@@ -30,6 +30,8 @@
 		C252942F18D83F8300D83E0A /* ZTObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252942C18D83F8300D83E0A /* ZTObject.cpp */; };
 		C252943218D8421E00D83E0A /* Lamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943018D8421E00D83E0A /* Lamp.cpp */; };
 		C252943318D8421E00D83E0A /* Lamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943018D8421E00D83E0A /* Lamp.cpp */; };
+		C252943618D96A2500D83E0A /* Name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943418D96A2500D83E0A /* Name.cpp */; };
+		C252943718D96A2500D83E0A /* Name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943418D96A2500D83E0A /* Name.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		C252942D18D83F8300D83E0A /* ZTObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTObject.h; sourceTree = "<group>"; };
 		C252943018D8421E00D83E0A /* Lamp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lamp.cpp; sourceTree = "<group>"; };
 		C252943118D8421E00D83E0A /* Lamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lamp.h; sourceTree = "<group>"; };
+		C252943418D96A2500D83E0A /* Name.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Name.cpp; sourceTree = "<group>"; };
+		C252943518D96A2500D83E0A /* Name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Name.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 				C252942718D83EB600D83E0A /* Line.h */,
 				C252943018D8421E00D83E0A /* Lamp.cpp */,
 				C252943118D8421E00D83E0A /* Lamp.h */,
+				C252943418D96A2500D83E0A /* Name.cpp */,
+				C252943518D96A2500D83E0A /* Name.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -294,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C252943618D96A2500D83E0A /* Name.cpp in Sources */,
 				C252941E18D83DA400D83E0A /* ZTServer.cpp in Sources */,
 				C252942818D83EB600D83E0A /* Line.cpp in Sources */,
 				C252942E18D83F8300D83E0A /* ZTObject.cpp in Sources */,
@@ -309,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C252943718D96A2500D83E0A /* Name.cpp in Sources */,
 				C252941F18D83DA400D83E0A /* ZTServer.cpp in Sources */,
 				C252942918D83EB600D83E0A /* Line.cpp in Sources */,
 				C252942F18D83F8300D83E0A /* ZTObject.cpp in Sources */,
@@ -489,6 +497,7 @@
 				C252940618D83CD500D83E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C252940718D83CD500D83E0A /* Build configuration list for PBXNativeTarget "ZTJTTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +506,7 @@
 				C252940918D83CD500D83E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

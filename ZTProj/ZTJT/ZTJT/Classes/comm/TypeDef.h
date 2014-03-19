@@ -59,4 +59,9 @@ VOID wclass::set##name(const type& newval) \
     m_##name = newval; \
 }
 
+#define CONSTRUCTOR_DECLARE(wclass) \
+wclass();\
+~wclass();
+
+
 #endif
