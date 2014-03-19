@@ -24,6 +24,18 @@ public:
     Line(POINT ptStart, POINT ptEnd);
     ~Line();
     
+    typedef enum {
+        LineColorWhite,
+        LineColorYellow
+    }LineColor;
+    
+    typedef enum {
+        LineWidth1,
+        LineWidth2,
+        LineWidth3,
+        LineWidth4
+    }LineWidth;
+    
     VOID SetStart(POINT start);
     POINT Start() const;
     

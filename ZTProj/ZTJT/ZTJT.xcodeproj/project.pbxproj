@@ -32,6 +32,10 @@
 		C252943318D8421E00D83E0A /* Lamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943018D8421E00D83E0A /* Lamp.cpp */; };
 		C252943618D96A2500D83E0A /* Name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943418D96A2500D83E0A /* Name.cpp */; };
 		C252943718D96A2500D83E0A /* Name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943418D96A2500D83E0A /* Name.cpp */; };
+		C252943A18D97AD300D83E0A /* GraphicObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943818D97AD300D83E0A /* GraphicObject.cpp */; };
+		C252943B18D97AD300D83E0A /* GraphicObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943818D97AD300D83E0A /* GraphicObject.cpp */; };
+		C252943E18D9870100D83E0A /* GraphicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943C18D9870100D83E0A /* GraphicsManager.cpp */; };
+		C252943F18D9870100D83E0A /* GraphicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943C18D9870100D83E0A /* GraphicsManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +91,10 @@
 		C252943118D8421E00D83E0A /* Lamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lamp.h; sourceTree = "<group>"; };
 		C252943418D96A2500D83E0A /* Name.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Name.cpp; sourceTree = "<group>"; };
 		C252943518D96A2500D83E0A /* Name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Name.h; sourceTree = "<group>"; };
+		C252943818D97AD300D83E0A /* GraphicObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicObject.cpp; sourceTree = "<group>"; };
+		C252943918D97AD300D83E0A /* GraphicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
+		C252943C18D9870100D83E0A /* GraphicsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsManager.cpp; sourceTree = "<group>"; };
+		C252943D18D9870100D83E0A /* GraphicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +197,10 @@
 				C252943118D8421E00D83E0A /* Lamp.h */,
 				C252943418D96A2500D83E0A /* Name.cpp */,
 				C252943518D96A2500D83E0A /* Name.h */,
+				C252943818D97AD300D83E0A /* GraphicObject.cpp */,
+				C252943918D97AD300D83E0A /* GraphicObject.h */,
+				C252943C18D9870100D83E0A /* GraphicsManager.cpp */,
+				C252943D18D9870100D83E0A /* GraphicsManager.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -222,9 +234,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C25293E018D83CD500D83E0A /* ZTJT */ = {
+		C25293E018D83CD500D83E0A /* libZTJT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C252940418D83CD500D83E0A /* Build configuration list for PBXNativeTarget "ZTJT" */;
+			buildConfigurationList = C252940418D83CD500D83E0A /* Build configuration list for PBXNativeTarget "libZTJT" */;
 			buildPhases = (
 				C25293DD18D83CD500D83E0A /* Sources */,
 				C25293DE18D83CD500D83E0A /* Frameworks */,
@@ -234,7 +246,7 @@
 			);
 			dependencies = (
 			);
-			name = ZTJT;
+			name = libZTJT;
 			productName = ZTJT;
 			productReference = C25293E118D83CD500D83E0A /* libZTJT.a */;
 			productType = "com.apple.product-type.library.static";
@@ -278,7 +290,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C25293E018D83CD500D83E0A /* ZTJT */,
+				C25293E018D83CD500D83E0A /* libZTJT */,
 				C25293F018D83CD500D83E0A /* ZTJTTests */,
 			);
 		};
@@ -300,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C252943A18D97AD300D83E0A /* GraphicObject.cpp in Sources */,
 				C252943618D96A2500D83E0A /* Name.cpp in Sources */,
 				C252941E18D83DA400D83E0A /* ZTServer.cpp in Sources */,
 				C252942818D83EB600D83E0A /* Line.cpp in Sources */,
@@ -309,6 +322,7 @@
 				C252941818D83DA400D83E0A /* ZTData.cpp in Sources */,
 				C252942018D83DA400D83E0A /* ZTSocket.cpp in Sources */,
 				C252941C18D83DA400D83E0A /* ZTPacket.cpp in Sources */,
+				C252943E18D9870100D83E0A /* GraphicsManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C252943B18D97AD300D83E0A /* GraphicObject.cpp in Sources */,
 				C252943718D96A2500D83E0A /* Name.cpp in Sources */,
 				C252941F18D83DA400D83E0A /* ZTServer.cpp in Sources */,
 				C252942918D83EB600D83E0A /* Line.cpp in Sources */,
@@ -325,6 +340,7 @@
 				C252941918D83DA400D83E0A /* ZTData.cpp in Sources */,
 				C252942118D83DA400D83E0A /* ZTSocket.cpp in Sources */,
 				C252941D18D83DA400D83E0A /* ZTPacket.cpp in Sources */,
+				C252943F18D9870100D83E0A /* GraphicsManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +349,7 @@
 /* Begin PBXTargetDependency section */
 		C25293F818D83CD500D83E0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C25293E018D83CD500D83E0A /* ZTJT */;
+			target = C25293E018D83CD500D83E0A /* libZTJT */;
 			targetProxy = C25293F718D83CD500D83E0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -490,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C252940418D83CD500D83E0A /* Build configuration list for PBXNativeTarget "ZTJT" */ = {
+		C252940418D83CD500D83E0A /* Build configuration list for PBXNativeTarget "libZTJT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C252940518D83CD500D83E0A /* Debug */,

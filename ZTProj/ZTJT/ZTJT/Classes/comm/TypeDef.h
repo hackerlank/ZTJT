@@ -33,19 +33,27 @@ typedef bool ZTBOOL;
 #define SOCKET_LEN_MAX 1024
 
 
-
 typedef struct {
     UINT  x;
     UINT  y;
 }POINT;
 
 
-#define PROPERTY(type,name) \
+
+
+#define PRIVATE_PROPERTY(type,name) \
 private: \
     type m_##name; \
 public: \
     const type& name()const; \
     void set##name(const type& newval);
+
+#define PROTECTED_PROPERTY(type,name) \
+protected: \
+type m_##name; \
+public: \
+const type& name()const; \
+void set##name(const type& newval);
 
 #define SYNTHESIZE(wclass,type,name) \
 const type& wclass::name() const \
@@ -60,8 +68,13 @@ VOID wclass::set##name(const type& newval) \
 }
 
 #define CONSTRUCTOR_DECLARE(wclass) \
-wclass();\
-~wclass();
+public:\
+    wclass();\
+    ~wclass();
 
+#define PROTECTED_CONSTRUCTOR_DECLARE(wclass) \
+protected:\
+    wclass();\
+    ~wclass();
 
 #endif

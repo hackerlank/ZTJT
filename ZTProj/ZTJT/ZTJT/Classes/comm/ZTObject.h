@@ -13,7 +13,7 @@
 
 class ZTObject
 {
-public:
+protected:
     ZTObject();
     ~ZTObject();
     

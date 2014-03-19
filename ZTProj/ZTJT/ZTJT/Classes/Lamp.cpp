@@ -10,19 +10,19 @@
 
 
 Lamp::Lamp()
-:m_center({0,0})
-,m_mode(0)
-,m_state(0)
-,m_lddout(0)
+:m_Center({0,0})
+,m_Type(0)
+,m_State(2)
+,m_Lddout(0)
 {
     
 }
 
-Lamp::Lamp(POINT center)
-:m_center(center)
-,m_mode(0)
-,m_state(0)
-,m_lddout(0)
+Lamp::Lamp(POINT center, UINT type)
+:m_Center(center)
+,m_Type(7)
+,m_State(2)
+,m_Lddout(0)
 {
     
 }
@@ -32,8 +32,12 @@ Lamp::~Lamp()
     
 }
 
-SYNTHESIZE(Lamp, BYTE,Pro)
-
+SYNTHESIZE(Lamp, POINT, Center)
+SYNTHESIZE(Lamp, UINT, Type)
+SYNTHESIZE(Lamp, BYTE, State)
+SYNTHESIZE(Lamp, BYTE, Lddout)
+SYNTHESIZE(Lamp, BYTE, Pro)
+/*
 VOID Lamp::SetCenter(POINT center)
 {
     m_center = center;
@@ -72,4 +76,19 @@ VOID Lamp::SetLddout(BYTE lddout)
 BYTE Lamp::Lddout() const
 {
     return m_lddout;
+}
+*/
+
+UINT Lamp::NextMode()
+{
+    return 0;
+    
+}
+
+const string* Lamp::LddoutString() const
+{
+    char buf[10];
+    snprintf(buf, 10, "%d.%d", (m_Lddout-1)/2,(m_Lddout-1)%2+1);
+    
+    return new string(buf);
 }

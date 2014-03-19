@@ -16,8 +16,8 @@ using namespace std;
 
 class Name : ZTObject {
     CONSTRUCTOR_DECLARE(Name);
-    PROPERTY(POINT, LefttopPt)
-    PROPERTY(string, NameStr)
+    PRIVATE_PROPERTY(POINT, LefttopPt)
+    PRIVATE_PROPERTY(string, NameStr)
 };
 
 #endif /* defined(__ZTJT__Name__) */
