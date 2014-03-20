@@ -10,8 +10,9 @@
 #define __ZTJT__GraphicsManager__
 
 #include "Line.h"
-#include "Lamp.h"
+#include "LampGroup.h"
 #include "Name.h"
+#include "Lamp.h"
 #include <list>
 using namespace std;
 
@@ -29,7 +30,7 @@ public:
     void  DelName(Name *aName);
     
     PRIVATE_PROPERTY(list<Line*>, Lines)    //路口线条
-    PRIVATE_PROPERTY(list<Lamp*>, Lamps)    //路灯
+    PRIVATE_PROPERTY(list<LampGroup*>, Lamps)    //路灯
     PRIVATE_PROPERTY(list<Name*>, Names)    //注释
 };
 
