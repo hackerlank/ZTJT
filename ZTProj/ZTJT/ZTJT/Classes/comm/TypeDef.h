@@ -9,7 +9,18 @@
 #ifndef SocketOnBackground_TypeDef_h
 #define SocketOnBackground_TypeDef_h
 
+#ifdef  __APPLE__
+#include <TargetConditionals.h>
+#if TARGET_IPHONE_SIMULATOR
+#include <_types/_uint32_t.h>
+#include <_types/_uint16_t.h>
+#include <sys/_types/_int32_t.h>
+#elif TARGET_OS_IPHONE
 #include <sys/types.h>
+#endif
+#endif
+
+
 
 typedef int32_t  INT32;
 typedef uint32_t UINT32;
@@ -38,7 +49,46 @@ typedef struct {
     UINT  y;
 }POINT;
 
+/*  灯的状态
+ 描述灯的各种图形化类型
+ */
+typedef enum {
+    //
+    LampTypeWalk = 0,           //人行
+    //////////////
+    LampTypeUp,                 //上行
+    LampTypeDown,               //下行
+    LampTypeLeft,               //左行
+    LampTypeRight,              //右行
+    //以下两种等只有开/关两种状态
+    LampTypeVDU,                //视频
+    LampTypeManual,             //手动
+    /////////////
+    LampTypeRound,              //圆
+    LampTypeUpTurnAround,       //上掉头
+    LampTypeDownTurnAround,     //下掉头
+    LampTypeLeftTurnAround,     //左掉头
+    LampTypeRightTurnAround,    //右掉头
+    LampTypeNonMotorizedVehicle,//非机动车
+    
+    LampTypeMax                 //枚举临界值
+}LampType;
 
+/*  灯的状态
+    描述灯的各种状态
+ */
+typedef enum {
+    LampStateBlack,                 //黑
+    LampStateYellowShine = 1,       //黄闪
+    LampStateRed,                   //红
+    LampStateGreen,                 //绿
+    LampStateGreenShine,            //绿闪
+    LampStateYellow,                //黄
+    LampStateYellowRed,             //黄红
+    
+    
+    LampStateMax                    //临界值
+}LampState;
 
 
 #define PRIVATE_PROPERTY(type,name) \

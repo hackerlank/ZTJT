@@ -7,21 +7,21 @@
 //
 
 #include "Lamp.h"
-
+#include "Config.h"
 
 Lamp::Lamp()
 :m_Center({0,0})
-,m_Type(0)
-,m_State(2)
+,m_Type(LampTypeRound)
+,m_State(LampStateRed)
 ,m_Lddout(0)
 {
     
 }
 
-Lamp::Lamp(POINT center, UINT type)
+Lamp::Lamp(POINT center, LampType type)
 :m_Center(center)
-,m_Type(7)
-,m_State(2)
+,m_Type(type)
+,m_State(LampStateRed)
 ,m_Lddout(0)
 {
     
@@ -33,10 +33,9 @@ Lamp::~Lamp()
 }
 
 SYNTHESIZE(Lamp, POINT, Center)
-SYNTHESIZE(Lamp, UINT, Type)
-SYNTHESIZE(Lamp, BYTE, State)
+SYNTHESIZE(Lamp, LampType, Type)
+SYNTHESIZE(Lamp, LampState, State)
 SYNTHESIZE(Lamp, BYTE, Lddout)
-SYNTHESIZE(Lamp, BYTE, Pro)
 /*
 VOID Lamp::SetCenter(POINT center)
 {
@@ -79,16 +78,63 @@ BYTE Lamp::Lddout() const
 }
 */
 
-UINT Lamp::NextMode()
+UINT Lamp::NextState()
 {
-    return 0;
+    BYTE sel = 0;
+    switch (m_Type) {
+        case LampTypeWalk:
+            sel = Config::GetInstance()->GetLampWalkSelectableStateValue();
+            break;
+        case LampTypeUp:
+        case LampTypeDown:
+        case LampTypeLeft:
+        case LampTypeRight:
+        case LampTypeUpTurnAround:
+        case LampTypeDownTurnAround:
+        case LampTypeLeftTurnAround:
+        case LampTypeRightTurnAround:
+            sel = Config::GetInstance()->GetLampCommSelectableStateValue();
+            break;
+        case LampTypeVDU:
+            sel = Config::GetInstance()->GetLampVDUSelectableStateValue();
+            break;
+        case LampTypeManual:
+            sel = Config::GetInstance()->GetLampManualSelectableStateValue();
+            break;
+            
+        default:
+            break;
+    }
+    
+    UINT st = (UINT)m_State;
+    
+    
+    BYTE cursor = 0x01;
+    cursor = cursor<<st;    //左移st位，
+    while (++st!=m_State) {
+        cursor=cursor<<1;
+        if (0 == cursor) { //如果游标溢出。那么重新赋值为1
+            cursor = 1;
+        }
+        if (8 == st) {     //如果state超过BYTE的位数，那么复位从0开始判断
+            st = 0;
+        }
+        if (cursor&sel) {
+            break;
+        }
+        
+    }
+    
+    m_State = (LampState)st;
+    
+    return m_State;
     
 }
 
 const string* Lamp::LddoutString() const
 {
     char buf[10];
-    snprintf(buf, 10, "%d.%d", (m_Lddout-1)/2,(m_Lddout-1)%2+1);
+    snprintf(buf, 10, "%d.%d", (m_Lddout-1)/2+1,(m_Lddout-1)%2+1);
     
     return new string(buf);
 }

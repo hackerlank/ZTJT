@@ -13,7 +13,7 @@
 		C25293F318D83CD500D83E0A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25293F218D83CD500D83E0A /* XCTest.framework */; };
 		C25293F418D83CD500D83E0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25293E418D83CD500D83E0A /* Foundation.framework */; };
 		C25293F618D83CD500D83E0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25293F518D83CD500D83E0A /* UIKit.framework */; };
-		C25293F918D83CD500D83E0A /* libZTJT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C25293E118D83CD500D83E0A /* libZTJT.a */; };
+		C25293F918D83CD500D83E0A /* liblibZTJT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C25293E118D83CD500D83E0A /* liblibZTJT.a */; };
 		C25293FF18D83CD500D83E0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25293FD18D83CD500D83E0A /* InfoPlist.strings */; };
 		C252940118D83CD500D83E0A /* ZTJTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C252940018D83CD500D83E0A /* ZTJTTests.m */; };
 		C252941818D83DA400D83E0A /* ZTData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252940D18D83DA400D83E0A /* ZTData.cpp */; };
@@ -36,6 +36,9 @@
 		C252943B18D97AD300D83E0A /* GraphicObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943818D97AD300D83E0A /* GraphicObject.cpp */; };
 		C252943E18D9870100D83E0A /* GraphicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943C18D9870100D83E0A /* GraphicsManager.cpp */; };
 		C252943F18D9870100D83E0A /* GraphicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943C18D9870100D83E0A /* GraphicsManager.cpp */; };
+		C252944118DA82B300D83E0A /* LampTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C252944018DA82B300D83E0A /* LampTests.mm */; };
+		C252944418DA930D00D83E0A /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944218DA930D00D83E0A /* Config.cpp */; };
+		C252944518DA930D00D83E0A /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944218DA930D00D83E0A /* Config.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C25293E118D83CD500D83E0A /* libZTJT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZTJT.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25293E118D83CD500D83E0A /* liblibZTJT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibZTJT.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25293E418D83CD500D83E0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C25293E818D83CD500D83E0A /* ZTJT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZTJT-Prefix.pch"; sourceTree = "<group>"; };
 		C25293E918D83CD500D83E0A /* ZTJT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTJT.h; sourceTree = "<group>"; };
@@ -95,6 +98,9 @@
 		C252943918D97AD300D83E0A /* GraphicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
 		C252943C18D9870100D83E0A /* GraphicsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsManager.cpp; sourceTree = "<group>"; };
 		C252943D18D9870100D83E0A /* GraphicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsManager.h; sourceTree = "<group>"; };
+		C252944018DA82B300D83E0A /* LampTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LampTests.mm; sourceTree = "<group>"; };
+		C252944218DA930D00D83E0A /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
+		C252944318DA930D00D83E0A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +119,7 @@
 				C25293F318D83CD500D83E0A /* XCTest.framework in Frameworks */,
 				C25293F618D83CD500D83E0A /* UIKit.framework in Frameworks */,
 				C25293F418D83CD500D83E0A /* Foundation.framework in Frameworks */,
-				C25293F918D83CD500D83E0A /* libZTJT.a in Frameworks */,
+				C25293F918D83CD500D83E0A /* liblibZTJT.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +139,7 @@
 		C25293E218D83CD500D83E0A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C25293E118D83CD500D83E0A /* libZTJT.a */,
+				C25293E118D83CD500D83E0A /* liblibZTJT.a */,
 				C25293F118D83CD500D83E0A /* ZTJTTests.xctest */,
 			);
 			name = Products;
@@ -173,6 +179,7 @@
 			children = (
 				C252940018D83CD500D83E0A /* ZTJTTests.m */,
 				C25293FB18D83CD500D83E0A /* Supporting Files */,
+				C252944018DA82B300D83E0A /* LampTests.mm */,
 			);
 			path = ZTJTTests;
 			sourceTree = "<group>";
@@ -227,6 +234,8 @@
 				C252942B18D83F8300D83E0A /* TypeDef.h */,
 				C252942C18D83F8300D83E0A /* ZTObject.cpp */,
 				C252942D18D83F8300D83E0A /* ZTObject.h */,
+				C252944218DA930D00D83E0A /* Config.cpp */,
+				C252944318DA930D00D83E0A /* Config.h */,
 			);
 			path = comm;
 			sourceTree = "<group>";
@@ -248,7 +257,7 @@
 			);
 			name = libZTJT;
 			productName = ZTJT;
-			productReference = C25293E118D83CD500D83E0A /* libZTJT.a */;
+			productReference = C25293E118D83CD500D83E0A /* liblibZTJT.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		C25293F018D83CD500D83E0A /* ZTJTTests */ = {
@@ -321,6 +330,7 @@
 				C25293EC18D83CD500D83E0A /* ZTJT.m in Sources */,
 				C252941818D83DA400D83E0A /* ZTData.cpp in Sources */,
 				C252942018D83DA400D83E0A /* ZTSocket.cpp in Sources */,
+				C252944418DA930D00D83E0A /* Config.cpp in Sources */,
 				C252941C18D83DA400D83E0A /* ZTPacket.cpp in Sources */,
 				C252943E18D9870100D83E0A /* GraphicsManager.cpp in Sources */,
 			);
@@ -331,10 +341,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C252943B18D97AD300D83E0A /* GraphicObject.cpp in Sources */,
+				C252944518DA930D00D83E0A /* Config.cpp in Sources */,
 				C252943718D96A2500D83E0A /* Name.cpp in Sources */,
 				C252941F18D83DA400D83E0A /* ZTServer.cpp in Sources */,
 				C252942918D83EB600D83E0A /* Line.cpp in Sources */,
 				C252942F18D83F8300D83E0A /* ZTObject.cpp in Sources */,
+				C252944118DA82B300D83E0A /* LampTests.mm in Sources */,
 				C252943318D8421E00D83E0A /* Lamp.cpp in Sources */,
 				C252940118D83CD500D83E0A /* ZTJTTests.m in Sources */,
 				C252941918D83DA400D83E0A /* ZTData.cpp in Sources */,
