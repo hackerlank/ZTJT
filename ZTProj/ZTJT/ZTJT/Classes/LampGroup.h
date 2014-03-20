@@ -16,6 +16,10 @@
 #include <list>
 using namespace std;
 
+
+
+
+
 class LampGroup : ZTObject {
 public:
     LampGroup();
@@ -33,10 +37,34 @@ public:
     
     const string* LddoutString() const;
     
+    
+    ZTBOOL AddLamp(Lamp *aLamp);
+    void RemoveLamp(Lamp *aLamp);       //取出一个lamp，并从组中删除
+    
+    ZTBOOL HasLamp(const Lamp *aLamp)const;
+    //void DelLamp(const Lamp *aLamp);           //从组中删除一个lamp
 private:
     Lamp* GetALamp()const;   //获取组中任意一个Lamp
     
 private:
     list<Lamp*> m_Lamps;
+};
+
+
+class LampGroup_Comparor
+{
+public:
+	LampGroup_Comparor(BYTE b)
+    : lddout(b)
+	{
+	}
+	bool operator()(const LampGroup *p)
+	{
+		return (lddout == p->Lddout());
+	}
+    
+private:
+	BYTE lddout;
+    
 };
 #endif /* defined(__ZTJT__Lamp__) */

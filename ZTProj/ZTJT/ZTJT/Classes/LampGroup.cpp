@@ -22,7 +22,11 @@ LampGroup::LampGroup()
 
 LampGroup::~LampGroup()
 {
-    
+    list<Lamp*>::iterator it = m_Lamps.begin();
+    while (it != m_Lamps.end()) {
+        delete *it;
+        it++;
+    }
 }
 
 
@@ -104,4 +108,27 @@ Lamp *LampGroup::GetALamp()const
     }
     
     return ZTNULL;
+}
+
+
+ZTBOOL LampGroup::AddLamp(Lamp *aLamp)
+{
+    m_Lamps.push_back(aLamp);
+    
+    return ZTTRUE;
+}
+
+void LampGroup::RemoveLamp(Lamp *aLamp)
+{
+    m_Lamps.remove(aLamp);
+}
+
+ZTBOOL LampGroup::HasLamp(const Lamp *aLamp)const
+{
+    list<Lamp *>::const_iterator it = std::find(m_Lamps.begin(), m_Lamps.end(), aLamp);
+    if (m_Lamps.end() != it) {
+        return ZTTRUE;
+    }
+    
+    return ZTFALSE;
 }

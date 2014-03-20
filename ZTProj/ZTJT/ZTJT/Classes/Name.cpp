@@ -15,6 +15,13 @@ Name::Name()
     
 }
 
+Name::Name(POINT pt)
+:m_LefttopPt(pt)
+,m_NameStr(ZTNULL)
+{
+    
+}
+
 Name::~Name()
 {
     
