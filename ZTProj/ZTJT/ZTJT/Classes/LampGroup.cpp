@@ -66,16 +66,15 @@ UINT LampGroup::NextState()
     
     UINT st = (UINT)m_State;
     
-    
+    //如果一个灯的可选状态只有一个，那么此算法....
     BYTE cursor = 0x01;
     cursor = cursor<<st;    //左移st位，
-    while (++st!=m_State) {
+    while (++st!=m_State) {   //判断条件，状态一个个循环，遇到相同状态则不再判断。
         cursor=cursor<<1;
-        if (0 == cursor) { //如果游标溢出。那么重新赋值为1
-            cursor = 1;
-        }
+        
         if (8 == st) {     //如果state超过BYTE的位数，那么复位从0开始判断
             st = 0;
+            cursor = 1;    //从bit1开始判断
         }
         if (cursor&sel) {
             break;
@@ -110,12 +109,37 @@ Lamp *LampGroup::GetALamp()const
     return ZTNULL;
 }
 
+ZTBOOL LampGroup::IsDefaultGroup()const
+{
+    if (0 == m_Lddout) {
+        return ZTTRUE;
+    }
+    
+    return ZTFALSE;
+}
+
+ZTBOOL LampGroup::CanAddLamp(Lamp *aLamp)const
+{
+    if (0 == m_Lamps.size() || 0 == m_Lddout) {  //no lamps or default group
+        return ZTTRUE;
+    }else if (Lamp::CanInSameGroup(GetALamp(), aLamp)) {
+        return ZTTRUE;
+    }
+    
+    return ZTFALSE;
+}
+
 
 ZTBOOL LampGroup::AddLamp(Lamp *aLamp)
 {
-    m_Lamps.push_back(aLamp);
+    if (CanAddLamp(aLamp)) {
+        if (!HasLamp(aLamp)) {
+            m_Lamps.push_back(aLamp);
+        }
+        return ZTTRUE;
+    }
     
-    return ZTTRUE;
+    return ZTFALSE;
 }
 
 void LampGroup::RemoveLamp(Lamp *aLamp)
@@ -127,6 +151,15 @@ ZTBOOL LampGroup::HasLamp(const Lamp *aLamp)const
 {
     list<Lamp *>::const_iterator it = std::find(m_Lamps.begin(), m_Lamps.end(), aLamp);
     if (m_Lamps.end() != it) {
+        return ZTTRUE;
+    }
+    
+    return ZTFALSE;
+}
+
+ZTBOOL LampGroup::IsEmpty()const
+{
+    if (0 == m_Lamps.size()) {
         return ZTTRUE;
     }
     

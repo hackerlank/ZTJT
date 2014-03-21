@@ -20,6 +20,9 @@ public:
     PRIVATE_PROPERTY(POINT,Center)
     PRIVATE_PROPERTY(LampType,Type)
     
+    static ZTBOOL CanInSameGroup(const Lamp *lamp1, const Lamp*lamp2);
+    
+private:
 };
 
 #endif /* defined(__ZTJT__Lamp__) */

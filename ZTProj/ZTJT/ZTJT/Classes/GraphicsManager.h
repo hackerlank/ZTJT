@@ -29,7 +29,9 @@ public:
     void  DelLine(Line *aline);
     
     Lamp* AddLamp(POINT center, LampType type);
-    void  DelLamp(Lamp *alamp);
+    void  DelLamp(Lamp *alamp);   //不会delete alamp,需要额外手动清除
+    ZTBOOL  SetLampLddout(Lamp *alamp, BYTE lddout);
+    LampGroup *findLamp(Lamp *alamp)const;
     
     Name* AddName(POINT point);
     void  DelName(Name *aName);
@@ -37,7 +39,7 @@ public:
     
 private:
     LampGroup *GetDefaultGroup();   //获取lddout为0的分组
-    LampGroup * GetGroup(BYTE lddout);   //获取lddout的分组，如果没有就创建一个
+    LampGroup *GetGroup(BYTE lddout);   //获取lddout的分组，如果没有就创建一个
 };
 
 #endif /* defined(__ZTJT__GraphicsManager__) */

@@ -89,7 +89,12 @@ VOID Config::SetLampVDUSelectableState(LampState st, ZTBOOL selectable)
     BYTE cur = 1;
     cur<<=(UINT)st;
     
-    sel |= cur;
+    if (selectable) {
+        sel |= cur;
+    }else {
+        sel &= ~cur;
+    }
+    
     m_Configs[KConfigKeyLampVDUSelectableState] = sel;
 }
 

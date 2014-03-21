@@ -36,7 +36,7 @@
 		C252943B18D97AD300D83E0A /* GraphicObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943818D97AD300D83E0A /* GraphicObject.cpp */; };
 		C252943E18D9870100D83E0A /* GraphicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943C18D9870100D83E0A /* GraphicsManager.cpp */; };
 		C252943F18D9870100D83E0A /* GraphicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943C18D9870100D83E0A /* GraphicsManager.cpp */; };
-		C252944118DA82B300D83E0A /* LampTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C252944018DA82B300D83E0A /* LampTests.mm */; };
+		C252944118DA82B300D83E0A /* LampGroupTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C252944018DA82B300D83E0A /* LampGroupTests.mm */; };
 		C252944418DA930D00D83E0A /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944218DA930D00D83E0A /* Config.cpp */; };
 		C252944518DA930D00D83E0A /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944218DA930D00D83E0A /* Config.cpp */; };
 		C252945018DAF4CE00D83E0A /* Lamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944E18DAF4CE00D83E0A /* Lamp.cpp */; };
@@ -100,7 +100,7 @@
 		C252943918D97AD300D83E0A /* GraphicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
 		C252943C18D9870100D83E0A /* GraphicsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsManager.cpp; sourceTree = "<group>"; };
 		C252943D18D9870100D83E0A /* GraphicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsManager.h; sourceTree = "<group>"; };
-		C252944018DA82B300D83E0A /* LampTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LampTests.mm; sourceTree = "<group>"; };
+		C252944018DA82B300D83E0A /* LampGroupTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LampGroupTests.mm; sourceTree = "<group>"; };
 		C252944218DA930D00D83E0A /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
 		C252944318DA930D00D83E0A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		C252944E18DAF4CE00D83E0A /* Lamp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lamp.cpp; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 			children = (
 				C252940018D83CD500D83E0A /* ZTJTTests.m */,
 				C25293FB18D83CD500D83E0A /* Supporting Files */,
-				C252944018DA82B300D83E0A /* LampTests.mm */,
+				C252944018DA82B300D83E0A /* LampGroupTests.mm */,
 			);
 			path = ZTJTTests;
 			sourceTree = "<group>";
@@ -353,7 +353,7 @@
 				C252941F18D83DA400D83E0A /* ZTServer.cpp in Sources */,
 				C252942918D83EB600D83E0A /* Line.cpp in Sources */,
 				C252942F18D83F8300D83E0A /* ZTObject.cpp in Sources */,
-				C252944118DA82B300D83E0A /* LampTests.mm in Sources */,
+				C252944118DA82B300D83E0A /* LampGroupTests.mm in Sources */,
 				C252943318D8421E00D83E0A /* LampGroup.cpp in Sources */,
 				C252940118D83CD500D83E0A /* ZTJTTests.m in Sources */,
 				C252945118DAF4CE00D83E0A /* Lamp.cpp in Sources */,

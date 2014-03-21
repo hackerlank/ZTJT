@@ -17,9 +17,6 @@
 using namespace std;
 
 
-
-
-
 class LampGroup : ZTObject {
 public:
     LampGroup();
@@ -37,12 +34,19 @@ public:
     
     const string* LddoutString() const;
     
-    
+    ZTBOOL IsDefaultGroup()const;
+    /*
+     是否可以在这个组中添加这个路灯
+     规则：如果是默认组(Lddout=0)，那么任何路灯都可以添加
+          其实的必须是同一类型灯才能添加(路灯，普通信号灯，视频，手控)
+     */
+    ZTBOOL CanAddLamp(Lamp *aLamp)const;
     ZTBOOL AddLamp(Lamp *aLamp);
     void RemoveLamp(Lamp *aLamp);       //取出一个lamp，并从组中删除
     
     ZTBOOL HasLamp(const Lamp *aLamp)const;
     //void DelLamp(const Lamp *aLamp);           //从组中删除一个lamp
+    ZTBOOL IsEmpty()const;
 private:
     Lamp* GetALamp()const;   //获取组中任意一个Lamp
     

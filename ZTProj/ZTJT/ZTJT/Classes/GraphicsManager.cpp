@@ -16,7 +16,23 @@ GraphicsManager::GraphicsManager()
 
 GraphicsManager::~GraphicsManager()
 {
+    list<Line*>::iterator lineIt = m_Lines.begin();
+    while (lineIt != m_Lines.end()) {
+        delete *lineIt;
+        lineIt++;
+    }
     
+    list<LampGroup*>::iterator lgIt = m_LampGroups.begin();
+    while (lgIt != m_LampGroups.end()) {
+        delete *lgIt;
+        lgIt++;
+    }
+    
+    list<Name*>::iterator nameIt = m_Names.begin();
+    while (nameIt != m_Names.end()) {
+        delete *nameIt;
+        nameIt++;
+    }
 }
 
 
@@ -50,9 +66,49 @@ void  GraphicsManager::DelLamp(Lamp *alamp)
         if ((*it)->HasLamp(alamp)) {
             (*it)->RemoveLamp(alamp);
             
-            return;
+            break;
         }
     }
+    
+    //如果group内没有灯，那么删除这个组
+    if (it != m_LampGroups.end()) {
+        if ((*it)->IsEmpty() && !(*it)->IsDefaultGroup()) {
+            delete *it;
+        }
+        
+        m_LampGroups.erase(it);
+    }
+}
+
+ZTBOOL  GraphicsManager::SetLampLddout(Lamp *alamp, BYTE lddout)
+{
+    LampGroup *group = GetGroup(lddout);
+    if (!group->CanAddLamp(alamp)) {           //不能加入这个组，灯有冲突
+        return ZTFALSE;
+    }
+    //找到alamp所属的group
+    LampGroup *ogroup = findLamp(alamp);
+    if (ZTNULL != ogroup) {
+        ogroup->RemoveLamp(alamp);
+    }
+    
+    group->AddLamp(alamp);
+    
+    return ZTTRUE;
+}
+
+LampGroup *GraphicsManager::findLamp(Lamp *alamp)const
+{
+    list<LampGroup*>::const_iterator it = m_LampGroups.begin();
+    while (it!=m_LampGroups.end()) {
+        if ((*it)->HasLamp(alamp)) {
+            return *it;
+        }
+        
+        it++;
+    }
+    
+    return ZTNULL;
 }
 
 Name* GraphicsManager::AddName(POINT point)
