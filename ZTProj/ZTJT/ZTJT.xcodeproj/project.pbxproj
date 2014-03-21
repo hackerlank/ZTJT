@@ -41,6 +41,8 @@
 		C252944518DA930D00D83E0A /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944218DA930D00D83E0A /* Config.cpp */; };
 		C252945018DAF4CE00D83E0A /* Lamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944E18DAF4CE00D83E0A /* Lamp.cpp */; };
 		C252945118DAF4CE00D83E0A /* Lamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944E18DAF4CE00D83E0A /* Lamp.cpp */; };
+		C2DD712318DC4270007DE4F9 /* ZTFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2DD712118DC4270007DE4F9 /* ZTFile.cpp */; };
+		C2DD712418DC4270007DE4F9 /* ZTFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2DD712118DC4270007DE4F9 /* ZTFile.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,8 @@
 		C252944318DA930D00D83E0A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		C252944E18DAF4CE00D83E0A /* Lamp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lamp.cpp; sourceTree = "<group>"; };
 		C252944F18DAF4CE00D83E0A /* Lamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lamp.h; sourceTree = "<group>"; };
+		C2DD712118DC4270007DE4F9 /* ZTFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZTFile.cpp; sourceTree = "<group>"; };
+		C2DD712218DC4270007DE4F9 /* ZTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +246,8 @@
 				C252942D18D83F8300D83E0A /* ZTObject.h */,
 				C252944218DA930D00D83E0A /* Config.cpp */,
 				C252944318DA930D00D83E0A /* Config.h */,
+				C2DD712118DC4270007DE4F9 /* ZTFile.cpp */,
+				C2DD712218DC4270007DE4F9 /* ZTFile.h */,
 			);
 			path = comm;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 				C252941C18D83DA400D83E0A /* ZTPacket.cpp in Sources */,
 				C252945018DAF4CE00D83E0A /* Lamp.cpp in Sources */,
 				C252943E18D9870100D83E0A /* GraphicsManager.cpp in Sources */,
+				C2DD712318DC4270007DE4F9 /* ZTFile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C252943B18D97AD300D83E0A /* GraphicObject.cpp in Sources */,
+				C2DD712418DC4270007DE4F9 /* ZTFile.cpp in Sources */,
 				C252944518DA930D00D83E0A /* Config.cpp in Sources */,
 				C252943718D96A2500D83E0A /* Name.cpp in Sources */,
 				C252941F18D83DA400D83E0A /* ZTServer.cpp in Sources */,
