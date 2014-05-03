@@ -20,3 +20,5 @@ GraphicObject::~GraphicObject()
 
 SYNTHESIZE(GraphicObject, ZTBOOL, Focus)
 SYNTHESIZE(GraphicObject, ZTBOOL, Drawing)
+
+

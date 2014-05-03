@@ -9,13 +9,15 @@
 #ifndef __SocketOnBackground__ZTObject__
 #define __SocketOnBackground__ZTObject__
 
-#include <iostream>
+#include "TypeDef.h"
 
 class ZTObject
 {
 protected:
     ZTObject();
     ~ZTObject();
+    
+    
     
 };
 

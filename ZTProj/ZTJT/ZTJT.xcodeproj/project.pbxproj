@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C21DEFB31913A314003E8A01 /* StatusTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C21DEFB21913A314003E8A01 /* StatusTests.mm */; };
+		C21DEFB61913A633003E8A01 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C21DEFB41913A633003E8A01 /* Debug.cpp */; };
+		C21DEFB71913A633003E8A01 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C21DEFB41913A633003E8A01 /* Debug.cpp */; };
+		C21DEFBA1913A9A1003E8A01 /* BinaryObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C21DEFB81913A9A1003E8A01 /* BinaryObj.cpp */; };
+		C21DEFBB1913A9A1003E8A01 /* BinaryObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C21DEFB81913A9A1003E8A01 /* BinaryObj.cpp */; };
+		C21DEFBC1913AD2F003E8A01 /* Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C228661719126987009D6502 /* Vertex.cpp */; };
+		C21DEFBE19147705003E8A01 /* VertexTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C21DEFBD19147705003E8A01 /* VertexTests.mm */; };
+		C21DEFC019147EE7003E8A01 /* LineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C21DEFBF19147EE7003E8A01 /* LineTests.m */; };
+		C228661919126987009D6502 /* Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C228661719126987009D6502 /* Vertex.cpp */; };
+		C228661C191275A1009D6502 /* Scheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C228661A191275A1009D6502 /* Scheme.cpp */; };
+		C228661D191275A1009D6502 /* Scheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C228661A191275A1009D6502 /* Scheme.cpp */; };
+		C228662019128A82009D6502 /* Status.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C228661E19128A82009D6502 /* Status.cpp */; };
+		C228662119128A82009D6502 /* Status.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C228661E19128A82009D6502 /* Status.cpp */; };
 		C25293E518D83CD500D83E0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25293E418D83CD500D83E0A /* Foundation.framework */; };
 		C25293EA18D83CD500D83E0A /* ZTJT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C25293E918D83CD500D83E0A /* ZTJT.h */; };
 		C25293EC18D83CD500D83E0A /* ZTJT.m in Sources */ = {isa = PBXBuildFile; fileRef = C25293EB18D83CD500D83E0A /* ZTJT.m */; };
 		C25293F318D83CD500D83E0A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25293F218D83CD500D83E0A /* XCTest.framework */; };
 		C25293F418D83CD500D83E0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25293E418D83CD500D83E0A /* Foundation.framework */; };
-		C25293F618D83CD500D83E0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25293F518D83CD500D83E0A /* UIKit.framework */; };
-		C25293F918D83CD500D83E0A /* liblibZTJT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C25293E118D83CD500D83E0A /* liblibZTJT.a */; };
 		C25293FF18D83CD500D83E0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25293FD18D83CD500D83E0A /* InfoPlist.strings */; };
 		C252940118D83CD500D83E0A /* ZTJTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C252940018D83CD500D83E0A /* ZTJTTests.m */; };
 		C252941818D83DA400D83E0A /* ZTData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252940D18D83DA400D83E0A /* ZTData.cpp */; };
@@ -69,6 +80,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C21DEFB21913A314003E8A01 /* StatusTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StatusTests.mm; sourceTree = "<group>"; };
+		C21DEFB41913A633003E8A01 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = "<group>"; };
+		C21DEFB51913A633003E8A01 /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = "<group>"; };
+		C21DEFB81913A9A1003E8A01 /* BinaryObj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryObj.cpp; sourceTree = "<group>"; };
+		C21DEFB91913A9A1003E8A01 /* BinaryObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryObj.h; sourceTree = "<group>"; };
+		C21DEFBD19147705003E8A01 /* VertexTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VertexTests.mm; sourceTree = "<group>"; };
+		C21DEFBF19147EE7003E8A01 /* LineTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineTests.m; sourceTree = "<group>"; };
+		C228661719126987009D6502 /* Vertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vertex.cpp; sourceTree = "<group>"; };
+		C228661819126987009D6502 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		C228661A191275A1009D6502 /* Scheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scheme.cpp; sourceTree = "<group>"; };
+		C228661B191275A1009D6502 /* Scheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheme.h; sourceTree = "<group>"; };
+		C228661E19128A82009D6502 /* Status.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Status.cpp; sourceTree = "<group>"; };
+		C228661F19128A82009D6502 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
 		C25293E118D83CD500D83E0A /* liblibZTJT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibZTJT.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25293E418D83CD500D83E0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C25293E818D83CD500D83E0A /* ZTJT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZTJT-Prefix.pch"; sourceTree = "<group>"; };
@@ -125,9 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C25293F318D83CD500D83E0A /* XCTest.framework in Frameworks */,
-				C25293F618D83CD500D83E0A /* UIKit.framework in Frameworks */,
 				C25293F418D83CD500D83E0A /* Foundation.framework in Frameworks */,
-				C25293F918D83CD500D83E0A /* liblibZTJT.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +210,9 @@
 				C252940018D83CD500D83E0A /* ZTJTTests.m */,
 				C25293FB18D83CD500D83E0A /* Supporting Files */,
 				C252944018DA82B300D83E0A /* LampGroupTests.mm */,
+				C21DEFB21913A314003E8A01 /* StatusTests.mm */,
+				C21DEFBD19147705003E8A01 /* VertexTests.mm */,
+				C21DEFBF19147EE7003E8A01 /* LineTests.m */,
 			);
 			path = ZTJTTests;
 			sourceTree = "<group>";
@@ -218,6 +243,16 @@
 				C252943D18D9870100D83E0A /* GraphicsManager.h */,
 				C252944E18DAF4CE00D83E0A /* Lamp.cpp */,
 				C252944F18DAF4CE00D83E0A /* Lamp.h */,
+				C228661719126987009D6502 /* Vertex.cpp */,
+				C228661819126987009D6502 /* Vertex.h */,
+				C228661A191275A1009D6502 /* Scheme.cpp */,
+				C228661B191275A1009D6502 /* Scheme.h */,
+				C228661E19128A82009D6502 /* Status.cpp */,
+				C228661F19128A82009D6502 /* Status.h */,
+				C21DEFB41913A633003E8A01 /* Debug.cpp */,
+				C21DEFB51913A633003E8A01 /* Debug.h */,
+				C21DEFB81913A9A1003E8A01 /* BinaryObj.cpp */,
+				C21DEFB91913A9A1003E8A01 /* BinaryObj.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -333,19 +368,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C228661C191275A1009D6502 /* Scheme.cpp in Sources */,
 				C252943A18D97AD300D83E0A /* GraphicObject.cpp in Sources */,
 				C252943618D96A2500D83E0A /* Name.cpp in Sources */,
 				C252941E18D83DA400D83E0A /* ZTServer.cpp in Sources */,
 				C252942818D83EB600D83E0A /* Line.cpp in Sources */,
+				C21DEFB61913A633003E8A01 /* Debug.cpp in Sources */,
 				C252942E18D83F8300D83E0A /* ZTObject.cpp in Sources */,
 				C252943218D8421E00D83E0A /* LampGroup.cpp in Sources */,
+				C228661919126987009D6502 /* Vertex.cpp in Sources */,
 				C25293EC18D83CD500D83E0A /* ZTJT.m in Sources */,
 				C252941818D83DA400D83E0A /* ZTData.cpp in Sources */,
 				C252942018D83DA400D83E0A /* ZTSocket.cpp in Sources */,
 				C252944418DA930D00D83E0A /* Config.cpp in Sources */,
+				C228662019128A82009D6502 /* Status.cpp in Sources */,
 				C252941C18D83DA400D83E0A /* ZTPacket.cpp in Sources */,
 				C252945018DAF4CE00D83E0A /* Lamp.cpp in Sources */,
 				C252943E18D9870100D83E0A /* GraphicsManager.cpp in Sources */,
+				C21DEFBA1913A9A1003E8A01 /* BinaryObj.cpp in Sources */,
 				C2DD712318DC4270007DE4F9 /* ZTFile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +394,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C228661D191275A1009D6502 /* Scheme.cpp in Sources */,
+				C21DEFB31913A314003E8A01 /* StatusTests.mm in Sources */,
 				C252943B18D97AD300D83E0A /* GraphicObject.cpp in Sources */,
 				C2DD712418DC4270007DE4F9 /* ZTFile.cpp in Sources */,
 				C252944518DA930D00D83E0A /* Config.cpp in Sources */,
@@ -363,12 +405,18 @@
 				C252942F18D83F8300D83E0A /* ZTObject.cpp in Sources */,
 				C252944118DA82B300D83E0A /* LampGroupTests.mm in Sources */,
 				C252943318D8421E00D83E0A /* LampGroup.cpp in Sources */,
+				C21DEFBE19147705003E8A01 /* VertexTests.mm in Sources */,
+				C21DEFC019147EE7003E8A01 /* LineTests.m in Sources */,
+				C21DEFBB1913A9A1003E8A01 /* BinaryObj.cpp in Sources */,
 				C252940118D83CD500D83E0A /* ZTJTTests.m in Sources */,
 				C252945118DAF4CE00D83E0A /* Lamp.cpp in Sources */,
+				C228662119128A82009D6502 /* Status.cpp in Sources */,
 				C252941918D83DA400D83E0A /* ZTData.cpp in Sources */,
+				C21DEFB71913A633003E8A01 /* Debug.cpp in Sources */,
 				C252942118D83DA400D83E0A /* ZTSocket.cpp in Sources */,
 				C252941D18D83DA400D83E0A /* ZTPacket.cpp in Sources */,
 				C252943F18D9870100D83E0A /* GraphicsManager.cpp in Sources */,
+				C21DEFBC1913AD2F003E8A01 /* Vertex.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +542,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZTJT/ZTJT-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -514,6 +563,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZTJT/ZTJT-Prefix.pch";
 				INFOPLIST_FILE = "ZTJTTests/ZTJTTests-Info.plist";

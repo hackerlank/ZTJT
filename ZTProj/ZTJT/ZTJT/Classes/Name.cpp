@@ -29,3 +29,14 @@ Name::~Name()
 
 SYNTHESIZE(Name, POINT, LefttopPt)
 SYNTHESIZE(Name, string, NameStr)
+
+
+ZTBOOL Name::HitTest(POINT point)
+{
+    return ZTFALSE;
+}
+
+void Name::generateBinary(BYTE *&pByte, INT &length)
+{
+    
+}

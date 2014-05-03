@@ -49,22 +49,42 @@ POINT Line::End() const
     return m_ptEnd;
 }
 
-VOID Line::SetColor(BYTE color)
+VOID Line::SetColor(LineColor color)
 {
     m_color = color;
 }
 
-BYTE Line::Color() const
+LineColor Line::Color() const
 {
-    return m_color;
+    return Line::m_color;
 }
 
-VOID Line::SetWidth(BYTE width)
+VOID Line::SetWidth(LineWidth width)
 {
     m_width = width;
 }
 
-BYTE Line::Width() const
+LineWidth Line::Width() const
 {
     return m_width;
+}
+
+
+ZTBOOL Line::HitTest(POINT point)
+{
+    return ZTFALSE;
+}
+
+void Line::generateBinary(BYTE *&pByte, INT &length)
+{
+    pByte = new BYTE[10];
+    bzero(pByte, 10);
+    length = 10;
+    SHORT *pShort = (SHORT*)pByte;
+    *(pShort) = m_ptStart.x;
+    *(pShort+1) = m_ptStart.y;
+    *(pShort+2) = m_ptEnd.x;
+    *(pShort+3) = m_ptEnd.y;
+    //*(pShort+4) = m_color<<8|m_width;
+    *(pShort+4) = MAKESHORT(m_width, m_color);
 }

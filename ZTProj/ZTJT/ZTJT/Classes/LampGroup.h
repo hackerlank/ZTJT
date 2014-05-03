@@ -17,7 +17,8 @@
 using namespace std;
 
 
-class LampGroup : ZTObject {
+class LampGroup : ZTObject
+{
 public:
     LampGroup();
     ~LampGroup();

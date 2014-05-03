@@ -16,6 +16,13 @@ GraphicsManager::GraphicsManager()
 
 GraphicsManager::~GraphicsManager()
 {
+    list<Vertex*>::iterator vertexIt = m_Vertexes.begin();
+    while (vertexIt != m_Vertexes.end()) {
+        delete *vertexIt;
+        vertexIt++;
+    }
+
+    
     list<Line*>::iterator lineIt = m_Lines.begin();
     while (lineIt != m_Lines.end()) {
         delete *lineIt;
@@ -35,6 +42,18 @@ GraphicsManager::~GraphicsManager()
     }
 }
 
+Vertex* GraphicsManager::AddVertex(POINT point)
+{
+    Vertex *vertex = new Vertex(point);
+    m_Vertexes.push_back(vertex);
+    
+    return vertex;
+}
+
+void GraphicsManager::DelVertex(Vertex *vertex)
+{
+    m_Vertexes.remove(vertex);
+}
 
 Line* GraphicsManager::AddLine(POINT start, POINT end)
 {
@@ -157,4 +176,47 @@ LampGroup *GraphicsManager::GetGroup(BYTE lddout)
     }
     
     return group;
+}
+
+
+#pragma mark - coding
+void GraphicsManager::generateVertexBinary(BYTE *&pByte, INT &length)
+{
+    //从文件的0x04到0x18c, 包括0x18c
+    pByte = new BYTE[0x189];
+    bzero(pByte, 0x189);
+    
+    SHORT *pShort = (SHORT *)pByte;
+    *pShort = m_Vertexes.size();        //记录个数
+    
+    INT offset = 2;     //偏移一个字节,从第一个字节开始
+    list<Vertex*>::iterator it = m_Vertexes.begin();
+    while (it != m_Vertexes.end()) {
+        BYTE *pVertexByte = ZTNULL;
+        INT len = 0;
+        (*it)->generateBinary(pVertexByte, len);
+        
+        memcpy(pByte, pVertexByte, len);
+        
+        delete pVertexByte;
+        
+        offset += len;
+        
+        it++;
+    }
+}
+
+void GraphicsManager::generateLinesBinary(BYTE *&pByte, INT &length)
+{
+    
+}
+
+void GraphicsManager::generateLampsBinary(BYTE *&pByte, INT &length)
+{
+    
+}
+
+void GraphicsManager::generateNamesBinary(BYTE *&pByte, INT &length)
+{
+    
 }

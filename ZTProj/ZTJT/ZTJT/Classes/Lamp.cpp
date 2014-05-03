@@ -42,3 +42,14 @@ ZTBOOL Lamp::CanInSameGroup(const Lamp *lamp1, const Lamp*lamp2)
     
     return ZTFALSE;
 }
+
+
+ZTBOOL Lamp::HitTest(POINT point)
+{
+    return ZTFALSE;
+}
+
+void Lamp::generateBinary(BYTE *&pByte, INT &length)
+{
+    
+}

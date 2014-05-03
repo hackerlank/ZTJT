@@ -9,9 +9,10 @@
 #ifndef __ZTJT__Lamp__
 #define __ZTJT__Lamp__
 #include "TypeDef.h"
-#include "ZTObject.h"
+#include "GraphicObject.h"
 
-class Lamp : public ZTObject {
+class Lamp : public GraphicObject
+{
 public:
     Lamp();
     Lamp(POINT center, LampType type);
@@ -19,10 +20,13 @@ public:
     
     PRIVATE_PROPERTY(POINT,Center)
     PRIVATE_PROPERTY(LampType,Type)
-    
+
+public:
     static ZTBOOL CanInSameGroup(const Lamp *lamp1, const Lamp*lamp2);
     
-private:
+    ZTBOOL HitTest(POINT point);
+    
+    void generateBinary(BYTE *&pByte, INT &length);
 };
 
 #endif /* defined(__ZTJT__Lamp__) */

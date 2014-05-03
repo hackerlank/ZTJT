@@ -20,7 +20,7 @@
 #endif
 #endif
 
-
+#include <string.h>
 
 typedef int32_t  INT32;
 typedef uint32_t UINT32;
@@ -33,6 +33,7 @@ typedef int32_t INT;
 typedef uint32_t UINT;
 typedef double  DOUBLE;
 typedef unsigned char BYTE;
+typedef short SHORT;
 
 
 typedef bool ZTBOOL;
@@ -126,5 +127,8 @@ public:\
 protected:\
     wclass();\
     ~wclass();
+
+
+#define MAKESHORT(low,high) ((SHORT)(((BYTE)(((UINT)(low)) & 0xff)) | ((SHORT)((BYTE)(((UINT)(high)) & 0xff))) << 8))
 
 #endif

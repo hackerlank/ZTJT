@@ -10,31 +10,35 @@
 #define __ZTJT__Line__
 
 #include "TypeDef.h"
-#include "ZTObject.h"
+#include "GraphicObject.h"
 
-class Line : public ZTObject {
+typedef enum {
+    LineColorWhite  = 1,
+    LineColorYellow = 2
+}LineColor;
+
+typedef enum {
+    LineWidth1 = 1,
+    LineWidth2 = 2,
+    LineWidth4 = 4,
+    LineWidth8 = 8
+}LineWidth;
+
+
+class Line : public GraphicObject
+{
 private:
     POINT m_ptStart;
     POINT m_ptEnd;
-    BYTE  m_color;
-    BYTE  m_width;
+    LineColor  m_color;
+    LineWidth  m_width;
     
 public:
     Line();
     Line(POINT ptStart, POINT ptEnd);
     ~Line();
     
-    typedef enum {
-        LineColorWhite,
-        LineColorYellow
-    }LineColor;
     
-    typedef enum {
-        LineWidth1,
-        LineWidth2,
-        LineWidth3,
-        LineWidth4
-    }LineWidth;
     
     VOID SetStart(POINT start);
     POINT Start() const;
@@ -42,11 +46,16 @@ public:
     VOID SetEnd(POINT end);
     POINT End() const;
     
-    VOID SetColor(BYTE color);
-    BYTE Color() const;
+    VOID SetColor(LineColor color);
+    LineColor Color() const;
     
-    VOID SetWidth(BYTE width);
-    BYTE Width() const;
+    VOID SetWidth(LineWidth width);
+    LineWidth Width() const;
+    
+public:
+    ZTBOOL HitTest(POINT point);
+    
+    void generateBinary(BYTE *&pByte, INT &length);
 };
 
 #endif /* defined(__ZTJT__Line__) */
