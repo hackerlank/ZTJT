@@ -9,62 +9,66 @@
 #include "Status.h"
 
 
-Status::Status()
+namespace ZTNAMESPACE
 {
     
-}
-
-Status::~Status()
-{
-    
-}
-
-
-SYNTHESIZE(Status, INT, Time)
-SYNTHESIZE(Status, INT, MaxTime)
-SYNTHESIZE(Status, INT, MinTime)
-SYNTHESIZE(Status, INT, VduPhase)
-
-
-void Status::SetLddoutStatus(BYTE lddout, BYTE status)
-{
-    m_LddoutStatus[lddout] = status;
-}
-
-void Status::generateBinary(BYTE *&pByte, INT &length)
-{
-    pByte = new BYTE[16];
-    bzero(pByte, 16);
-    length = 16;
-    
-    BYTE *pTempByte = pByte;
-    *pTempByte      = 0xA5;
-    *(pTempByte+1)  = m_Time;
-    *(pTempByte+2)  = m_MaxTime;
-    *(pTempByte+3)  = m_MinTime;
-    *(pTempByte+4)  = m_VduPhase;
-    
-    map<BYTE, BYTE>::iterator it = m_LddoutStatus.begin();
-    while (it != m_LddoutStatus.end())
+    Status::Status()
     {
-        BYTE lddout = it->first;
-        INT offset = (lddout-1)/2;
-        INT remainder = (lddout-1)%2;
         
-        if (0 == remainder)    //放到低位
-        {
-            *(pTempByte+6+offset) |= it->second;
-        }
-        else                   //放到高位
-        {
-            *(pTempByte+6+offset) |= (it->second<<4);
-        }
-        
-        it++;
     }
     
-    for (INT i = 0; i < 15; i++)
+    Status::~Status()
     {
-        *(pTempByte + 15) += *(pTempByte + i);
+        
+    }
+    
+    
+    SYNTHESIZE(Status, INT, Time)
+    SYNTHESIZE(Status, INT, MaxTime)
+    SYNTHESIZE(Status, INT, MinTime)
+    SYNTHESIZE(Status, INT, VduPhase)
+    
+    
+    void Status::SetLddoutStatus(BYTE lddout, BYTE status)
+    {
+        m_LddoutStatus[lddout] = status;
+    }
+    
+    void Status::GenerateBinary(BYTE *&pByte, INT &length)
+    {
+        length = 16;
+        pByte = new BYTE[length];
+        bzero(pByte, length);
+        
+        BYTE *pTempByte = pByte;
+        *pTempByte      = 0xA5;
+        *(pTempByte+1)  = m_Time;
+        *(pTempByte+2)  = m_MaxTime;
+        *(pTempByte+3)  = m_MinTime;
+        *(pTempByte+4)  = m_VduPhase;
+        
+        map<BYTE, BYTE>::iterator it = m_LddoutStatus.begin();
+        while (it != m_LddoutStatus.end())
+        {
+            BYTE lddout = it->first;
+            INT offset = (lddout-1)/2;
+            INT remainder = (lddout-1)%2;
+            
+            if (0 == remainder)    //放到低位
+            {
+                *(pTempByte+6+offset) |= it->second;
+            }
+            else                   //放到高位
+            {
+                *(pTempByte+6+offset) |= (it->second<<4);
+            }
+            
+            it++;
+        }
+        
+        for (INT i = 0; i < 15; i++)
+        {
+            *(pTempByte + 15) += *(pTempByte + i);
+        }
     }
 }

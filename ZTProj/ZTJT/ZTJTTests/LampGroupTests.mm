@@ -246,4 +246,24 @@
     delete group;
 }
 
+
+- (void)testGenerateBinary
+{
+    //测试普通灯
+    LampGroup *group = new LampGroup;
+    Lamp *alamp = new Lamp({0,0}, LampTypeWalk);
+    group->AddLamp(alamp);
+    
+    alamp = new Lamp({100,20}, LampTypeDown);
+    group->AddLamp(alamp);
+    
+    alamp = new Lamp({300,50}, LampTypeLeft);
+    group->AddLamp(alamp);
+    
+    BYTE *pByte = ZTNULL;
+    INT len = 0;
+    group->GenerateBinary(pByte, len);
+    
+    HexOutput(pByte, len);
+}
 @end

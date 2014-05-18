@@ -8,35 +8,48 @@
 
 #include "Name.h"
 
-Name::Name()
-:m_LefttopPt({0,0})
-,m_NameStr(ZTNULL)
+
+namespace ZTNAMESPACE
 {
     
-}
-
-Name::Name(POINT pt)
-:m_LefttopPt(pt)
-,m_NameStr(ZTNULL)
-{
+    Name::Name()
+    :m_LefttopPt({0,0})
+    ,m_NameStr(ZTNULL)
+    {
+        
+    }
     
-}
-
-Name::~Name()
-{
+    Name::Name(POINT pt)
+    :m_LefttopPt(pt)
+    {
+        
+    }
     
-}
-
-SYNTHESIZE(Name, POINT, LefttopPt)
-SYNTHESIZE(Name, string, NameStr)
-
-
-ZTBOOL Name::HitTest(POINT point)
-{
-    return ZTFALSE;
-}
-
-void Name::generateBinary(BYTE *&pByte, INT &length)
-{
+    Name::~Name()
+    {
+        
+    }
+    
+    SYNTHESIZE(Name, POINT, LefttopPt)
+    SYNTHESIZE(Name, string, NameStr)
+    
+    
+    ZTBOOL Name::HitTest(POINT point)
+    {
+        return ZTFALSE;
+    }
+    
+    void Name::GenerateBinary(BYTE *&pByte, INT &length)
+    {
+        length = 26;
+        pByte = new BYTE[length];
+        bzero(pByte, length);
+        
+        SHORT *pShort = (SHORT*)pByte;
+        *(pShort) = m_LefttopPt.x;
+        *(pShort+1) = m_LefttopPt.y;
+        *(pShort+2) = m_NameStr.length();
+        snprintf((char *)(pByte+6), 20, "%s", m_NameStr.c_str());
+    }
     
 }

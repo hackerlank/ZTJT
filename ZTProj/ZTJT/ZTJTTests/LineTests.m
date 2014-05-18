@@ -36,7 +36,7 @@
     
     BYTE *pByte = ZTNULL;
     INT len = 0;
-    l.generateBinary(pByte, len);
+    l.GenerateBinary(pByte, len);
     
     HexOutput(pByte, len);
 }

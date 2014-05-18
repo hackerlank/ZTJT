@@ -44,6 +44,8 @@ typedef bool ZTBOOL;
 
 #define SOCKET_LEN_MAX 1024
 
+#define ZTNAMESPACE ZT
+
 
 typedef struct {
     UINT  x;
@@ -127,6 +129,14 @@ public:\
 protected:\
     wclass();\
     ~wclass();
+
+#define CONSTRUCTOR_IMPLEMENTATION(wclass) \
+wclass::wclass() \
+{ \
+} \
+wclass::~wclass() \
+{ \
+}
 
 
 #define MAKESHORT(low,high) ((SHORT)(((BYTE)(((UINT)(low)) & 0xff)) | ((SHORT)((BYTE)(((UINT)(high)) & 0xff))) << 8))

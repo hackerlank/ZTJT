@@ -12,14 +12,19 @@
 #include "TypeDef.h"
 #include "BinaryObj.h"
 
-class GraphicObject : public BinaryObj
+namespace ZTNAMESPACE
 {
-    PROTECTED_CONSTRUCTOR_DECLARE(GraphicObject)
-    PROTECTED_PROPERTY(ZTBOOL, Focus)
-    PROTECTED_PROPERTY(ZTBOOL, Drawing)
-
-protected:
-    virtual ZTBOOL HitTest(POINT point) = 0;
-};
+    
+    class GraphicObject : public BinaryObj
+    {
+        PROTECTED_CONSTRUCTOR_DECLARE(GraphicObject)
+        PROTECTED_PROPERTY(ZTBOOL, Focus)
+        PROTECTED_PROPERTY(ZTBOOL, Drawing)
+        
+    protected:
+        virtual ZTBOOL HitTest(POINT point) = 0;
+    };
+    
+}
 
 #endif /* defined(__ZTJT__DrawObject__) */

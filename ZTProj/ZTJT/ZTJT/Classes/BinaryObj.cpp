@@ -8,13 +8,17 @@
 
 #include "BinaryObj.h"
 
-
-BinaryObj::BinaryObj()
+namespace ZTNAMESPACE
 {
     
-}
-
-BinaryObj::~BinaryObj()
-{
+    BinaryObj::BinaryObj()
+    {
+        
+    }
+    
+    BinaryObj::~BinaryObj()
+    {
+        
+    }
     
 }

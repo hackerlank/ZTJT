@@ -11,22 +11,27 @@
 #include "TypeDef.h"
 #include "GraphicObject.h"
 
-class Lamp : public GraphicObject
+namespace ZTNAMESPACE
 {
-public:
-    Lamp();
-    Lamp(POINT center, LampType type);
-    ~Lamp();
     
-    PRIVATE_PROPERTY(POINT,Center)
-    PRIVATE_PROPERTY(LampType,Type)
-
-public:
-    static ZTBOOL CanInSameGroup(const Lamp *lamp1, const Lamp*lamp2);
+    class Lamp : public GraphicObject
+    {
+    public:
+        Lamp();
+        Lamp(POINT center, LampType type);
+        ~Lamp();
+        
+        PRIVATE_PROPERTY(POINT,Center)
+        PRIVATE_PROPERTY(LampType,Type)
+        
+    public:
+        static ZTBOOL CanInSameGroup(const Lamp *lamp1, const Lamp*lamp2);
+        
+        ZTBOOL HitTest(POINT point);
+        
+        void GenerateBinary(BYTE *&pByte, INT &length);
+    };
     
-    ZTBOOL HitTest(POINT point);
-    
-    void generateBinary(BYTE *&pByte, INT &length);
-};
+}
 
 #endif /* defined(__ZTJT__Lamp__) */

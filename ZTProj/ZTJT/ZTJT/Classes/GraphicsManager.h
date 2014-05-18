@@ -17,38 +17,43 @@
 #include <list>
 using namespace std;
 
-class GraphicsManager : public ZTObject
+namespace ZTNAMESPACE
 {
-    list<Vertex*> m_Vertexes;           //路口形状顶点图
-    list<Line*> m_Lines;                  //路口线条
-    list<LampGroup*> m_LampGroups;        //路灯
-    list<Name*> m_Names;                  //注释
     
-public:
-    CONSTRUCTOR_DECLARE(GraphicsManager)
-    Vertex *AddVertex(POINT point);
-    void DelVertex(Vertex *vertex);
+    class GraphicsManager : public ZTObject
+    {
+        list<Vertex*> m_Vertexes;           //路口形状顶点图
+        list<Line*> m_Lines;                  //路口线条
+        list<LampGroup*> m_LampGroups;        //路灯
+        list<Name*> m_Names;                  //注释
+        
+    public:
+        CONSTRUCTOR_DECLARE(GraphicsManager)
+        Vertex *AddVertex(POINT point);
+        void DelVertex(Vertex *vertex);
+        
+        Line* AddLine(POINT start, POINT end);
+        void  DelLine(Line *aline);
+        
+        Lamp* AddLamp(POINT center, LampType type);
+        void  DelLamp(Lamp *alamp);   //不会delete alamp,需要额外手动清除
+        ZTBOOL  SetLampLddout(Lamp *alamp, BYTE lddout);
+        LampGroup *findLamp(Lamp *alamp)const;
+        
+        Name* AddName(POINT point);    //每个路名最多20个字节
+        void  DelName(Name *aName);
+        
+    private:
+        void generateVertexBinary(BYTE *&pByte, INT &length);
+        void generateLinesBinary(BYTE *&pByte, INT &length);
+        void generateLampsBinary(BYTE *&pByte, INT &length);
+        void generateNamesBinary(BYTE *&pByte, INT &length);
+        
+    private:
+        LampGroup *GetDefaultGroup();   //获取lddout为0的分组
+        LampGroup *GetGroup(BYTE lddout);   //获取lddout的分组，如果没有就创建一个
+    };
     
-    Line* AddLine(POINT start, POINT end);
-    void  DelLine(Line *aline);
-    
-    Lamp* AddLamp(POINT center, LampType type);
-    void  DelLamp(Lamp *alamp);   //不会delete alamp,需要额外手动清除
-    ZTBOOL  SetLampLddout(Lamp *alamp, BYTE lddout);
-    LampGroup *findLamp(Lamp *alamp)const;
-    
-    Name* AddName(POINT point);
-    void  DelName(Name *aName);
-    
-private:
-    void generateVertexBinary(BYTE *&pByte, INT &length);
-    void generateLinesBinary(BYTE *&pByte, INT &length);
-    void generateLampsBinary(BYTE *&pByte, INT &length);
-    void generateNamesBinary(BYTE *&pByte, INT &length);
-    
-private:
-    LampGroup *GetDefaultGroup();   //获取lddout为0的分组
-    LampGroup *GetGroup(BYTE lddout);   //获取lddout的分组，如果没有就创建一个
-};
+}
 
 #endif /* defined(__ZTJT__GraphicsManager__) */

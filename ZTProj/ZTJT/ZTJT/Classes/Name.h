@@ -15,17 +15,21 @@
 
 using namespace std;
 
-class Name : GraphicObject
+namespace ZTNAMESPACE
 {
-    CONSTRUCTOR_DECLARE(Name)
-    Name(POINT pt);
-    PRIVATE_PROPERTY(POINT, LefttopPt)
-    PRIVATE_PROPERTY(string, NameStr)
     
-public:
-    ZTBOOL HitTest(POINT point);
+    class Name : public GraphicObject
+    {
+        CONSTRUCTOR_DECLARE(Name)
+        Name(POINT pt);
+        PRIVATE_PROPERTY(POINT, LefttopPt)
+        PRIVATE_PROPERTY(string, NameStr)
+        
+    public:
+        ZTBOOL HitTest(POINT point);
+        
+        void GenerateBinary(BYTE *&pByte, INT &length);
+    };
     
-    void generateBinary(BYTE *&pByte, INT &length);
-};
-
+}
 #endif /* defined(__ZTJT__Name__) */

@@ -12,17 +12,20 @@
 #include "TypeDef.h"
 #include "GraphicObject.h"
 
-class Vertex : public GraphicObject
+namespace ZTNAMESPACE
 {
-    CONSTRUCTOR_DECLARE(Vertex);
-    Vertex(POINT pt);
-
-    PRIVATE_PROPERTY(POINT,Point)
+    class Vertex : public GraphicObject
+    {
+        CONSTRUCTOR_DECLARE(Vertex);
+        Vertex(POINT pt);
+        
+        PRIVATE_PROPERTY(POINT,Point)
+        
+    public:
+        ZTBOOL HitTest(POINT point);
+        
+        void GenerateBinary(BYTE *&pByte, INT &length);
+    };
     
-public:
-    ZTBOOL HitTest(POINT point);
-    
-    void generateBinary(BYTE *&pByte, INT &length);
-};
-
+}
 #endif /* defined(__ZTJT__Vertex__) */

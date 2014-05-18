@@ -35,7 +35,7 @@
     
 }
 
-- (void)testgenerateBinary
+- (void)testGenerateBinary
 {
     _status->setTime(2);
     _status->setMaxTime(2);
@@ -47,7 +47,7 @@
     
     BYTE *pData = nil;
     INT len = 0;
-    _status->generateBinary(pData, len);
+    _status->GenerateBinary(pData, len);
     
     HexOutput(pData, len);
 }

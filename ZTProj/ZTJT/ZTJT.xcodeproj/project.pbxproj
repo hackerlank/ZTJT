@@ -52,6 +52,17 @@
 		C252944518DA930D00D83E0A /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944218DA930D00D83E0A /* Config.cpp */; };
 		C252945018DAF4CE00D83E0A /* Lamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944E18DAF4CE00D83E0A /* Lamp.cpp */; };
 		C252945118DAF4CE00D83E0A /* Lamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944E18DAF4CE00D83E0A /* Lamp.cpp */; };
+		C29C171119277D3E00A47643 /* PlanModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29C170F19277D3E00A47643 /* PlanModule.cpp */; };
+		C29C171219277D3E00A47643 /* PlanModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29C170F19277D3E00A47643 /* PlanModule.cpp */; };
+		C29F6191191FB6C300F33ADE /* WeekPlan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29F618F191FB6C300F33ADE /* WeekPlan.cpp */; };
+		C29F6192191FB6C300F33ADE /* WeekPlan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29F618F191FB6C300F33ADE /* WeekPlan.cpp */; };
+		C29F6195191FC31100F33ADE /* DayPlan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29F6193191FC31100F33ADE /* DayPlan.cpp */; };
+		C29F6196191FC31100F33ADE /* DayPlan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29F6193191FC31100F33ADE /* DayPlan.cpp */; };
+		C29F6199191FC39300F33ADE /* Period.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29F6197191FC39300F33ADE /* Period.cpp */; };
+		C29F619A191FC39300F33ADE /* Period.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C29F6197191FC39300F33ADE /* Period.cpp */; };
+		C2C5FF3A191E54E600307B19 /* NameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C5FF39191E54E600307B19 /* NameTests.m */; };
+		C2C5FF3D191FA53600307B19 /* DevConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C5FF3B191FA53600307B19 /* DevConfig.cpp */; };
+		C2C5FF3E191FA53600307B19 /* DevConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C5FF3B191FA53600307B19 /* DevConfig.cpp */; };
 		C2DD712318DC4270007DE4F9 /* ZTFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2DD712118DC4270007DE4F9 /* ZTFile.cpp */; };
 		C2DD712418DC4270007DE4F9 /* ZTFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2DD712118DC4270007DE4F9 /* ZTFile.cpp */; };
 /* End PBXBuildFile section */
@@ -131,6 +142,17 @@
 		C252944318DA930D00D83E0A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		C252944E18DAF4CE00D83E0A /* Lamp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lamp.cpp; sourceTree = "<group>"; };
 		C252944F18DAF4CE00D83E0A /* Lamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lamp.h; sourceTree = "<group>"; };
+		C29C170F19277D3E00A47643 /* PlanModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlanModule.cpp; sourceTree = "<group>"; };
+		C29C171019277D3E00A47643 /* PlanModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanModule.h; sourceTree = "<group>"; };
+		C29F618F191FB6C300F33ADE /* WeekPlan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WeekPlan.cpp; sourceTree = "<group>"; };
+		C29F6190191FB6C300F33ADE /* WeekPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekPlan.h; sourceTree = "<group>"; };
+		C29F6193191FC31100F33ADE /* DayPlan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DayPlan.cpp; sourceTree = "<group>"; };
+		C29F6194191FC31100F33ADE /* DayPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayPlan.h; sourceTree = "<group>"; };
+		C29F6197191FC39300F33ADE /* Period.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Period.cpp; sourceTree = "<group>"; };
+		C29F6198191FC39300F33ADE /* Period.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Period.h; sourceTree = "<group>"; };
+		C2C5FF39191E54E600307B19 /* NameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameTests.m; sourceTree = "<group>"; };
+		C2C5FF3B191FA53600307B19 /* DevConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DevConfig.cpp; sourceTree = "<group>"; };
+		C2C5FF3C191FA53600307B19 /* DevConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevConfig.h; sourceTree = "<group>"; };
 		C2DD712118DC4270007DE4F9 /* ZTFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZTFile.cpp; sourceTree = "<group>"; };
 		C2DD712218DC4270007DE4F9 /* ZTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,6 +235,7 @@
 				C21DEFB21913A314003E8A01 /* StatusTests.mm */,
 				C21DEFBD19147705003E8A01 /* VertexTests.mm */,
 				C21DEFBF19147EE7003E8A01 /* LineTests.m */,
+				C2C5FF39191E54E600307B19 /* NameTests.m */,
 			);
 			path = ZTJTTests;
 			sourceTree = "<group>";
@@ -253,6 +276,16 @@
 				C21DEFB51913A633003E8A01 /* Debug.h */,
 				C21DEFB81913A9A1003E8A01 /* BinaryObj.cpp */,
 				C21DEFB91913A9A1003E8A01 /* BinaryObj.h */,
+				C2C5FF3B191FA53600307B19 /* DevConfig.cpp */,
+				C2C5FF3C191FA53600307B19 /* DevConfig.h */,
+				C29F618F191FB6C300F33ADE /* WeekPlan.cpp */,
+				C29F6190191FB6C300F33ADE /* WeekPlan.h */,
+				C29F6193191FC31100F33ADE /* DayPlan.cpp */,
+				C29F6194191FC31100F33ADE /* DayPlan.h */,
+				C29F6197191FC39300F33ADE /* Period.cpp */,
+				C29F6198191FC39300F33ADE /* Period.h */,
+				C29C170F19277D3E00A47643 /* PlanModule.cpp */,
+				C29C171019277D3E00A47643 /* PlanModule.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -380,12 +413,17 @@
 				C25293EC18D83CD500D83E0A /* ZTJT.m in Sources */,
 				C252941818D83DA400D83E0A /* ZTData.cpp in Sources */,
 				C252942018D83DA400D83E0A /* ZTSocket.cpp in Sources */,
+				C29F6191191FB6C300F33ADE /* WeekPlan.cpp in Sources */,
 				C252944418DA930D00D83E0A /* Config.cpp in Sources */,
+				C29F6199191FC39300F33ADE /* Period.cpp in Sources */,
 				C228662019128A82009D6502 /* Status.cpp in Sources */,
 				C252941C18D83DA400D83E0A /* ZTPacket.cpp in Sources */,
+				C2C5FF3D191FA53600307B19 /* DevConfig.cpp in Sources */,
+				C29F6195191FC31100F33ADE /* DayPlan.cpp in Sources */,
 				C252945018DAF4CE00D83E0A /* Lamp.cpp in Sources */,
 				C252943E18D9870100D83E0A /* GraphicsManager.cpp in Sources */,
 				C21DEFBA1913A9A1003E8A01 /* BinaryObj.cpp in Sources */,
+				C29C171119277D3E00A47643 /* PlanModule.cpp in Sources */,
 				C2DD712318DC4270007DE4F9 /* ZTFile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,12 +438,16 @@
 				C2DD712418DC4270007DE4F9 /* ZTFile.cpp in Sources */,
 				C252944518DA930D00D83E0A /* Config.cpp in Sources */,
 				C252943718D96A2500D83E0A /* Name.cpp in Sources */,
+				C29F6192191FB6C300F33ADE /* WeekPlan.cpp in Sources */,
 				C252941F18D83DA400D83E0A /* ZTServer.cpp in Sources */,
 				C252942918D83EB600D83E0A /* Line.cpp in Sources */,
 				C252942F18D83F8300D83E0A /* ZTObject.cpp in Sources */,
 				C252944118DA82B300D83E0A /* LampGroupTests.mm in Sources */,
+				C2C5FF3A191E54E600307B19 /* NameTests.m in Sources */,
 				C252943318D8421E00D83E0A /* LampGroup.cpp in Sources */,
 				C21DEFBE19147705003E8A01 /* VertexTests.mm in Sources */,
+				C29F619A191FC39300F33ADE /* Period.cpp in Sources */,
+				C29F6196191FC31100F33ADE /* DayPlan.cpp in Sources */,
 				C21DEFC019147EE7003E8A01 /* LineTests.m in Sources */,
 				C21DEFBB1913A9A1003E8A01 /* BinaryObj.cpp in Sources */,
 				C252940118D83CD500D83E0A /* ZTJTTests.m in Sources */,
@@ -413,10 +455,12 @@
 				C228662119128A82009D6502 /* Status.cpp in Sources */,
 				C252941918D83DA400D83E0A /* ZTData.cpp in Sources */,
 				C21DEFB71913A633003E8A01 /* Debug.cpp in Sources */,
+				C2C5FF3E191FA53600307B19 /* DevConfig.cpp in Sources */,
 				C252942118D83DA400D83E0A /* ZTSocket.cpp in Sources */,
 				C252941D18D83DA400D83E0A /* ZTPacket.cpp in Sources */,
 				C252943F18D9870100D83E0A /* GraphicsManager.cpp in Sources */,
 				C21DEFBC1913AD2F003E8A01 /* Vertex.cpp in Sources */,
+				C29C171219277D3E00A47643 /* PlanModule.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

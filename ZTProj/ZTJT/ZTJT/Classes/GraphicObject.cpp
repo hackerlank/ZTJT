@@ -8,17 +8,19 @@
 
 #include "GraphicObject.h"
 
-GraphicObject::GraphicObject()
+namespace ZTNAMESPACE
 {
+    GraphicObject::GraphicObject()
+    {
+        
+    }
+    
+    GraphicObject::~GraphicObject()
+    {
+        
+    }
+    
+    SYNTHESIZE(GraphicObject, ZTBOOL, Focus)
+    SYNTHESIZE(GraphicObject, ZTBOOL, Drawing)
     
 }
-
-GraphicObject::~GraphicObject()
-{
-    
-}
-
-SYNTHESIZE(GraphicObject, ZTBOOL, Focus)
-SYNTHESIZE(GraphicObject, ZTBOOL, Drawing)
-
-

@@ -1,20 +1,19 @@
 //
-//  VertexTests.m
+//  NameTests.m
 //  ZTJT
 //
-//  Created by Perry on 14-5-3.
+//  Created by Perry on 14-5-10.
 //  Copyright (c) 2014年 PerryMac. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "Vertex.h"
-#import "Debug.h"
+#import "Name.h"
 
-@interface VertexTests : XCTestCase
+@interface NameTests : XCTestCase
 
 @end
 
-@implementation VertexTests
+@implementation NameTests
 
 - (void)setUp
 {
@@ -30,10 +29,12 @@
 
 - (void)testGenerateBinary
 {
-    Vertex v({22,33});
+    Name name({10,10});
+    name.setNameStr("abcd");
+    
     BYTE *pByte = ZTNULL;
     INT len = 0;
-    v.GenerateBinary(pByte, len);
+    name.GenerateBinary(pByte, len);
     
     HexOutput(pByte, len);
 }
