@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C21D1CBF193ACFFE00E34523 /* Intersections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C21D1CBD193ACFFE00E34523 /* Intersections.cpp */; };
 		C21DEFB31913A314003E8A01 /* StatusTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C21DEFB21913A314003E8A01 /* StatusTests.mm */; };
 		C21DEFB61913A633003E8A01 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C21DEFB41913A633003E8A01 /* Debug.cpp */; };
 		C21DEFB71913A633003E8A01 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C21DEFB41913A633003E8A01 /* Debug.cpp */; };
@@ -91,6 +92,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C21D1CBD193ACFFE00E34523 /* Intersections.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Intersections.cpp; sourceTree = "<group>"; };
+		C21D1CBE193ACFFE00E34523 /* Intersections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intersections.h; sourceTree = "<group>"; };
 		C21DEFB21913A314003E8A01 /* StatusTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StatusTests.mm; sourceTree = "<group>"; };
 		C21DEFB41913A633003E8A01 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = "<group>"; };
 		C21DEFB51913A633003E8A01 /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = "<group>"; };
@@ -286,6 +289,8 @@
 				C29F6198191FC39300F33ADE /* Period.h */,
 				C29C170F19277D3E00A47643 /* PlanModule.cpp */,
 				C29C171019277D3E00A47643 /* PlanModule.h */,
+				C21D1CBD193ACFFE00E34523 /* Intersections.cpp */,
+				C21D1CBE193ACFFE00E34523 /* Intersections.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -414,6 +419,7 @@
 				C252941818D83DA400D83E0A /* ZTData.cpp in Sources */,
 				C252942018D83DA400D83E0A /* ZTSocket.cpp in Sources */,
 				C29F6191191FB6C300F33ADE /* WeekPlan.cpp in Sources */,
+				C21D1CBF193ACFFE00E34523 /* Intersections.cpp in Sources */,
 				C252944418DA930D00D83E0A /* Config.cpp in Sources */,
 				C29F6199191FC39300F33ADE /* Period.cpp in Sources */,
 				C228662019128A82009D6502 /* Status.cpp in Sources */,
