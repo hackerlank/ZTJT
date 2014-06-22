@@ -1,13 +1,13 @@
 //
-//  GraphicsManager.h
+//  InterGraphicsModule.h
 //  ZTJT
 //
 //  Created by PerryMac on 3/19/14.
 //  Copyright (c) 2014 PerryMac. All rights reserved.
 //
 
-#ifndef __ZTJT__GraphicsManager__
-#define __ZTJT__GraphicsManager__
+#ifndef __ZTJT__InterGraphicsModule__
+#define __ZTJT__InterGraphicsModule__
 
 #include "Line.h"
 #include "LampGroup.h"
@@ -20,7 +20,7 @@ using namespace std;
 namespace ZTNAMESPACE
 {
     
-    class GraphicsManager : public ZTObject
+    class InterGraphicsModule : public ZTObject
     {
         list<Vertex*> m_Vertexes;           //路口形状顶点图
         list<Line*> m_Lines;                  //路口线条
@@ -28,7 +28,7 @@ namespace ZTNAMESPACE
         list<Name*> m_Names;                  //注释
         
     public:
-        CONSTRUCTOR_DECLARE(GraphicsManager)
+        CONSTRUCTOR_DECLARE(InterGraphicsModule)
         Vertex *AddVertex(POINT point);
         void DelVertex(Vertex *vertex);
         
@@ -56,4 +56,4 @@ namespace ZTNAMESPACE
     
 }
 
-#endif /* defined(__ZTJT__GraphicsManager__) */
+#endif /* defined(__ZTJT__InterGraphicsModule__) */

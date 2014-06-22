@@ -13,14 +13,15 @@
 #include "ZTObject.h"
 #include "TypeDef.h"
 #include <string>
+
 using namespace std;
 
-class ZTServer : public ZTObject
+class NetNode : public ZTObject
 {
 public:
-    ZTServer();
-    ZTServer(const string &ipAddrStr, UINT16 port);
-    ~ZTServer();
+    NetNode();
+    NetNode(const string &ipAddrStr, UINT16 port);
+    ~NetNode();
     
     in_addr_t getNetAddress();
     const string &getIPAddressString();
@@ -30,6 +31,15 @@ public:
 private:
     string m_ipAddrStr;
     UINT16 m_port;
+};
+
+
+class NetServer : public NetNode
+{
+public:
+    NetServer();
+    NetServer(const string &ipAddrStr, UINT16 port);
+    ~NetServer();
 };
 
 #endif /* defined(__SocketOnBackground__ZTServer__) */

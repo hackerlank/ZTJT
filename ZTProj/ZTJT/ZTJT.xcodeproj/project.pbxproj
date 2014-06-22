@@ -32,8 +32,8 @@
 		C252941918D83DA400D83E0A /* ZTData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252940D18D83DA400D83E0A /* ZTData.cpp */; };
 		C252941C18D83DA400D83E0A /* ZTPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252941118D83DA400D83E0A /* ZTPacket.cpp */; };
 		C252941D18D83DA400D83E0A /* ZTPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252941118D83DA400D83E0A /* ZTPacket.cpp */; };
-		C252941E18D83DA400D83E0A /* ZTServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252941318D83DA400D83E0A /* ZTServer.cpp */; };
-		C252941F18D83DA400D83E0A /* ZTServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252941318D83DA400D83E0A /* ZTServer.cpp */; };
+		C252941E18D83DA400D83E0A /* NetNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252941318D83DA400D83E0A /* NetNode.cpp */; };
+		C252941F18D83DA400D83E0A /* NetNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252941318D83DA400D83E0A /* NetNode.cpp */; };
 		C252942018D83DA400D83E0A /* ZTSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252941518D83DA400D83E0A /* ZTSocket.cpp */; };
 		C252942118D83DA400D83E0A /* ZTSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252941518D83DA400D83E0A /* ZTSocket.cpp */; };
 		C252942818D83EB600D83E0A /* Line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252942618D83EB600D83E0A /* Line.cpp */; };
@@ -46,8 +46,8 @@
 		C252943718D96A2500D83E0A /* Name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943418D96A2500D83E0A /* Name.cpp */; };
 		C252943A18D97AD300D83E0A /* GraphicObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943818D97AD300D83E0A /* GraphicObject.cpp */; };
 		C252943B18D97AD300D83E0A /* GraphicObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943818D97AD300D83E0A /* GraphicObject.cpp */; };
-		C252943E18D9870100D83E0A /* GraphicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943C18D9870100D83E0A /* GraphicsManager.cpp */; };
-		C252943F18D9870100D83E0A /* GraphicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943C18D9870100D83E0A /* GraphicsManager.cpp */; };
+		C252943E18D9870100D83E0A /* InterGraphicsModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943C18D9870100D83E0A /* InterGraphicsModule.cpp */; };
+		C252943F18D9870100D83E0A /* InterGraphicsModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252943C18D9870100D83E0A /* InterGraphicsModule.cpp */; };
 		C252944118DA82B300D83E0A /* LampGroupTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C252944018DA82B300D83E0A /* LampGroupTests.mm */; };
 		C252944418DA930D00D83E0A /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944218DA930D00D83E0A /* Config.cpp */; };
 		C252944518DA930D00D83E0A /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252944218DA930D00D83E0A /* Config.cpp */; };
@@ -122,8 +122,8 @@
 		C252940E18D83DA400D83E0A /* ZTData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTData.h; sourceTree = "<group>"; };
 		C252941118D83DA400D83E0A /* ZTPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZTPacket.cpp; sourceTree = "<group>"; };
 		C252941218D83DA400D83E0A /* ZTPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTPacket.h; sourceTree = "<group>"; };
-		C252941318D83DA400D83E0A /* ZTServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZTServer.cpp; sourceTree = "<group>"; };
-		C252941418D83DA400D83E0A /* ZTServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTServer.h; sourceTree = "<group>"; };
+		C252941318D83DA400D83E0A /* NetNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetNode.cpp; sourceTree = "<group>"; };
+		C252941418D83DA400D83E0A /* NetNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetNode.h; sourceTree = "<group>"; };
 		C252941518D83DA400D83E0A /* ZTSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZTSocket.cpp; sourceTree = "<group>"; };
 		C252941618D83DA400D83E0A /* ZTSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTSocket.h; sourceTree = "<group>"; };
 		C252941718D83DA400D83E0A /* ZTThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTThread.h; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 		C252943518D96A2500D83E0A /* Name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Name.h; sourceTree = "<group>"; };
 		C252943818D97AD300D83E0A /* GraphicObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicObject.cpp; sourceTree = "<group>"; };
 		C252943918D97AD300D83E0A /* GraphicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
-		C252943C18D9870100D83E0A /* GraphicsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsManager.cpp; sourceTree = "<group>"; };
-		C252943D18D9870100D83E0A /* GraphicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsManager.h; sourceTree = "<group>"; };
+		C252943C18D9870100D83E0A /* InterGraphicsModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InterGraphicsModule.cpp; sourceTree = "<group>"; };
+		C252943D18D9870100D83E0A /* InterGraphicsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterGraphicsModule.h; sourceTree = "<group>"; };
 		C252944018DA82B300D83E0A /* LampGroupTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LampGroupTests.mm; sourceTree = "<group>"; };
 		C252944218DA930D00D83E0A /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
 		C252944318DA930D00D83E0A /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
@@ -265,8 +265,8 @@
 				C252943518D96A2500D83E0A /* Name.h */,
 				C252943818D97AD300D83E0A /* GraphicObject.cpp */,
 				C252943918D97AD300D83E0A /* GraphicObject.h */,
-				C252943C18D9870100D83E0A /* GraphicsManager.cpp */,
-				C252943D18D9870100D83E0A /* GraphicsManager.h */,
+				C252943C18D9870100D83E0A /* InterGraphicsModule.cpp */,
+				C252943D18D9870100D83E0A /* InterGraphicsModule.h */,
 				C252944E18DAF4CE00D83E0A /* Lamp.cpp */,
 				C252944F18DAF4CE00D83E0A /* Lamp.h */,
 				C228661719126987009D6502 /* Vertex.cpp */,
@@ -302,8 +302,8 @@
 				C252940E18D83DA400D83E0A /* ZTData.h */,
 				C252941118D83DA400D83E0A /* ZTPacket.cpp */,
 				C252941218D83DA400D83E0A /* ZTPacket.h */,
-				C252941318D83DA400D83E0A /* ZTServer.cpp */,
-				C252941418D83DA400D83E0A /* ZTServer.h */,
+				C252941318D83DA400D83E0A /* NetNode.cpp */,
+				C252941418D83DA400D83E0A /* NetNode.h */,
 				C252941518D83DA400D83E0A /* ZTSocket.cpp */,
 				C252941618D83DA400D83E0A /* ZTSocket.h */,
 				C252941718D83DA400D83E0A /* ZTThread.h */,
@@ -409,7 +409,7 @@
 				C228661C191275A1009D6502 /* Scheme.cpp in Sources */,
 				C252943A18D97AD300D83E0A /* GraphicObject.cpp in Sources */,
 				C252943618D96A2500D83E0A /* Name.cpp in Sources */,
-				C252941E18D83DA400D83E0A /* ZTServer.cpp in Sources */,
+				C252941E18D83DA400D83E0A /* NetNode.cpp in Sources */,
 				C252942818D83EB600D83E0A /* Line.cpp in Sources */,
 				C21DEFB61913A633003E8A01 /* Debug.cpp in Sources */,
 				C252942E18D83F8300D83E0A /* ZTObject.cpp in Sources */,
@@ -427,7 +427,7 @@
 				C2C5FF3D191FA53600307B19 /* DevConfig.cpp in Sources */,
 				C29F6195191FC31100F33ADE /* DayPlan.cpp in Sources */,
 				C252945018DAF4CE00D83E0A /* Lamp.cpp in Sources */,
-				C252943E18D9870100D83E0A /* GraphicsManager.cpp in Sources */,
+				C252943E18D9870100D83E0A /* InterGraphicsModule.cpp in Sources */,
 				C21DEFBA1913A9A1003E8A01 /* BinaryObj.cpp in Sources */,
 				C29C171119277D3E00A47643 /* PlanModule.cpp in Sources */,
 				C2DD712318DC4270007DE4F9 /* ZTFile.cpp in Sources */,
@@ -445,7 +445,7 @@
 				C252944518DA930D00D83E0A /* Config.cpp in Sources */,
 				C252943718D96A2500D83E0A /* Name.cpp in Sources */,
 				C29F6192191FB6C300F33ADE /* WeekPlan.cpp in Sources */,
-				C252941F18D83DA400D83E0A /* ZTServer.cpp in Sources */,
+				C252941F18D83DA400D83E0A /* NetNode.cpp in Sources */,
 				C252942918D83EB600D83E0A /* Line.cpp in Sources */,
 				C252942F18D83F8300D83E0A /* ZTObject.cpp in Sources */,
 				C252944118DA82B300D83E0A /* LampGroupTests.mm in Sources */,
@@ -464,7 +464,7 @@
 				C2C5FF3E191FA53600307B19 /* DevConfig.cpp in Sources */,
 				C252942118D83DA400D83E0A /* ZTSocket.cpp in Sources */,
 				C252941D18D83DA400D83E0A /* ZTPacket.cpp in Sources */,
-				C252943F18D9870100D83E0A /* GraphicsManager.cpp in Sources */,
+				C252943F18D9870100D83E0A /* InterGraphicsModule.cpp in Sources */,
 				C21DEFBC1913AD2F003E8A01 /* Vertex.cpp in Sources */,
 				C29C171219277D3E00A47643 /* PlanModule.cpp in Sources */,
 			);

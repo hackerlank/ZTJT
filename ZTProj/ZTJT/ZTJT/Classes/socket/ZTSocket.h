@@ -16,7 +16,7 @@
 #include "TypeDef.h"
 #include "ZTPacket.h"
 #include "ZTThread.h"
-#include "ZTServer.h"
+#include "NetNode.h"
 
 
 
@@ -37,7 +37,7 @@ private:
     
 private:
     ZTBOOL m_running;
-    ZTServer m_server;
+    NetServer m_server;
     
     int m_socketfd;
     vector<ZTPacketBase*> m_recvData;

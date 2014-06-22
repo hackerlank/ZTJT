@@ -1,23 +1,23 @@
 //
-//  GraphicsManager.cpp
+//  InterGraphicsModule.cpp
 //  ZTJT
 //
 //  Created by PerryMac on 3/19/14.
 //  Copyright (c) 2014 PerryMac. All rights reserved.
 //
 
-#include "GraphicsManager.h"
+#include "InterGraphicsModule.h"
 
 
 namespace ZTNAMESPACE
 {
     
-    GraphicsManager::GraphicsManager()
+    InterGraphicsModule::InterGraphicsModule()
     {
         
     }
     
-    GraphicsManager::~GraphicsManager()
+    InterGraphicsModule::~InterGraphicsModule()
     {
         list<Vertex*>::iterator vertexIt = m_Vertexes.begin();
         while (vertexIt != m_Vertexes.end())
@@ -49,7 +49,7 @@ namespace ZTNAMESPACE
         }
     }
     
-    Vertex* GraphicsManager::AddVertex(POINT point)
+    Vertex* InterGraphicsModule::AddVertex(POINT point)
     {
         Vertex *vertex = new Vertex(point);
         m_Vertexes.push_back(vertex);
@@ -57,12 +57,12 @@ namespace ZTNAMESPACE
         return vertex;
     }
     
-    void GraphicsManager::DelVertex(Vertex *vertex)
+    void InterGraphicsModule::DelVertex(Vertex *vertex)
     {
         m_Vertexes.remove(vertex);
     }
     
-    Line* GraphicsManager::AddLine(POINT start, POINT end)
+    Line* InterGraphicsModule::AddLine(POINT start, POINT end)
     {
         Line *newLine = new Line(start, end);
         m_Lines.push_back(newLine);
@@ -70,12 +70,12 @@ namespace ZTNAMESPACE
         return newLine;
     }
     
-    void  GraphicsManager::DelLine(Line *aline)
+    void  InterGraphicsModule::DelLine(Line *aline)
     {
         m_Lines.remove(aline);
     }
     
-    Lamp* GraphicsManager::AddLamp(POINT center, LampType type)
+    Lamp* InterGraphicsModule::AddLamp(POINT center, LampType type)
     {
         Lamp *newLamp = new Lamp(center, type);
         
@@ -85,7 +85,7 @@ namespace ZTNAMESPACE
         return newLamp;
     }
     
-    void  GraphicsManager::DelLamp(Lamp *alamp)
+    void  InterGraphicsModule::DelLamp(Lamp *alamp)
     {
         list<LampGroup *>::iterator it = m_LampGroups.begin();
         while (it != m_LampGroups.end())
@@ -110,7 +110,7 @@ namespace ZTNAMESPACE
         }
     }
     
-    ZTBOOL  GraphicsManager::SetLampLddout(Lamp *alamp, BYTE lddout)
+    ZTBOOL  InterGraphicsModule::SetLampLddout(Lamp *alamp, BYTE lddout)
     {
         LampGroup *group = GetGroup(lddout);
         if (!group->CanAddLamp(alamp))
@@ -129,7 +129,7 @@ namespace ZTNAMESPACE
         return ZTTRUE;
     }
     
-    LampGroup *GraphicsManager::findLamp(Lamp *alamp)const
+    LampGroup *InterGraphicsModule::findLamp(Lamp *alamp)const
     {
         list<LampGroup*>::const_iterator it = m_LampGroups.begin();
         while (it!=m_LampGroups.end())
@@ -145,7 +145,7 @@ namespace ZTNAMESPACE
         return ZTNULL;
     }
     
-    Name* GraphicsManager::AddName(POINT point)
+    Name* InterGraphicsModule::AddName(POINT point)
     {
         Name *newName = new Name(point);
         m_Names.push_back(newName);
@@ -153,14 +153,14 @@ namespace ZTNAMESPACE
         return newName;
     }
     
-    void  GraphicsManager::DelName(Name *aName)
+    void  InterGraphicsModule::DelName(Name *aName)
     {
         m_Names.remove(aName);
     }
     
     
     
-    LampGroup *GraphicsManager::GetDefaultGroup()
+    LampGroup *InterGraphicsModule::GetDefaultGroup()
     {
         LampGroup *group = ZTNULL;
         
@@ -178,7 +178,7 @@ namespace ZTNAMESPACE
     }
     
     
-    LampGroup *GraphicsManager::GetGroup(BYTE lddout)
+    LampGroup *InterGraphicsModule::GetGroup(BYTE lddout)
     {
         LampGroup *group = ZTNULL;
         
@@ -201,7 +201,7 @@ namespace ZTNAMESPACE
     
     
 #pragma mark - coding
-    void GraphicsManager::generateVertexBinary(BYTE *&pByte, INT &length)
+    void InterGraphicsModule::generateVertexBinary(BYTE *&pByte, INT &length)
     {
         //开始:0x04 第4个byte 结束:0x18E, 不包括0x18E
         //总共189个byte
@@ -230,7 +230,7 @@ namespace ZTNAMESPACE
         }
     }
     
-    void GraphicsManager::generateLinesBinary(BYTE *&pByte, INT &length)
+    void InterGraphicsModule::generateLinesBinary(BYTE *&pByte, INT &length)
     {
         //开始:0x18E  第398个byte  结束：0x4B0, 不包括0x4B0
         //总共802个byte
@@ -259,7 +259,7 @@ namespace ZTNAMESPACE
         }
     }
     
-    void GraphicsManager::generateLampsBinary(BYTE *&pByte, INT &length)
+    void InterGraphicsModule::generateLampsBinary(BYTE *&pByte, INT &length)
     {
         //开始:0x640  第1600个byte 结束:0x810 不包括0x810
         //总共0x1D0(464)个byte
@@ -288,7 +288,7 @@ namespace ZTNAMESPACE
         }
     }
     
-    void GraphicsManager::generateNamesBinary(BYTE *&pByte, INT &length)
+    void InterGraphicsModule::generateNamesBinary(BYTE *&pByte, INT &length)
     {
         //开始:0x4B0  第1200个byte 结束:0x640, 不包括0x640
         //总共0x190(400)个BYTE

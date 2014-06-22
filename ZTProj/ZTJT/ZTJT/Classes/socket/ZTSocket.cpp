@@ -26,7 +26,7 @@ ZTSocket::ZTSocket()
 
 ZTSocket::ZTSocket(std::string &ipaddress, UINT32 uPort)
 :m_running(ZTFALSE)
-,m_server(ZTServer(ipaddress, uPort))
+,m_server(NetServer(ipaddress, uPort))
 ,m_socketfd(-1)
 {
     //
