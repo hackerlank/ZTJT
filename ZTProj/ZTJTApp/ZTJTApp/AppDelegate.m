@@ -12,6 +12,9 @@
 #include "LeftSideViewController.h"
 #include "MMExampleDrawerVisualStateManager.h"
 
+//key
+//bc9f630a840c14edb3680634a0f37b32
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -25,6 +28,7 @@
     
     UINavigationController * centerNavigationController = [[UINavigationController alloc] initWithRootViewController:centerViewController];
     //UINavigationController * leftNavigationController = [[UINavigationController alloc] initWithRootViewController:leftSideDrawerViewController];
+    self.centerNavi = centerNavigationController;
     
     MMDrawerController * drawerController = [[MMDrawerController alloc]
                                              initWithCenterViewController:centerNavigationController

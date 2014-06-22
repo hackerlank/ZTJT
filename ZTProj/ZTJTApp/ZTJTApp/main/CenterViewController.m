@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
 };
 
 @interface CenterViewController ()
-
+@property (strong, nonatomic) MAMapView *mapView;
 @end
 
 @implementation CenterViewController
@@ -77,6 +77,11 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
     MMLogoView * logo = [[MMLogoView alloc] initWithFrame:CGRectMake(0, 0, 29, 31)];
     [self.navigationItem setTitleView:logo];
     [self.navigationController.view.layer setCornerRadius:10.0f];
+    
+    
+    [MAMapServices sharedServices].apiKey = @"bc9f630a840c14edb3680634a0f37b32";
+    self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:_mapView];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

@@ -25,6 +25,7 @@
 #import "MMSideDrawerSectionHeaderView.h"
 #import "MMLogoView.h"
 #import "LeftSideTableViewCell.h"
+#include "AppDelegate.h"
 
 static NSString *LeftSideCellID = @"cell";
 
@@ -134,7 +135,7 @@ static NSString *LeftSideCellID = @"cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.section) {
-            CenterViewController * center = [[CenterViewController alloc] init];
+            CenterViewController * center = ((AppDelegate *)[UIApplication sharedApplication].delegate).centerNavi;//[[CenterViewController alloc] init];
             
             UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:center];
             

@@ -38,6 +38,15 @@
 		C25225861956F22D00BA1731 /* LeftSideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25225841956F22D00BA1731 /* LeftSideTableViewCell.xib */; };
 		C25225891957043800BA1731 /* key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C25225881957043800BA1731 /* key@2x.png */; };
 		C252258B195705FB00BA1731 /* key2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C252258A195705FB00BA1731 /* key2@2x.png */; };
+		C252258D195725D000BA1731 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252258C195725D000BA1731 /* MAMapKit.framework */; };
+		C252258F195725F100BA1731 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252258E195725F100BA1731 /* CoreLocation.framework */; };
+		C2522591195725FF00BA1731 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2522590195725FF00BA1731 /* QuartzCore.framework */; };
+		C25225931957261100BA1731 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25225921957261100BA1731 /* SystemConfiguration.framework */; };
+		C25225951957261C00BA1731 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25225941957261C00BA1731 /* CoreTelephony.framework */; };
+		C25225991957263200BA1731 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25225981957263200BA1731 /* Security.framework */; };
+		C252259B1957263E00BA1731 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C252259A1957263E00BA1731 /* libstdc++.6.0.9.dylib */; };
+		C252259D195726A800BA1731 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C252259C195726A800BA1731 /* libz.dylib */; };
+		C252259F195726E100BA1731 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C252259E195726E100BA1731 /* AMap.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +108,15 @@
 		C25225841956F22D00BA1731 /* LeftSideTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftSideTableViewCell.xib; sourceTree = "<group>"; };
 		C25225881957043800BA1731 /* key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key@2x.png"; sourceTree = "<group>"; };
 		C252258A195705FB00BA1731 /* key2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key2@2x.png"; sourceTree = "<group>"; };
+		C252258C195725D000BA1731 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ZTJTApp/MAMapKit.framework; sourceTree = "<group>"; };
+		C252258E195725F100BA1731 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C2522590195725FF00BA1731 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C25225921957261100BA1731 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C25225941957261C00BA1731 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C25225981957263200BA1731 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C252259A1957263E00BA1731 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		C252259C195726A800BA1731 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C252259E195726E100BA1731 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/Versions/2.2.1.1647/Resources/AMap.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +124,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C252259D195726A800BA1731 /* libz.dylib in Frameworks */,
+				C252259B1957263E00BA1731 /* libstdc++.6.0.9.dylib in Frameworks */,
+				C25225991957263200BA1731 /* Security.framework in Frameworks */,
+				C25225951957261C00BA1731 /* CoreTelephony.framework in Frameworks */,
+				C25225931957261100BA1731 /* SystemConfiguration.framework in Frameworks */,
+				C2522591195725FF00BA1731 /* QuartzCore.framework in Frameworks */,
+				C252258F195725F100BA1731 /* CoreLocation.framework in Frameworks */,
+				C252258D195725D000BA1731 /* MAMapKit.framework in Frameworks */,
 				C252255A195678E700BA1731 /* ZTJT.framework in Frameworks */,
 				C25224841956778D00BA1731 /* CoreGraphics.framework in Frameworks */,
 				C25224861956778D00BA1731 /* UIKit.framework in Frameworks */,
@@ -148,6 +174,14 @@
 		C25224801956778D00BA1731 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C252259C195726A800BA1731 /* libz.dylib */,
+				C252259A1957263E00BA1731 /* libstdc++.6.0.9.dylib */,
+				C25225981957263200BA1731 /* Security.framework */,
+				C25225941957261C00BA1731 /* CoreTelephony.framework */,
+				C25225921957261100BA1731 /* SystemConfiguration.framework */,
+				C2522590195725FF00BA1731 /* QuartzCore.framework */,
+				C252258E195725F100BA1731 /* CoreLocation.framework */,
+				C252258C195725D000BA1731 /* MAMapKit.framework */,
 				C2522559195678E700BA1731 /* ZTJT.framework */,
 				C25224811956778D00BA1731 /* Foundation.framework */,
 				C25224831956778D00BA1731 /* CoreGraphics.framework */,
@@ -160,6 +194,7 @@
 		C25224871956778D00BA1731 /* ZTJTApp */ = {
 			isa = PBXGroup;
 			children = (
+				C252259E195726E100BA1731 /* AMap.bundle */,
 				C25225871957043800BA1731 /* image */,
 				C25225691956E21D00BA1731 /* main */,
 				C252255C1956DCCF00BA1731 /* MMDrawerController */,
@@ -330,6 +365,7 @@
 			files = (
 				C25225891957043800BA1731 /* key@2x.png in Resources */,
 				C25224981956778D00BA1731 /* Main_iPad.storyboard in Resources */,
+				C252259F195726E100BA1731 /* AMap.bundle in Resources */,
 				C25225861956F22D00BA1731 /* LeftSideTableViewCell.xib in Resources */,
 				C252249D1956778D00BA1731 /* Images.xcassets in Resources */,
 				C25224951956778D00BA1731 /* Main_iPhone.storyboard in Resources */,
@@ -505,6 +541,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/ZTJT/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/ZTJTApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZTJTApp/ZTJTApp-Prefix.pch";
@@ -522,6 +559,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/ZTJT/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/ZTJTApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZTJTApp/ZTJTApp-Prefix.pch";
