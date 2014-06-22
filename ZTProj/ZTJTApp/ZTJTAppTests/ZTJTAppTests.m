@@ -1,6 +1,6 @@
 //
-//  ZTJTTests.m
-//  ZTJTTests
+//  ZTJTAppTests.m
+//  ZTJTAppTests
 //
 //  Created by Perry on 14-6-22.
 //  Copyright (c) 2014年 Perry. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface ZTJTTests : XCTestCase
+@interface ZTJTAppTests : XCTestCase
 
 @end
 
-@implementation ZTJTTests
+@implementation ZTJTAppTests
 
 - (void)setUp
 {

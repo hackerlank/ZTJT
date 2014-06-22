@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7A9CC9ED-E2F0-4D6B-A0E2-7D169198E9A3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZTJT</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>96EFA872-4629-41A7-90F8-752512673DD7</key>
+		<string>https://github.com/perry0002/ZTJT.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ZTProj/ZTJT.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>96EFA872-4629-41A7-90F8-752512673DD7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/perry0002/ZTJT.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>96EFA872-4629-41A7-90F8-752512673DD7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>96EFA872-4629-41A7-90F8-752512673DD7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZTJT</string>
+		</dict>
+	</array>
+</dict>
+</plist>

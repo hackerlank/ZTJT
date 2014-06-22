@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C25224821956778D00BA1731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224811956778D00BA1731 /* Foundation.framework */; };
+		C25224841956778D00BA1731 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224831956778D00BA1731 /* CoreGraphics.framework */; };
+		C25224861956778D00BA1731 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224851956778D00BA1731 /* UIKit.framework */; };
+		C252248C1956778D00BA1731 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C252248A1956778D00BA1731 /* InfoPlist.strings */; };
+		C252248E1956778D00BA1731 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C252248D1956778D00BA1731 /* main.m */; };
+		C25224921956778D00BA1731 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C25224911956778D00BA1731 /* AppDelegate.m */; };
+		C25224951956778D00BA1731 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25224931956778D00BA1731 /* Main_iPhone.storyboard */; };
+		C25224981956778D00BA1731 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25224961956778D00BA1731 /* Main_iPad.storyboard */; };
+		C252249B1956778D00BA1731 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C252249A1956778D00BA1731 /* ViewController.m */; };
+		C252249D1956778D00BA1731 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C252249C1956778D00BA1731 /* Images.xcassets */; };
+		C25224A41956778E00BA1731 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224A31956778E00BA1731 /* XCTest.framework */; };
+		C25224A51956778E00BA1731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224811956778D00BA1731 /* Foundation.framework */; };
+		C25224A61956778E00BA1731 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224851956778D00BA1731 /* UIKit.framework */; };
+		C25224AE1956778E00BA1731 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25224AC1956778E00BA1731 /* InfoPlist.strings */; };
+		C25224B01956778E00BA1731 /* ZTJTAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C25224AF1956778E00BA1731 /* ZTJTAppTests.m */; };
+		C252255A195678E700BA1731 /* ZTJT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2522559195678E700BA1731 /* ZTJT.framework */; };
+		C25225651956DCCF00BA1731 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C252255E1956DCCF00BA1731 /* MMDrawerBarButtonItem.m */; };
+		C25225661956DCCF00BA1731 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25225601956DCCF00BA1731 /* MMDrawerController.m */; };
+		C25225671956DCCF00BA1731 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = C25225621956DCCF00BA1731 /* MMDrawerVisualState.m */; };
+		C25225681956DCCF00BA1731 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25225641956DCCF00BA1731 /* UIViewController+MMDrawerController.m */; };
+		C252256F1956E23500BA1731 /* MMSideDrawerSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C252256E1956E23500BA1731 /* MMSideDrawerSectionHeaderView.m */; };
+		C25225721956E26000BA1731 /* MMLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C25225711956E26000BA1731 /* MMLogoView.m */; };
+		C25225751956E2A900BA1731 /* LeftSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25225741956E2A900BA1731 /* LeftSideViewController.m */; };
+		C25225781956E2B800BA1731 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25225771956E2B800BA1731 /* CenterViewController.m */; };
+		C252257B1956E3B800BA1731 /* MMSideDrawerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C252257A1956E3B800BA1731 /* MMSideDrawerTableViewCell.m */; };
+		C252257E1956E3CF00BA1731 /* MMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C252257D1956E3CF00BA1731 /* MMTableViewCell.m */; };
+		C25225811956E50D00BA1731 /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C25225801956E50D00BA1731 /* MMExampleDrawerVisualStateManager.m */; };
+		C25225851956F22D00BA1731 /* LeftSideTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C25225831956F22D00BA1731 /* LeftSideTableViewCell.m */; };
+		C25225861956F22D00BA1731 /* LeftSideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25225841956F22D00BA1731 /* LeftSideTableViewCell.xib */; };
+		C25225891957043800BA1731 /* key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C25225881957043800BA1731 /* key@2x.png */; };
+		C252258B195705FB00BA1731 /* key2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C252258A195705FB00BA1731 /* key2@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C25224A71956778E00BA1731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25224761956778D00BA1731 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C252247D1956778D00BA1731;
+			remoteInfo = ZTJTApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C252247E1956778D00BA1731 /* ZTJTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTJTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25224811956778D00BA1731 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C25224831956778D00BA1731 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C25224851956778D00BA1731 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C25224891956778D00BA1731 /* ZTJTApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZTJTApp-Info.plist"; sourceTree = "<group>"; };
+		C252248B1956778D00BA1731 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C252248D1956778D00BA1731 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C252248F1956778D00BA1731 /* ZTJTApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZTJTApp-Prefix.pch"; sourceTree = "<group>"; };
+		C25224901956778D00BA1731 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C25224911956778D00BA1731 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C25224941956778D00BA1731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C25224971956778D00BA1731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		C25224991956778D00BA1731 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C252249A1956778D00BA1731 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C252249C1956778D00BA1731 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C25224A21956778E00BA1731 /* ZTJTAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTJTAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25224A31956778E00BA1731 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C25224AB1956778E00BA1731 /* ZTJTAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZTJTAppTests-Info.plist"; sourceTree = "<group>"; };
+		C25224AD1956778E00BA1731 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C25224AF1956778E00BA1731 /* ZTJTAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTJTAppTests.m; sourceTree = "<group>"; };
+		C2522559195678E700BA1731 /* ZTJT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZTJT.framework; path = "../ZTJT/build/Debug-iphoneos/ZTJT.framework"; sourceTree = "<group>"; };
+		C252255D1956DCCF00BA1731 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		C252255E1956DCCF00BA1731 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		C252255F1956DCCF00BA1731 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		C25225601956DCCF00BA1731 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		C25225611956DCCF00BA1731 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		C25225621956DCCF00BA1731 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		C25225631956DCCF00BA1731 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		C25225641956DCCF00BA1731 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		C252256D1956E23500BA1731 /* MMSideDrawerSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSideDrawerSectionHeaderView.h; sourceTree = "<group>"; };
+		C252256E1956E23500BA1731 /* MMSideDrawerSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSideDrawerSectionHeaderView.m; sourceTree = "<group>"; };
+		C25225701956E26000BA1731 /* MMLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLogoView.h; sourceTree = "<group>"; };
+		C25225711956E26000BA1731 /* MMLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLogoView.m; sourceTree = "<group>"; };
+		C25225731956E2A900BA1731 /* LeftSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSideViewController.h; sourceTree = "<group>"; };
+		C25225741956E2A900BA1731 /* LeftSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSideViewController.m; sourceTree = "<group>"; };
+		C25225761956E2B800BA1731 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		C25225771956E2B800BA1731 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
+		C25225791956E3B800BA1731 /* MMSideDrawerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSideDrawerTableViewCell.h; sourceTree = "<group>"; };
+		C252257A1956E3B800BA1731 /* MMSideDrawerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSideDrawerTableViewCell.m; sourceTree = "<group>"; };
+		C252257C1956E3CF00BA1731 /* MMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewCell.h; sourceTree = "<group>"; };
+		C252257D1956E3CF00BA1731 /* MMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTableViewCell.m; sourceTree = "<group>"; };
+		C252257F1956E50D00BA1731 /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		C25225801956E50D00BA1731 /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
+		C25225821956F22D00BA1731 /* LeftSideTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSideTableViewCell.h; sourceTree = "<group>"; };
+		C25225831956F22D00BA1731 /* LeftSideTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSideTableViewCell.m; sourceTree = "<group>"; };
+		C25225841956F22D00BA1731 /* LeftSideTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftSideTableViewCell.xib; sourceTree = "<group>"; };
+		C25225881957043800BA1731 /* key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key@2x.png"; sourceTree = "<group>"; };
+		C252258A195705FB00BA1731 /* key2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key2@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C252247B1956778D00BA1731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C252255A195678E700BA1731 /* ZTJT.framework in Frameworks */,
+				C25224841956778D00BA1731 /* CoreGraphics.framework in Frameworks */,
+				C25224861956778D00BA1731 /* UIKit.framework in Frameworks */,
+				C25224821956778D00BA1731 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C252249F1956778E00BA1731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25224A41956778E00BA1731 /* XCTest.framework in Frameworks */,
+				C25224A61956778E00BA1731 /* UIKit.framework in Frameworks */,
+				C25224A51956778E00BA1731 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C25224751956778D00BA1731 = {
+			isa = PBXGroup;
+			children = (
+				C25224871956778D00BA1731 /* ZTJTApp */,
+				C25224A91956778E00BA1731 /* ZTJTAppTests */,
+				C25224801956778D00BA1731 /* Frameworks */,
+				C252247F1956778D00BA1731 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C252247F1956778D00BA1731 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C252247E1956778D00BA1731 /* ZTJTApp.app */,
+				C25224A21956778E00BA1731 /* ZTJTAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C25224801956778D00BA1731 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2522559195678E700BA1731 /* ZTJT.framework */,
+				C25224811956778D00BA1731 /* Foundation.framework */,
+				C25224831956778D00BA1731 /* CoreGraphics.framework */,
+				C25224851956778D00BA1731 /* UIKit.framework */,
+				C25224A31956778E00BA1731 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C25224871956778D00BA1731 /* ZTJTApp */ = {
+			isa = PBXGroup;
+			children = (
+				C25225871957043800BA1731 /* image */,
+				C25225691956E21D00BA1731 /* main */,
+				C252255C1956DCCF00BA1731 /* MMDrawerController */,
+				C25224901956778D00BA1731 /* AppDelegate.h */,
+				C25224911956778D00BA1731 /* AppDelegate.m */,
+				C25224931956778D00BA1731 /* Main_iPhone.storyboard */,
+				C25224961956778D00BA1731 /* Main_iPad.storyboard */,
+				C25224991956778D00BA1731 /* ViewController.h */,
+				C252249A1956778D00BA1731 /* ViewController.m */,
+				C252249C1956778D00BA1731 /* Images.xcassets */,
+				C25224881956778D00BA1731 /* Supporting Files */,
+			);
+			path = ZTJTApp;
+			sourceTree = "<group>";
+		};
+		C25224881956778D00BA1731 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C25224891956778D00BA1731 /* ZTJTApp-Info.plist */,
+				C252248A1956778D00BA1731 /* InfoPlist.strings */,
+				C252248D1956778D00BA1731 /* main.m */,
+				C252248F1956778D00BA1731 /* ZTJTApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C25224A91956778E00BA1731 /* ZTJTAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C25224AF1956778E00BA1731 /* ZTJTAppTests.m */,
+				C25224AA1956778E00BA1731 /* Supporting Files */,
+			);
+			path = ZTJTAppTests;
+			sourceTree = "<group>";
+		};
+		C25224AA1956778E00BA1731 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C25224AB1956778E00BA1731 /* ZTJTAppTests-Info.plist */,
+				C25224AC1956778E00BA1731 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C252255C1956DCCF00BA1731 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				C252255D1956DCCF00BA1731 /* MMDrawerBarButtonItem.h */,
+				C252255E1956DCCF00BA1731 /* MMDrawerBarButtonItem.m */,
+				C252255F1956DCCF00BA1731 /* MMDrawerController.h */,
+				C25225601956DCCF00BA1731 /* MMDrawerController.m */,
+				C25225611956DCCF00BA1731 /* MMDrawerVisualState.h */,
+				C25225621956DCCF00BA1731 /* MMDrawerVisualState.m */,
+				C25225631956DCCF00BA1731 /* UIViewController+MMDrawerController.h */,
+				C25225641956DCCF00BA1731 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		C25225691956E21D00BA1731 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				C252257F1956E50D00BA1731 /* MMExampleDrawerVisualStateManager.h */,
+				C25225801956E50D00BA1731 /* MMExampleDrawerVisualStateManager.m */,
+				C25225761956E2B800BA1731 /* CenterViewController.h */,
+				C25225771956E2B800BA1731 /* CenterViewController.m */,
+				C25225731956E2A900BA1731 /* LeftSideViewController.h */,
+				C25225741956E2A900BA1731 /* LeftSideViewController.m */,
+				C25225701956E26000BA1731 /* MMLogoView.h */,
+				C25225711956E26000BA1731 /* MMLogoView.m */,
+				C252256D1956E23500BA1731 /* MMSideDrawerSectionHeaderView.h */,
+				C252256E1956E23500BA1731 /* MMSideDrawerSectionHeaderView.m */,
+				C25225791956E3B800BA1731 /* MMSideDrawerTableViewCell.h */,
+				C252257A1956E3B800BA1731 /* MMSideDrawerTableViewCell.m */,
+				C252257C1956E3CF00BA1731 /* MMTableViewCell.h */,
+				C252257D1956E3CF00BA1731 /* MMTableViewCell.m */,
+				C25225821956F22D00BA1731 /* LeftSideTableViewCell.h */,
+				C25225831956F22D00BA1731 /* LeftSideTableViewCell.m */,
+				C25225841956F22D00BA1731 /* LeftSideTableViewCell.xib */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		C25225871957043800BA1731 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				C252258A195705FB00BA1731 /* key2@2x.png */,
+				C25225881957043800BA1731 /* key@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C252247D1956778D00BA1731 /* ZTJTApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C25224B31956778E00BA1731 /* Build configuration list for PBXNativeTarget "ZTJTApp" */;
+			buildPhases = (
+				C252247A1956778D00BA1731 /* Sources */,
+				C252247B1956778D00BA1731 /* Frameworks */,
+				C252247C1956778D00BA1731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZTJTApp;
+			productName = ZTJTApp;
+			productReference = C252247E1956778D00BA1731 /* ZTJTApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C25224A11956778E00BA1731 /* ZTJTAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C25224B61956778E00BA1731 /* Build configuration list for PBXNativeTarget "ZTJTAppTests" */;
+			buildPhases = (
+				C252249E1956778E00BA1731 /* Sources */,
+				C252249F1956778E00BA1731 /* Frameworks */,
+				C25224A01956778E00BA1731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C25224A81956778E00BA1731 /* PBXTargetDependency */,
+			);
+			name = ZTJTAppTests;
+			productName = ZTJTAppTests;
+			productReference = C25224A21956778E00BA1731 /* ZTJTAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C25224761956778D00BA1731 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Perry;
+				TargetAttributes = {
+					C25224A11956778E00BA1731 = {
+						TestTargetID = C252247D1956778D00BA1731;
+					};
+				};
+			};
+			buildConfigurationList = C25224791956778D00BA1731 /* Build configuration list for PBXProject "ZTJTApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C25224751956778D00BA1731;
+			productRefGroup = C252247F1956778D00BA1731 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C252247D1956778D00BA1731 /* ZTJTApp */,
+				C25224A11956778E00BA1731 /* ZTJTAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C252247C1956778D00BA1731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25225891957043800BA1731 /* key@2x.png in Resources */,
+				C25224981956778D00BA1731 /* Main_iPad.storyboard in Resources */,
+				C25225861956F22D00BA1731 /* LeftSideTableViewCell.xib in Resources */,
+				C252249D1956778D00BA1731 /* Images.xcassets in Resources */,
+				C25224951956778D00BA1731 /* Main_iPhone.storyboard in Resources */,
+				C252248C1956778D00BA1731 /* InfoPlist.strings in Resources */,
+				C252258B195705FB00BA1731 /* key2@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C25224A01956778E00BA1731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25224AE1956778E00BA1731 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C252247A1956778D00BA1731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C252257E1956E3CF00BA1731 /* MMTableViewCell.m in Sources */,
+				C25225671956DCCF00BA1731 /* MMDrawerVisualState.m in Sources */,
+				C252249B1956778D00BA1731 /* ViewController.m in Sources */,
+				C25225681956DCCF00BA1731 /* UIViewController+MMDrawerController.m in Sources */,
+				C25225661956DCCF00BA1731 /* MMDrawerController.m in Sources */,
+				C25225651956DCCF00BA1731 /* MMDrawerBarButtonItem.m in Sources */,
+				C25225751956E2A900BA1731 /* LeftSideViewController.m in Sources */,
+				C25225811956E50D00BA1731 /* MMExampleDrawerVisualStateManager.m in Sources */,
+				C25224921956778D00BA1731 /* AppDelegate.m in Sources */,
+				C25225721956E26000BA1731 /* MMLogoView.m in Sources */,
+				C25225851956F22D00BA1731 /* LeftSideTableViewCell.m in Sources */,
+				C25225781956E2B800BA1731 /* CenterViewController.m in Sources */,
+				C252257B1956E3B800BA1731 /* MMSideDrawerTableViewCell.m in Sources */,
+				C252248E1956778D00BA1731 /* main.m in Sources */,
+				C252256F1956E23500BA1731 /* MMSideDrawerSectionHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C252249E1956778E00BA1731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25224B01956778E00BA1731 /* ZTJTAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C25224A81956778E00BA1731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C252247D1956778D00BA1731 /* ZTJTApp */;
+			targetProxy = C25224A71956778E00BA1731 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C252248A1956778D00BA1731 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C252248B1956778D00BA1731 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C25224931956778D00BA1731 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25224941956778D00BA1731 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C25224961956778D00BA1731 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25224971956778D00BA1731 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C25224AC1956778E00BA1731 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25224AD1956778E00BA1731 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C25224B11956778E00BA1731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C25224B21956778E00BA1731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C25224B41956778E00BA1731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/ZTJT/build/Debug-iphoneos",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZTJTApp/ZTJTApp-Prefix.pch";
+				INFOPLIST_FILE = "ZTJTApp/ZTJTApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C25224B51956778E00BA1731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/ZTJT/build/Debug-iphoneos",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZTJTApp/ZTJTApp-Prefix.pch";
+				INFOPLIST_FILE = "ZTJTApp/ZTJTApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C25224B71956778E00BA1731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZTJTApp.app/ZTJTApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZTJTApp/ZTJTApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ZTJTAppTests/ZTJTAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C25224B81956778E00BA1731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZTJTApp.app/ZTJTApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZTJTApp/ZTJTApp-Prefix.pch";
+				INFOPLIST_FILE = "ZTJTAppTests/ZTJTAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C25224791956778D00BA1731 /* Build configuration list for PBXProject "ZTJTApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25224B11956778E00BA1731 /* Debug */,
+				C25224B21956778E00BA1731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C25224B31956778E00BA1731 /* Build configuration list for PBXNativeTarget "ZTJTApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25224B41956778E00BA1731 /* Debug */,
+				C25224B51956778E00BA1731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C25224B61956778E00BA1731 /* Build configuration list for PBXNativeTarget "ZTJTAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25224B71956778E00BA1731 /* Debug */,
+				C25224B81956778E00BA1731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C25224761956778D00BA1731 /* Project object */;
+}
