@@ -7,444 +7,285 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C25224C81956782C00BA1731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224C71956782C00BA1731 /* Foundation.framework */; };
-		C25224CE1956782C00BA1731 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25224CC1956782C00BA1731 /* InfoPlist.strings */; };
-		C25224D21956782C00BA1731 /* ZTJT.m in Sources */ = {isa = PBXBuildFile; fileRef = C25224D11956782C00BA1731 /* ZTJT.m */; };
-		C25224D91956782C00BA1731 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224D81956782C00BA1731 /* XCTest.framework */; };
-		C25224DA1956782C00BA1731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224C71956782C00BA1731 /* Foundation.framework */; };
-		C25224DC1956782C00BA1731 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224DB1956782C00BA1731 /* UIKit.framework */; };
-		C25224E11956782C00BA1731 /* ZTJT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224C41956782C00BA1731 /* ZTJT.framework */; };
-		C25224E71956782C00BA1731 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25224E51956782C00BA1731 /* InfoPlist.strings */; };
-		C25224E91956782C00BA1731 /* ZTJTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C25224E81956782C00BA1731 /* ZTJTTests.m */; };
-		C25225271956789200BA1731 /* BinaryObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25224F31956789100BA1731 /* BinaryObj.cpp */; };
-		C25225281956789200BA1731 /* BinaryObj.h in Headers */ = {isa = PBXBuildFile; fileRef = C25224F41956789100BA1731 /* BinaryObj.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225291956789200BA1731 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25224F61956789200BA1731 /* Config.cpp */; };
-		C252252A1956789200BA1731 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = C25224F71956789200BA1731 /* Config.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C252252B1956789200BA1731 /* TypeDef.h in Headers */ = {isa = PBXBuildFile; fileRef = C25224F81956789200BA1731 /* TypeDef.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C252252C1956789200BA1731 /* ZTFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25224F91956789200BA1731 /* ZTFile.cpp */; };
-		C252252D1956789200BA1731 /* ZTFile.h in Headers */ = {isa = PBXBuildFile; fileRef = C25224FA1956789200BA1731 /* ZTFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C252252E1956789200BA1731 /* ZTObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25224FB1956789200BA1731 /* ZTObject.cpp */; };
-		C252252F1956789200BA1731 /* ZTObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C25224FC1956789200BA1731 /* ZTObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225301956789200BA1731 /* DayPlan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25224FD1956789200BA1731 /* DayPlan.cpp */; };
-		C25225311956789200BA1731 /* DayPlan.h in Headers */ = {isa = PBXBuildFile; fileRef = C25224FE1956789200BA1731 /* DayPlan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225321956789200BA1731 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25224FF1956789200BA1731 /* Debug.cpp */; };
-		C25225331956789200BA1731 /* Debug.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225001956789200BA1731 /* Debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225341956789200BA1731 /* DevConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225011956789200BA1731 /* DevConfig.cpp */; };
-		C25225351956789200BA1731 /* DevConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225021956789200BA1731 /* DevConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225361956789200BA1731 /* GraphicObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225031956789200BA1731 /* GraphicObject.cpp */; };
-		C25225371956789200BA1731 /* GraphicObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225041956789200BA1731 /* GraphicObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225381956789200BA1731 /* InterGraphicsModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225051956789200BA1731 /* InterGraphicsModule.cpp */; };
-		C25225391956789200BA1731 /* InterGraphicsModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225061956789200BA1731 /* InterGraphicsModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C252253A1956789200BA1731 /* Intersections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225071956789200BA1731 /* Intersections.cpp */; };
-		C252253B1956789200BA1731 /* Intersections.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225081956789200BA1731 /* Intersections.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C252253C1956789200BA1731 /* Lamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225091956789200BA1731 /* Lamp.cpp */; };
-		C252253D1956789200BA1731 /* Lamp.h in Headers */ = {isa = PBXBuildFile; fileRef = C252250A1956789200BA1731 /* Lamp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C252253E1956789200BA1731 /* LampGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252250B1956789200BA1731 /* LampGroup.cpp */; };
-		C252253F1956789200BA1731 /* LampGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = C252250C1956789200BA1731 /* LampGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225401956789200BA1731 /* Line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252250D1956789200BA1731 /* Line.cpp */; };
-		C25225411956789200BA1731 /* Line.h in Headers */ = {isa = PBXBuildFile; fileRef = C252250E1956789200BA1731 /* Line.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225421956789200BA1731 /* Name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252250F1956789200BA1731 /* Name.cpp */; };
-		C25225431956789200BA1731 /* Name.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225101956789200BA1731 /* Name.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225441956789200BA1731 /* Period.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225111956789200BA1731 /* Period.cpp */; };
-		C25225451956789200BA1731 /* Period.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225121956789200BA1731 /* Period.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225461956789200BA1731 /* PlanModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225131956789200BA1731 /* PlanModule.cpp */; };
-		C25225471956789200BA1731 /* PlanModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225141956789200BA1731 /* PlanModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225481956789200BA1731 /* Scheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225151956789200BA1731 /* Scheme.cpp */; };
-		C25225491956789200BA1731 /* Scheme.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225161956789200BA1731 /* Scheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C252254A1956789200BA1731 /* NetNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225181956789200BA1731 /* NetNode.cpp */; };
-		C252254B1956789200BA1731 /* NetNode.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225191956789200BA1731 /* NetNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C252254C1956789200BA1731 /* ZTData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252251A1956789200BA1731 /* ZTData.cpp */; };
-		C252254D1956789200BA1731 /* ZTData.h in Headers */ = {isa = PBXBuildFile; fileRef = C252251B1956789200BA1731 /* ZTData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C252254E1956789200BA1731 /* ZTPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252251C1956789200BA1731 /* ZTPacket.cpp */; };
-		C252254F1956789200BA1731 /* ZTPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C252251D1956789200BA1731 /* ZTPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225501956789200BA1731 /* ZTSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252251E1956789200BA1731 /* ZTSocket.cpp */; };
-		C25225511956789200BA1731 /* ZTSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C252251F1956789200BA1731 /* ZTSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225521956789200BA1731 /* ZTThread.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225201956789200BA1731 /* ZTThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225531956789200BA1731 /* Status.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225211956789200BA1731 /* Status.cpp */; };
-		C25225541956789200BA1731 /* Status.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225221956789200BA1731 /* Status.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225551956789200BA1731 /* Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225231956789200BA1731 /* Vertex.cpp */; };
-		C25225561956789200BA1731 /* Vertex.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225241956789200BA1731 /* Vertex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225571956789200BA1731 /* WeekPlan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225251956789200BA1731 /* WeekPlan.cpp */; };
-		C25225581956789200BA1731 /* WeekPlan.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225261956789200BA1731 /* WeekPlan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C206F9B0197A2D4400624D10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C206F9AF197A2D4400624D10 /* Foundation.framework */; };
+		C206F9B6197A2D4400624D10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C206F9B4197A2D4400624D10 /* InfoPlist.strings */; };
+		C206F9C1197A2D4400624D10 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C206F9C0197A2D4400624D10 /* XCTest.framework */; };
+		C206F9C2197A2D4400624D10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C206F9AF197A2D4400624D10 /* Foundation.framework */; };
+		C206F9C4197A2D4400624D10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C206F9C3197A2D4400624D10 /* UIKit.framework */; };
+		C206F9C9197A2D4400624D10 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C206F9AC197A2D4400624D10 /* FMDB.framework */; };
+		C206F9CF197A2D4400624D10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C206F9CD197A2D4400624D10 /* InfoPlist.strings */; };
+		C206F9D1197A2D4400624D10 /* FMDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F9D0197A2D4400624D10 /* FMDBTests.m */; };
+		C206F9E5197A2D6900624D10 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = C206F9DA197A2D6900624D10 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C206F9E6197A2D6900624D10 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = C206F9DB197A2D6900624D10 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C206F9E7197A2D6900624D10 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F9DC197A2D6900624D10 /* FMDatabase.m */; };
+		C206F9E8197A2D6900624D10 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = C206F9DD197A2D6900624D10 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C206F9E9197A2D6900624D10 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F9DE197A2D6900624D10 /* FMResultSet.m */; };
+		C206F9EA197A2D6900624D10 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = C206F9DF197A2D6900624D10 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C206F9EB197A2D6900624D10 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F9E0197A2D6900624D10 /* FMDatabaseQueue.m */; };
+		C206F9EC197A2D6900624D10 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C206F9E1197A2D6900624D10 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C206F9ED197A2D6900624D10 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F9E2197A2D6900624D10 /* FMDatabaseAdditions.m */; };
+		C206F9EE197A2D6900624D10 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = C206F9E3197A2D6900624D10 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C206F9EF197A2D6900624D10 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F9E4197A2D6900624D10 /* FMDatabasePool.m */; };
+		C206F9F2197A2D7A00624D10 /* FMDatabase+InMemoryOnDiskIO.h in Headers */ = {isa = PBXBuildFile; fileRef = C206F9F0197A2D7A00624D10 /* FMDatabase+InMemoryOnDiskIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C206F9F3197A2D7A00624D10 /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F9F1197A2D7A00624D10 /* FMDatabase+InMemoryOnDiskIO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C25224DD1956782C00BA1731 /* PBXContainerItemProxy */ = {
+		C206F9C5197A2D4400624D10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C25224BA1956782C00BA1731 /* Project object */;
+			containerPortal = C206F9A2197A2D4400624D10 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C25224C31956782C00BA1731;
-			remoteInfo = ZTJT;
+			remoteGlobalIDString = C206F9AB197A2D4400624D10;
+			remoteInfo = FMDB;
 		};
-		C25224DF1956782C00BA1731 /* PBXContainerItemProxy */ = {
+		C206F9C7197A2D4400624D10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C25224BA1956782C00BA1731 /* Project object */;
+			containerPortal = C206F9A2197A2D4400624D10 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C25224C31956782C00BA1731;
-			remoteInfo = ZTJT;
+			remoteGlobalIDString = C206F9AB197A2D4400624D10;
+			remoteInfo = FMDB;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C25224C41956782C00BA1731 /* ZTJT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = ZTJT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C25224C71956782C00BA1731 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C25224CB1956782C00BA1731 /* ZTJT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZTJT-Info.plist"; sourceTree = "<group>"; };
-		C25224CD1956782C00BA1731 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C25224CF1956782C00BA1731 /* ZTJT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZTJT-Prefix.pch"; sourceTree = "<group>"; };
-		C25224D01956782C00BA1731 /* ZTJT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTJT.h; sourceTree = "<group>"; };
-		C25224D11956782C00BA1731 /* ZTJT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTJT.m; sourceTree = "<group>"; };
-		C25224D71956782C00BA1731 /* ZTJTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTJTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C25224D81956782C00BA1731 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C25224DB1956782C00BA1731 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C25224E41956782C00BA1731 /* ZTJTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZTJTTests-Info.plist"; sourceTree = "<group>"; };
-		C25224E61956782C00BA1731 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C25224E81956782C00BA1731 /* ZTJTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTJTTests.m; sourceTree = "<group>"; };
-		C25224F31956789100BA1731 /* BinaryObj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryObj.cpp; sourceTree = "<group>"; };
-		C25224F41956789100BA1731 /* BinaryObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryObj.h; sourceTree = "<group>"; };
-		C25224F61956789200BA1731 /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
-		C25224F71956789200BA1731 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
-		C25224F81956789200BA1731 /* TypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeDef.h; sourceTree = "<group>"; };
-		C25224F91956789200BA1731 /* ZTFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZTFile.cpp; sourceTree = "<group>"; };
-		C25224FA1956789200BA1731 /* ZTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFile.h; sourceTree = "<group>"; };
-		C25224FB1956789200BA1731 /* ZTObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZTObject.cpp; sourceTree = "<group>"; };
-		C25224FC1956789200BA1731 /* ZTObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTObject.h; sourceTree = "<group>"; };
-		C25224FD1956789200BA1731 /* DayPlan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DayPlan.cpp; sourceTree = "<group>"; };
-		C25224FE1956789200BA1731 /* DayPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayPlan.h; sourceTree = "<group>"; };
-		C25224FF1956789200BA1731 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = "<group>"; };
-		C25225001956789200BA1731 /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = "<group>"; };
-		C25225011956789200BA1731 /* DevConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DevConfig.cpp; sourceTree = "<group>"; };
-		C25225021956789200BA1731 /* DevConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevConfig.h; sourceTree = "<group>"; };
-		C25225031956789200BA1731 /* GraphicObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicObject.cpp; sourceTree = "<group>"; };
-		C25225041956789200BA1731 /* GraphicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
-		C25225051956789200BA1731 /* InterGraphicsModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InterGraphicsModule.cpp; sourceTree = "<group>"; };
-		C25225061956789200BA1731 /* InterGraphicsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterGraphicsModule.h; sourceTree = "<group>"; };
-		C25225071956789200BA1731 /* Intersections.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Intersections.cpp; sourceTree = "<group>"; };
-		C25225081956789200BA1731 /* Intersections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intersections.h; sourceTree = "<group>"; };
-		C25225091956789200BA1731 /* Lamp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lamp.cpp; sourceTree = "<group>"; };
-		C252250A1956789200BA1731 /* Lamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lamp.h; sourceTree = "<group>"; };
-		C252250B1956789200BA1731 /* LampGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LampGroup.cpp; sourceTree = "<group>"; };
-		C252250C1956789200BA1731 /* LampGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampGroup.h; sourceTree = "<group>"; };
-		C252250D1956789200BA1731 /* Line.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Line.cpp; sourceTree = "<group>"; };
-		C252250E1956789200BA1731 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
-		C252250F1956789200BA1731 /* Name.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Name.cpp; sourceTree = "<group>"; };
-		C25225101956789200BA1731 /* Name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Name.h; sourceTree = "<group>"; };
-		C25225111956789200BA1731 /* Period.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Period.cpp; sourceTree = "<group>"; };
-		C25225121956789200BA1731 /* Period.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Period.h; sourceTree = "<group>"; };
-		C25225131956789200BA1731 /* PlanModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlanModule.cpp; sourceTree = "<group>"; };
-		C25225141956789200BA1731 /* PlanModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanModule.h; sourceTree = "<group>"; };
-		C25225151956789200BA1731 /* Scheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scheme.cpp; sourceTree = "<group>"; };
-		C25225161956789200BA1731 /* Scheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheme.h; sourceTree = "<group>"; };
-		C25225181956789200BA1731 /* NetNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetNode.cpp; sourceTree = "<group>"; };
-		C25225191956789200BA1731 /* NetNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetNode.h; sourceTree = "<group>"; };
-		C252251A1956789200BA1731 /* ZTData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZTData.cpp; sourceTree = "<group>"; };
-		C252251B1956789200BA1731 /* ZTData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTData.h; sourceTree = "<group>"; };
-		C252251C1956789200BA1731 /* ZTPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZTPacket.cpp; sourceTree = "<group>"; };
-		C252251D1956789200BA1731 /* ZTPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTPacket.h; sourceTree = "<group>"; };
-		C252251E1956789200BA1731 /* ZTSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZTSocket.cpp; sourceTree = "<group>"; };
-		C252251F1956789200BA1731 /* ZTSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTSocket.h; sourceTree = "<group>"; };
-		C25225201956789200BA1731 /* ZTThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTThread.h; sourceTree = "<group>"; };
-		C25225211956789200BA1731 /* Status.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Status.cpp; sourceTree = "<group>"; };
-		C25225221956789200BA1731 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
-		C25225231956789200BA1731 /* Vertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vertex.cpp; sourceTree = "<group>"; };
-		C25225241956789200BA1731 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
-		C25225251956789200BA1731 /* WeekPlan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WeekPlan.cpp; sourceTree = "<group>"; };
-		C25225261956789200BA1731 /* WeekPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekPlan.h; sourceTree = "<group>"; };
+		C206F9AC197A2D4400624D10 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C206F9AF197A2D4400624D10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C206F9B3197A2D4400624D10 /* FMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FMDB-Info.plist"; sourceTree = "<group>"; };
+		C206F9B5197A2D4400624D10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C206F9B7197A2D4400624D10 /* FMDB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FMDB-Prefix.pch"; sourceTree = "<group>"; };
+		C206F9BF197A2D4400624D10 /* FMDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C206F9C0197A2D4400624D10 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C206F9C3197A2D4400624D10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C206F9CC197A2D4400624D10 /* FMDBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FMDBTests-Info.plist"; sourceTree = "<group>"; };
+		C206F9CE197A2D4400624D10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C206F9D0197A2D4400624D10 /* FMDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBTests.m; sourceTree = "<group>"; };
+		C206F9DA197A2D6900624D10 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		C206F9DB197A2D6900624D10 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		C206F9DC197A2D6900624D10 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		C206F9DD197A2D6900624D10 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		C206F9DE197A2D6900624D10 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		C206F9DF197A2D6900624D10 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		C206F9E0197A2D6900624D10 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C206F9E1197A2D6900624D10 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C206F9E2197A2D6900624D10 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		C206F9E3197A2D6900624D10 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		C206F9E4197A2D6900624D10 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		C206F9F0197A2D7A00624D10 /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		C206F9F1197A2D7A00624D10 /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C25224BF1956782C00BA1731 /* Frameworks */ = {
+		C206F9A7197A2D4400624D10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25224C81956782C00BA1731 /* Foundation.framework in Frameworks */,
+				C206F9B0197A2D4400624D10 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C25224D41956782C00BA1731 /* Frameworks */ = {
+		C206F9BC197A2D4400624D10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25224D91956782C00BA1731 /* XCTest.framework in Frameworks */,
-				C25224DC1956782C00BA1731 /* UIKit.framework in Frameworks */,
-				C25224E11956782C00BA1731 /* ZTJT.framework in Frameworks */,
-				C25224DA1956782C00BA1731 /* Foundation.framework in Frameworks */,
+				C206F9C1197A2D4400624D10 /* XCTest.framework in Frameworks */,
+				C206F9C4197A2D4400624D10 /* UIKit.framework in Frameworks */,
+				C206F9C2197A2D4400624D10 /* Foundation.framework in Frameworks */,
+				C206F9C9197A2D4400624D10 /* FMDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C25224B91956782C00BA1731 = {
+		C206F9A1197A2D4400624D10 = {
 			isa = PBXGroup;
 			children = (
-				C25224C91956782C00BA1731 /* ZTJT */,
-				C25224E21956782C00BA1731 /* ZTJTTests */,
-				C25224C61956782C00BA1731 /* Frameworks */,
-				C25224C51956782C00BA1731 /* Products */,
+				C206F9B1197A2D4400624D10 /* FMDB */,
+				C206F9CA197A2D4400624D10 /* FMDBTests */,
+				C206F9AE197A2D4400624D10 /* Frameworks */,
+				C206F9AD197A2D4400624D10 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C25224C51956782C00BA1731 /* Products */ = {
+		C206F9AD197A2D4400624D10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C25224C41956782C00BA1731 /* ZTJT.framework */,
-				C25224D71956782C00BA1731 /* ZTJTTests.xctest */,
+				C206F9AC197A2D4400624D10 /* FMDB.framework */,
+				C206F9BF197A2D4400624D10 /* FMDBTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C25224C61956782C00BA1731 /* Frameworks */ = {
+		C206F9AE197A2D4400624D10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C25224C71956782C00BA1731 /* Foundation.framework */,
-				C25224D81956782C00BA1731 /* XCTest.framework */,
-				C25224DB1956782C00BA1731 /* UIKit.framework */,
+				C206F9AF197A2D4400624D10 /* Foundation.framework */,
+				C206F9C0197A2D4400624D10 /* XCTest.framework */,
+				C206F9C3197A2D4400624D10 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C25224C91956782C00BA1731 /* ZTJT */ = {
+		C206F9B1197A2D4400624D10 /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
-				C25224F21956789100BA1731 /* Classes */,
-				C25224D01956782C00BA1731 /* ZTJT.h */,
-				C25224D11956782C00BA1731 /* ZTJT.m */,
-				C25224CA1956782C00BA1731 /* Supporting Files */,
+				C206F9F0197A2D7A00624D10 /* FMDatabase+InMemoryOnDiskIO.h */,
+				C206F9F1197A2D7A00624D10 /* FMDatabase+InMemoryOnDiskIO.m */,
+				C206F9DA197A2D6900624D10 /* FMDB.h */,
+				C206F9DB197A2D6900624D10 /* FMDatabase.h */,
+				C206F9DC197A2D6900624D10 /* FMDatabase.m */,
+				C206F9DD197A2D6900624D10 /* FMResultSet.h */,
+				C206F9DE197A2D6900624D10 /* FMResultSet.m */,
+				C206F9DF197A2D6900624D10 /* FMDatabaseQueue.h */,
+				C206F9E0197A2D6900624D10 /* FMDatabaseQueue.m */,
+				C206F9E1197A2D6900624D10 /* FMDatabaseAdditions.h */,
+				C206F9E2197A2D6900624D10 /* FMDatabaseAdditions.m */,
+				C206F9E3197A2D6900624D10 /* FMDatabasePool.h */,
+				C206F9E4197A2D6900624D10 /* FMDatabasePool.m */,
+				C206F9B2197A2D4400624D10 /* Supporting Files */,
 			);
-			path = ZTJT;
+			path = FMDB;
 			sourceTree = "<group>";
 		};
-		C25224CA1956782C00BA1731 /* Supporting Files */ = {
+		C206F9B2197A2D4400624D10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C25224CB1956782C00BA1731 /* ZTJT-Info.plist */,
-				C25224CC1956782C00BA1731 /* InfoPlist.strings */,
-				C25224CF1956782C00BA1731 /* ZTJT-Prefix.pch */,
+				C206F9B3197A2D4400624D10 /* FMDB-Info.plist */,
+				C206F9B4197A2D4400624D10 /* InfoPlist.strings */,
+				C206F9B7197A2D4400624D10 /* FMDB-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C25224E21956782C00BA1731 /* ZTJTTests */ = {
+		C206F9CA197A2D4400624D10 /* FMDBTests */ = {
 			isa = PBXGroup;
 			children = (
-				C25224E81956782C00BA1731 /* ZTJTTests.m */,
-				C25224E31956782C00BA1731 /* Supporting Files */,
+				C206F9D0197A2D4400624D10 /* FMDBTests.m */,
+				C206F9CB197A2D4400624D10 /* Supporting Files */,
 			);
-			path = ZTJTTests;
+			path = FMDBTests;
 			sourceTree = "<group>";
 		};
-		C25224E31956782C00BA1731 /* Supporting Files */ = {
+		C206F9CB197A2D4400624D10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C25224E41956782C00BA1731 /* ZTJTTests-Info.plist */,
-				C25224E51956782C00BA1731 /* InfoPlist.strings */,
+				C206F9CC197A2D4400624D10 /* FMDBTests-Info.plist */,
+				C206F9CD197A2D4400624D10 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C25224F21956789100BA1731 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C25224F31956789100BA1731 /* BinaryObj.cpp */,
-				C25224F41956789100BA1731 /* BinaryObj.h */,
-				C25224F51956789100BA1731 /* comm */,
-				C25224FD1956789200BA1731 /* DayPlan.cpp */,
-				C25224FE1956789200BA1731 /* DayPlan.h */,
-				C25224FF1956789200BA1731 /* Debug.cpp */,
-				C25225001956789200BA1731 /* Debug.h */,
-				C25225011956789200BA1731 /* DevConfig.cpp */,
-				C25225021956789200BA1731 /* DevConfig.h */,
-				C25225031956789200BA1731 /* GraphicObject.cpp */,
-				C25225041956789200BA1731 /* GraphicObject.h */,
-				C25225051956789200BA1731 /* InterGraphicsModule.cpp */,
-				C25225061956789200BA1731 /* InterGraphicsModule.h */,
-				C25225071956789200BA1731 /* Intersections.cpp */,
-				C25225081956789200BA1731 /* Intersections.h */,
-				C25225091956789200BA1731 /* Lamp.cpp */,
-				C252250A1956789200BA1731 /* Lamp.h */,
-				C252250B1956789200BA1731 /* LampGroup.cpp */,
-				C252250C1956789200BA1731 /* LampGroup.h */,
-				C252250D1956789200BA1731 /* Line.cpp */,
-				C252250E1956789200BA1731 /* Line.h */,
-				C252250F1956789200BA1731 /* Name.cpp */,
-				C25225101956789200BA1731 /* Name.h */,
-				C25225111956789200BA1731 /* Period.cpp */,
-				C25225121956789200BA1731 /* Period.h */,
-				C25225131956789200BA1731 /* PlanModule.cpp */,
-				C25225141956789200BA1731 /* PlanModule.h */,
-				C25225151956789200BA1731 /* Scheme.cpp */,
-				C25225161956789200BA1731 /* Scheme.h */,
-				C25225171956789200BA1731 /* socket */,
-				C25225211956789200BA1731 /* Status.cpp */,
-				C25225221956789200BA1731 /* Status.h */,
-				C25225231956789200BA1731 /* Vertex.cpp */,
-				C25225241956789200BA1731 /* Vertex.h */,
-				C25225251956789200BA1731 /* WeekPlan.cpp */,
-				C25225261956789200BA1731 /* WeekPlan.h */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C25224F51956789100BA1731 /* comm */ = {
-			isa = PBXGroup;
-			children = (
-				C25224F61956789200BA1731 /* Config.cpp */,
-				C25224F71956789200BA1731 /* Config.h */,
-				C25224F81956789200BA1731 /* TypeDef.h */,
-				C25224F91956789200BA1731 /* ZTFile.cpp */,
-				C25224FA1956789200BA1731 /* ZTFile.h */,
-				C25224FB1956789200BA1731 /* ZTObject.cpp */,
-				C25224FC1956789200BA1731 /* ZTObject.h */,
-			);
-			path = comm;
-			sourceTree = "<group>";
-		};
-		C25225171956789200BA1731 /* socket */ = {
-			isa = PBXGroup;
-			children = (
-				C25225181956789200BA1731 /* NetNode.cpp */,
-				C25225191956789200BA1731 /* NetNode.h */,
-				C252251A1956789200BA1731 /* ZTData.cpp */,
-				C252251B1956789200BA1731 /* ZTData.h */,
-				C252251C1956789200BA1731 /* ZTPacket.cpp */,
-				C252251D1956789200BA1731 /* ZTPacket.h */,
-				C252251E1956789200BA1731 /* ZTSocket.cpp */,
-				C252251F1956789200BA1731 /* ZTSocket.h */,
-				C25225201956789200BA1731 /* ZTThread.h */,
-			);
-			path = socket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C25224C01956782C00BA1731 /* Headers */ = {
+		C206F9A8197A2D4400624D10 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25225431956789200BA1731 /* Name.h in Headers */,
-				C25225451956789200BA1731 /* Period.h in Headers */,
-				C252252D1956789200BA1731 /* ZTFile.h in Headers */,
-				C252252F1956789200BA1731 /* ZTObject.h in Headers */,
-				C252253D1956789200BA1731 /* Lamp.h in Headers */,
-				C25225311956789200BA1731 /* DayPlan.h in Headers */,
-				C252253F1956789200BA1731 /* LampGroup.h in Headers */,
-				C25225581956789200BA1731 /* WeekPlan.h in Headers */,
-				C25225511956789200BA1731 /* ZTSocket.h in Headers */,
-				C252252B1956789200BA1731 /* TypeDef.h in Headers */,
-				C252254B1956789200BA1731 /* NetNode.h in Headers */,
-				C25225411956789200BA1731 /* Line.h in Headers */,
-				C25225491956789200BA1731 /* Scheme.h in Headers */,
-				C25225561956789200BA1731 /* Vertex.h in Headers */,
-				C25225391956789200BA1731 /* InterGraphicsModule.h in Headers */,
-				C25225331956789200BA1731 /* Debug.h in Headers */,
-				C252254F1956789200BA1731 /* ZTPacket.h in Headers */,
-				C25225371956789200BA1731 /* GraphicObject.h in Headers */,
-				C252252A1956789200BA1731 /* Config.h in Headers */,
-				C25225351956789200BA1731 /* DevConfig.h in Headers */,
-				C25225541956789200BA1731 /* Status.h in Headers */,
-				C252253B1956789200BA1731 /* Intersections.h in Headers */,
-				C25225471956789200BA1731 /* PlanModule.h in Headers */,
-				C25225521956789200BA1731 /* ZTThread.h in Headers */,
-				C252254D1956789200BA1731 /* ZTData.h in Headers */,
-				C25225281956789200BA1731 /* BinaryObj.h in Headers */,
+				C206F9EE197A2D6900624D10 /* FMDatabasePool.h in Headers */,
+				C206F9EA197A2D6900624D10 /* FMDatabaseQueue.h in Headers */,
+				C206F9E8197A2D6900624D10 /* FMResultSet.h in Headers */,
+				C206F9E6197A2D6900624D10 /* FMDatabase.h in Headers */,
+				C206F9E5197A2D6900624D10 /* FMDB.h in Headers */,
+				C206F9EC197A2D6900624D10 /* FMDatabaseAdditions.h in Headers */,
+				C206F9F2197A2D7A00624D10 /* FMDatabase+InMemoryOnDiskIO.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C25224C31956782C00BA1731 /* ZTJT */ = {
+		C206F9AB197A2D4400624D10 /* FMDB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C25224EC1956782C00BA1731 /* Build configuration list for PBXNativeTarget "ZTJT" */;
+			buildConfigurationList = C206F9D4197A2D4400624D10 /* Build configuration list for PBXNativeTarget "FMDB" */;
 			buildPhases = (
-				C25224BE1956782C00BA1731 /* Sources */,
-				C25224BF1956782C00BA1731 /* Frameworks */,
-				C25224C01956782C00BA1731 /* Headers */,
-				C25224C11956782C00BA1731 /* Resources */,
-				C25224C21956782C00BA1731 /* ShellScript */,
+				C206F9A6197A2D4400624D10 /* Sources */,
+				C206F9A7197A2D4400624D10 /* Frameworks */,
+				C206F9A8197A2D4400624D10 /* Headers */,
+				C206F9A9197A2D4400624D10 /* Resources */,
+				C206F9AA197A2D4400624D10 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ZTJT;
-			productName = ZTJT;
-			productReference = C25224C41956782C00BA1731 /* ZTJT.framework */;
+			name = FMDB;
+			productName = FMDB;
+			productReference = C206F9AC197A2D4400624D10 /* FMDB.framework */;
 			productType = "com.apple.product-type.framework.static";
 		};
-		C25224D61956782C00BA1731 /* ZTJTTests */ = {
+		C206F9BE197A2D4400624D10 /* FMDBTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C25224EF1956782C00BA1731 /* Build configuration list for PBXNativeTarget "ZTJTTests" */;
+			buildConfigurationList = C206F9D7197A2D4400624D10 /* Build configuration list for PBXNativeTarget "FMDBTests" */;
 			buildPhases = (
-				C25224D31956782C00BA1731 /* Sources */,
-				C25224D41956782C00BA1731 /* Frameworks */,
-				C25224D51956782C00BA1731 /* Resources */,
+				C206F9BB197A2D4400624D10 /* Sources */,
+				C206F9BC197A2D4400624D10 /* Frameworks */,
+				C206F9BD197A2D4400624D10 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C25224DE1956782C00BA1731 /* PBXTargetDependency */,
-				C25224E01956782C00BA1731 /* PBXTargetDependency */,
+				C206F9C6197A2D4400624D10 /* PBXTargetDependency */,
+				C206F9C8197A2D4400624D10 /* PBXTargetDependency */,
 			);
-			name = ZTJTTests;
-			productName = ZTJTTests;
-			productReference = C25224D71956782C00BA1731 /* ZTJTTests.xctest */;
+			name = FMDBTests;
+			productName = FMDBTests;
+			productReference = C206F9BF197A2D4400624D10 /* FMDBTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C25224BA1956782C00BA1731 /* Project object */ = {
+		C206F9A2197A2D4400624D10 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Perry;
 				TargetAttributes = {
-					C25224D61956782C00BA1731 = {
-						TestTargetID = C25224C31956782C00BA1731;
+					C206F9BE197A2D4400624D10 = {
+						TestTargetID = C206F9AB197A2D4400624D10;
 					};
 				};
 			};
-			buildConfigurationList = C25224BD1956782C00BA1731 /* Build configuration list for PBXProject "ZTJT" */;
+			buildConfigurationList = C206F9A5197A2D4400624D10 /* Build configuration list for PBXProject "FMDB" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = C25224B91956782C00BA1731;
-			productRefGroup = C25224C51956782C00BA1731 /* Products */;
+			mainGroup = C206F9A1197A2D4400624D10;
+			productRefGroup = C206F9AD197A2D4400624D10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C25224C31956782C00BA1731 /* ZTJT */,
-				C25224D61956782C00BA1731 /* ZTJTTests */,
+				C206F9AB197A2D4400624D10 /* FMDB */,
+				C206F9BE197A2D4400624D10 /* FMDBTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C25224C11956782C00BA1731 /* Resources */ = {
+		C206F9A9197A2D4400624D10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25224CE1956782C00BA1731 /* InfoPlist.strings in Resources */,
+				C206F9B6197A2D4400624D10 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C25224D51956782C00BA1731 /* Resources */ = {
+		C206F9BD197A2D4400624D10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25224E71956782C00BA1731 /* InfoPlist.strings in Resources */,
+				C206F9CF197A2D4400624D10 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C25224C21956782C00BA1731 /* ShellScript */ = {
+		C206F9AA197A2D4400624D10 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -461,74 +302,55 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C25224BE1956782C00BA1731 /* Sources */ = {
+		C206F9A6197A2D4400624D10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25225291956789200BA1731 /* Config.cpp in Sources */,
-				C25225401956789200BA1731 /* Line.cpp in Sources */,
-				C252254A1956789200BA1731 /* NetNode.cpp in Sources */,
-				C252254E1956789200BA1731 /* ZTPacket.cpp in Sources */,
-				C25225381956789200BA1731 /* InterGraphicsModule.cpp in Sources */,
-				C25225531956789200BA1731 /* Status.cpp in Sources */,
-				C252252E1956789200BA1731 /* ZTObject.cpp in Sources */,
-				C252253C1956789200BA1731 /* Lamp.cpp in Sources */,
-				C25225321956789200BA1731 /* Debug.cpp in Sources */,
-				C25225551956789200BA1731 /* Vertex.cpp in Sources */,
-				C25225461956789200BA1731 /* PlanModule.cpp in Sources */,
-				C25225341956789200BA1731 /* DevConfig.cpp in Sources */,
-				C25225501956789200BA1731 /* ZTSocket.cpp in Sources */,
-				C252252C1956789200BA1731 /* ZTFile.cpp in Sources */,
-				C25225271956789200BA1731 /* BinaryObj.cpp in Sources */,
-				C252254C1956789200BA1731 /* ZTData.cpp in Sources */,
-				C25225481956789200BA1731 /* Scheme.cpp in Sources */,
-				C25225421956789200BA1731 /* Name.cpp in Sources */,
-				C25224D21956782C00BA1731 /* ZTJT.m in Sources */,
-				C252253E1956789200BA1731 /* LampGroup.cpp in Sources */,
-				C25225361956789200BA1731 /* GraphicObject.cpp in Sources */,
-				C252253A1956789200BA1731 /* Intersections.cpp in Sources */,
-				C25225441956789200BA1731 /* Period.cpp in Sources */,
-				C25225301956789200BA1731 /* DayPlan.cpp in Sources */,
-				C25225571956789200BA1731 /* WeekPlan.cpp in Sources */,
+				C206F9E9197A2D6900624D10 /* FMResultSet.m in Sources */,
+				C206F9E7197A2D6900624D10 /* FMDatabase.m in Sources */,
+				C206F9EF197A2D6900624D10 /* FMDatabasePool.m in Sources */,
+				C206F9EB197A2D6900624D10 /* FMDatabaseQueue.m in Sources */,
+				C206F9ED197A2D6900624D10 /* FMDatabaseAdditions.m in Sources */,
+				C206F9F3197A2D7A00624D10 /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C25224D31956782C00BA1731 /* Sources */ = {
+		C206F9BB197A2D4400624D10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25224E91956782C00BA1731 /* ZTJTTests.m in Sources */,
+				C206F9D1197A2D4400624D10 /* FMDBTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C25224DE1956782C00BA1731 /* PBXTargetDependency */ = {
+		C206F9C6197A2D4400624D10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C25224C31956782C00BA1731 /* ZTJT */;
-			targetProxy = C25224DD1956782C00BA1731 /* PBXContainerItemProxy */;
+			target = C206F9AB197A2D4400624D10 /* FMDB */;
+			targetProxy = C206F9C5197A2D4400624D10 /* PBXContainerItemProxy */;
 		};
-		C25224E01956782C00BA1731 /* PBXTargetDependency */ = {
+		C206F9C8197A2D4400624D10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C25224C31956782C00BA1731 /* ZTJT */;
-			targetProxy = C25224DF1956782C00BA1731 /* PBXContainerItemProxy */;
+			target = C206F9AB197A2D4400624D10 /* FMDB */;
+			targetProxy = C206F9C7197A2D4400624D10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C25224CC1956782C00BA1731 /* InfoPlist.strings */ = {
+		C206F9B4197A2D4400624D10 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C25224CD1956782C00BA1731 /* en */,
+				C206F9B5197A2D4400624D10 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		C25224E51956782C00BA1731 /* InfoPlist.strings */ = {
+		C206F9CD197A2D4400624D10 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C25224E61956782C00BA1731 /* en */,
+				C206F9CE197A2D4400624D10 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -536,7 +358,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C25224EA1956782C00BA1731 /* Debug */ = {
+		C206F9D2197A2D4400624D10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -573,7 +395,7 @@
 			};
 			name = Debug;
 		};
-		C25224EB1956782C00BA1731 /* Release */ = {
+		C206F9D3197A2D4400624D10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -604,7 +426,7 @@
 			};
 			name = Release;
 		};
-		C25224ED1956782C00BA1731 /* Debug */ = {
+		C206F9D5197A2D4400624D10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
@@ -615,15 +437,15 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZTJT/ZTJT-Prefix.pch";
-				INFOPLIST_FILE = "ZTJT/ZTJT-Info.plist";
+				GCC_PREFIX_HEADER = "FMDB/FMDB-Prefix.pch";
+				INFOPLIST_FILE = "FMDB/FMDB-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
 		};
-		C25224EE1956782C00BA1731 /* Release */ = {
+		C206F9D6197A2D4400624D10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
@@ -634,48 +456,48 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZTJT/ZTJT-Prefix.pch";
-				INFOPLIST_FILE = "ZTJT/ZTJT-Info.plist";
+				GCC_PREFIX_HEADER = "FMDB/FMDB-Prefix.pch";
+				INFOPLIST_FILE = "FMDB/FMDB-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
 		};
-		C25224F01956782C00BA1731 /* Debug */ = {
+		C206F9D8197A2D4400624D10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZTJT.framework/Versions/A/ZTJT";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FMDB.framework/Versions/A/FMDB";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZTJT/ZTJT-Prefix.pch";
+				GCC_PREFIX_HEADER = "FMDB/FMDB-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "ZTJTTests/ZTJTTests-Info.plist";
+				INFOPLIST_FILE = "FMDBTests/FMDBTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		C25224F11956782C00BA1731 /* Release */ = {
+		C206F9D9197A2D4400624D10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZTJT.framework/Versions/A/ZTJT";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FMDB.framework/Versions/A/FMDB";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZTJT/ZTJT-Prefix.pch";
-				INFOPLIST_FILE = "ZTJTTests/ZTJTTests-Info.plist";
+				GCC_PREFIX_HEADER = "FMDB/FMDB-Prefix.pch";
+				INFOPLIST_FILE = "FMDBTests/FMDBTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -685,34 +507,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C25224BD1956782C00BA1731 /* Build configuration list for PBXProject "ZTJT" */ = {
+		C206F9A5197A2D4400624D10 /* Build configuration list for PBXProject "FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C25224EA1956782C00BA1731 /* Debug */,
-				C25224EB1956782C00BA1731 /* Release */,
+				C206F9D2197A2D4400624D10 /* Debug */,
+				C206F9D3197A2D4400624D10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C25224EC1956782C00BA1731 /* Build configuration list for PBXNativeTarget "ZTJT" */ = {
+		C206F9D4197A2D4400624D10 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C25224ED1956782C00BA1731 /* Debug */,
-				C25224EE1956782C00BA1731 /* Release */,
+				C206F9D5197A2D4400624D10 /* Debug */,
+				C206F9D6197A2D4400624D10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		C25224EF1956782C00BA1731 /* Build configuration list for PBXNativeTarget "ZTJTTests" */ = {
+		C206F9D7197A2D4400624D10 /* Build configuration list for PBXNativeTarget "FMDBTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C25224F01956782C00BA1731 /* Debug */,
-				C25224F11956782C00BA1731 /* Release */,
+				C206F9D8197A2D4400624D10 /* Debug */,
+				C206F9D9197A2D4400624D10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C25224BA1956782C00BA1731 /* Project object */;
+	rootObject = C206F9A2197A2D4400624D10 /* Project object */;
 }

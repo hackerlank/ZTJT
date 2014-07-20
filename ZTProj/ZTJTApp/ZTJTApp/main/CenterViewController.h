@@ -21,6 +21,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CenterViewController : UIViewController
+@interface CenterViewController : UIViewController <MKMapViewDelegate>
 
 @end

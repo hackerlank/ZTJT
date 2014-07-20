@@ -13,5 +13,14 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-    #import <MAMapKit/MAMapKit.h>
+    #import <MapKit/MapKit.h>
+#endif
+
+
+#ifdef DEBUG
+#define DLog(format, ...) NSLog(format, ## __VA_ARGS__);
+#define DLog_Method NSLog(@"%s", __FUNCTION__);
+#else
+#define DLog(format, ...)
+#define DLog_Method
 #endif

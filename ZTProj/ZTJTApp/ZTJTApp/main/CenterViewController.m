@@ -25,6 +25,8 @@
 #import "MMDrawerBarButtonItem.h"
 #import "MMLogoView.h"
 #import "LeftSideViewController.h"
+#import "ZTAnnotation.h"
+#import "ZTBriefBottomView.h"
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -36,7 +38,10 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
 };
 
 @interface CenterViewController ()
-@property (strong, nonatomic) MAMapView *mapView;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet ZTBriefBottomView *bottomView;
+@property (strong, nonatomic) NSMutableArray *annotations;
+
 @end
 
 @implementation CenterViewController
@@ -77,11 +82,18 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
     MMLogoView * logo = [[MMLogoView alloc] initWithFrame:CGRectMake(0, 0, 29, 31)];
     [self.navigationItem setTitleView:logo];
     [self.navigationController.view.layer setCornerRadius:10.0f];
+
+    // 创建地图
+    //self.mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
+    //self.mapView.delegate = self;
+    //[self.view addSubview:_mapView];
     
+    // 给地图添加长按手势
+    //UILongPressGestureRecognizer *gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+    //gesture.minimumPressDuration = 1;
+    //[self.view addGestureRecognizer:gesture];
     
-    [MAMapServices sharedServices].apiKey = @"bc9f630a840c14edb3680634a0f37b32";
-    self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:_mapView];
+    //self.bottomView.blurRadius = 15;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -133,4 +145,62 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
     [self.mm_drawerController bouncePreviewForDrawerSide:MMDrawerSideRight completion:nil];
 }
 
+
+
+#pragma mark - Gesture Recognizer Handlers
+- (IBAction) handleLongPress:(UILongPressGestureRecognizer *)gesture
+{
+    if (gesture.state == UIGestureRecognizerStateBegan)
+    {
+        DLog(@"UIGestureRecognizerStateBegan");
+        // 在这里放pin
+        CGPoint mapPoint = [gesture locationInView:self.mapView];
+        CLLocationCoordinate2D coordinate = [self.mapView convertPoint:mapPoint toCoordinateFromView:self.mapView];
+        
+        ZTAnnotation *annotation = [[ZTAnnotation alloc] init];
+        annotation.coordinate = coordinate;
+        annotation.title = @"Test";
+        
+        [self.annotations addObject:annotation];
+        
+        [self.mapView addAnnotation:annotation];
+    }
+    else if (gesture.state == UIGestureRecognizerStateRecognized)
+    {
+        DLog(@"UIGestureRecognizerStateRecognized");
+    }
+    
+}
+
+#pragma mark - Map Methods
+- (void) showPinDetail:(ZTAnnotation *)annotation
+{
+    DLog_Method
+}
+
+
+#pragma mark - MKMapViewDelegate methods
+- (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    MKPinAnnotationView *annotationView = nil;
+	if ([annotation isKindOfClass:[ZTAnnotation class]])
+	{
+		annotationView = (MKPinAnnotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:@"Pin"];
+		if (annotationView == nil)
+		{
+			annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Pin"];
+			annotationView.canShowCallout = YES;
+			annotationView.animatesDrop = YES;
+            
+            UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            [rightButton addTarget:self action:@selector(showPinDetail:) forControlEvents:UIControlEventTouchUpInside];
+            annotationView.rightCalloutAccessoryView = rightButton;
+            
+            UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+            [leftButton addTarget:self action:@selector(showPinDetail:) forControlEvents:UIControlEventTouchUpInside];
+            annotationView.leftCalloutAccessoryView = leftButton;
+		}
+	}
+	return annotationView;
+}
 @end

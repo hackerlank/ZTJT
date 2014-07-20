@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C206F99C197A136400624D10 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C206F99B197A136400624D10 /* MapKit.framework */; };
+		C206F9A0197A1EAE00624D10 /* ZTAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F99F197A1EAE00624D10 /* ZTAnnotation.m */; };
+		C206F9F5197A2DC500624D10 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C206F9F4197A2DC500624D10 /* FMDB.framework */; };
+		C206F9F8197AA66B00624D10 /* ZTBriefBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F9F7197AA66B00624D10 /* ZTBriefBottomView.m */; };
+		C206F9FC197AAD7500624D10 /* CenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C206F9FB197AAD7500624D10 /* CenterViewController.xib */; };
+		C206FA00197ABD9000624D10 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F9FF197ABD9000624D10 /* FXBlurView.m */; };
 		C25224821956778D00BA1731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224811956778D00BA1731 /* Foundation.framework */; };
 		C25224841956778D00BA1731 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224831956778D00BA1731 /* CoreGraphics.framework */; };
 		C25224861956778D00BA1731 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224851956778D00BA1731 /* UIKit.framework */; };
@@ -38,7 +44,6 @@
 		C25225861956F22D00BA1731 /* LeftSideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25225841956F22D00BA1731 /* LeftSideTableViewCell.xib */; };
 		C25225891957043800BA1731 /* key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C25225881957043800BA1731 /* key@2x.png */; };
 		C252258B195705FB00BA1731 /* key2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C252258A195705FB00BA1731 /* key2@2x.png */; };
-		C252258D195725D000BA1731 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252258C195725D000BA1731 /* MAMapKit.framework */; };
 		C252258F195725F100BA1731 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C252258E195725F100BA1731 /* CoreLocation.framework */; };
 		C2522591195725FF00BA1731 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2522590195725FF00BA1731 /* QuartzCore.framework */; };
 		C25225931957261100BA1731 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25225921957261100BA1731 /* SystemConfiguration.framework */; };
@@ -46,7 +51,6 @@
 		C25225991957263200BA1731 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25225981957263200BA1731 /* Security.framework */; };
 		C252259B1957263E00BA1731 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C252259A1957263E00BA1731 /* libstdc++.6.0.9.dylib */; };
 		C252259D195726A800BA1731 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C252259C195726A800BA1731 /* libz.dylib */; };
-		C252259F195726E100BA1731 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C252259E195726E100BA1731 /* AMap.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C206F99B197A136400624D10 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C206F99E197A1EAE00624D10 /* ZTAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTAnnotation.h; path = MapElements/ZTAnnotation.h; sourceTree = "<group>"; };
+		C206F99F197A1EAE00624D10 /* ZTAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTAnnotation.m; path = MapElements/ZTAnnotation.m; sourceTree = "<group>"; };
+		C206F9F4197A2DC500624D10 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = "../FMDB/build/Debug-iphoneos/FMDB.framework"; sourceTree = "<group>"; };
+		C206F9F6197AA66B00624D10 /* ZTBriefBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTBriefBottomView.h; sourceTree = "<group>"; };
+		C206F9F7197AA66B00624D10 /* ZTBriefBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTBriefBottomView.m; sourceTree = "<group>"; };
+		C206F9FB197AAD7500624D10 /* CenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CenterViewController.xib; sourceTree = "<group>"; };
+		C206F9FE197ABD9000624D10 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		C206F9FF197ABD9000624D10 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 		C252247E1956778D00BA1731 /* ZTJTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTJTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25224811956778D00BA1731 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C25224831956778D00BA1731 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -108,7 +121,6 @@
 		C25225841956F22D00BA1731 /* LeftSideTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftSideTableViewCell.xib; sourceTree = "<group>"; };
 		C25225881957043800BA1731 /* key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key@2x.png"; sourceTree = "<group>"; };
 		C252258A195705FB00BA1731 /* key2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key2@2x.png"; sourceTree = "<group>"; };
-		C252258C195725D000BA1731 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ZTJTApp/MAMapKit.framework; sourceTree = "<group>"; };
 		C252258E195725F100BA1731 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C2522590195725FF00BA1731 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C25225921957261100BA1731 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -116,7 +128,6 @@
 		C25225981957263200BA1731 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C252259A1957263E00BA1731 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		C252259C195726A800BA1731 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		C252259E195726E100BA1731 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/Versions/2.2.1.1647/Resources/AMap.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +135,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C206F9F5197A2DC500624D10 /* FMDB.framework in Frameworks */,
+				C206F99C197A136400624D10 /* MapKit.framework in Frameworks */,
 				C252259D195726A800BA1731 /* libz.dylib in Frameworks */,
 				C252259B1957263E00BA1731 /* libstdc++.6.0.9.dylib in Frameworks */,
 				C25225991957263200BA1731 /* Security.framework in Frameworks */,
@@ -131,7 +144,6 @@
 				C25225931957261100BA1731 /* SystemConfiguration.framework in Frameworks */,
 				C2522591195725FF00BA1731 /* QuartzCore.framework in Frameworks */,
 				C252258F195725F100BA1731 /* CoreLocation.framework in Frameworks */,
-				C252258D195725D000BA1731 /* MAMapKit.framework in Frameworks */,
 				C252255A195678E700BA1731 /* ZTJT.framework in Frameworks */,
 				C25224841956778D00BA1731 /* CoreGraphics.framework in Frameworks */,
 				C25224861956778D00BA1731 /* UIKit.framework in Frameworks */,
@@ -152,6 +164,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C206F99D197A1C5700624D10 /* MapElements */ = {
+			isa = PBXGroup;
+			children = (
+				C206F99E197A1EAE00624D10 /* ZTAnnotation.h */,
+				C206F99F197A1EAE00624D10 /* ZTAnnotation.m */,
+			);
+			name = MapElements;
+			sourceTree = "<group>";
+		};
+		C206F9FD197ABD9000624D10 /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				C206F9FE197ABD9000624D10 /* FXBlurView.h */,
+				C206F9FF197ABD9000624D10 /* FXBlurView.m */,
+			);
+			path = FXBlurView;
+			sourceTree = "<group>";
+		};
 		C25224751956778D00BA1731 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +204,8 @@
 		C25224801956778D00BA1731 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C206F9F4197A2DC500624D10 /* FMDB.framework */,
+				C206F99B197A136400624D10 /* MapKit.framework */,
 				C252259C195726A800BA1731 /* libz.dylib */,
 				C252259A1957263E00BA1731 /* libstdc++.6.0.9.dylib */,
 				C25225981957263200BA1731 /* Security.framework */,
@@ -181,7 +213,6 @@
 				C25225921957261100BA1731 /* SystemConfiguration.framework */,
 				C2522590195725FF00BA1731 /* QuartzCore.framework */,
 				C252258E195725F100BA1731 /* CoreLocation.framework */,
-				C252258C195725D000BA1731 /* MAMapKit.framework */,
 				C2522559195678E700BA1731 /* ZTJT.framework */,
 				C25224811956778D00BA1731 /* Foundation.framework */,
 				C25224831956778D00BA1731 /* CoreGraphics.framework */,
@@ -194,7 +225,7 @@
 		C25224871956778D00BA1731 /* ZTJTApp */ = {
 			isa = PBXGroup;
 			children = (
-				C252259E195726E100BA1731 /* AMap.bundle */,
+				C206F9FD197ABD9000624D10 /* FXBlurView */,
 				C25225871957043800BA1731 /* image */,
 				C25225691956E21D00BA1731 /* main */,
 				C252255C1956DCCF00BA1731 /* MMDrawerController */,
@@ -257,10 +288,12 @@
 		C25225691956E21D00BA1731 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				C206F99D197A1C5700624D10 /* MapElements */,
 				C252257F1956E50D00BA1731 /* MMExampleDrawerVisualStateManager.h */,
 				C25225801956E50D00BA1731 /* MMExampleDrawerVisualStateManager.m */,
 				C25225761956E2B800BA1731 /* CenterViewController.h */,
 				C25225771956E2B800BA1731 /* CenterViewController.m */,
+				C206F9FB197AAD7500624D10 /* CenterViewController.xib */,
 				C25225731956E2A900BA1731 /* LeftSideViewController.h */,
 				C25225741956E2A900BA1731 /* LeftSideViewController.m */,
 				C25225701956E26000BA1731 /* MMLogoView.h */,
@@ -274,6 +307,8 @@
 				C25225821956F22D00BA1731 /* LeftSideTableViewCell.h */,
 				C25225831956F22D00BA1731 /* LeftSideTableViewCell.m */,
 				C25225841956F22D00BA1731 /* LeftSideTableViewCell.xib */,
+				C206F9F6197AA66B00624D10 /* ZTBriefBottomView.h */,
+				C206F9F7197AA66B00624D10 /* ZTBriefBottomView.m */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -365,12 +400,12 @@
 			files = (
 				C25225891957043800BA1731 /* key@2x.png in Resources */,
 				C25224981956778D00BA1731 /* Main_iPad.storyboard in Resources */,
-				C252259F195726E100BA1731 /* AMap.bundle in Resources */,
 				C25225861956F22D00BA1731 /* LeftSideTableViewCell.xib in Resources */,
 				C252249D1956778D00BA1731 /* Images.xcassets in Resources */,
 				C25224951956778D00BA1731 /* Main_iPhone.storyboard in Resources */,
 				C252248C1956778D00BA1731 /* InfoPlist.strings in Resources */,
 				C252258B195705FB00BA1731 /* key2@2x.png in Resources */,
+				C206F9FC197AAD7500624D10 /* CenterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +426,7 @@
 			files = (
 				C252257E1956E3CF00BA1731 /* MMTableViewCell.m in Sources */,
 				C25225671956DCCF00BA1731 /* MMDrawerVisualState.m in Sources */,
+				C206F9A0197A1EAE00624D10 /* ZTAnnotation.m in Sources */,
 				C252249B1956778D00BA1731 /* ViewController.m in Sources */,
 				C25225681956DCCF00BA1731 /* UIViewController+MMDrawerController.m in Sources */,
 				C25225661956DCCF00BA1731 /* MMDrawerController.m in Sources */,
@@ -401,9 +437,11 @@
 				C25225721956E26000BA1731 /* MMLogoView.m in Sources */,
 				C25225851956F22D00BA1731 /* LeftSideTableViewCell.m in Sources */,
 				C25225781956E2B800BA1731 /* CenterViewController.m in Sources */,
+				C206F9F8197AA66B00624D10 /* ZTBriefBottomView.m in Sources */,
 				C252257B1956E3B800BA1731 /* MMSideDrawerTableViewCell.m in Sources */,
 				C252248E1956778D00BA1731 /* main.m in Sources */,
 				C252256F1956E23500BA1731 /* MMSideDrawerSectionHeaderView.m in Sources */,
+				C206FA00197ABD9000624D10 /* FXBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,10 +580,12 @@
 					"$(inherited)",
 					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/ZTJT/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/ZTJTApp",
+					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/FMDB/build/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZTJTApp/ZTJTApp-Prefix.pch";
 				INFOPLIST_FILE = "ZTJTApp/ZTJTApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -560,10 +600,12 @@
 					"$(inherited)",
 					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/ZTJT/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/ZTJTApp",
+					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/FMDB/build/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZTJTApp/ZTJTApp-Prefix.pch";
 				INFOPLIST_FILE = "ZTJTApp/ZTJTApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -628,6 +670,7 @@
 				C25224B51956778E00BA1731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C25224B61956778E00BA1731 /* Build configuration list for PBXNativeTarget "ZTJTAppTests" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +679,7 @@
 				C25224B81956778E00BA1731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

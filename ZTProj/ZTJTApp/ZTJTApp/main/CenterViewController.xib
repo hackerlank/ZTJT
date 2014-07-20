@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CenterViewController">
+            <connections>
+                <outlet property="bottomView" destination="GJq-ov-Fcd" id="eAu-od-m6T"/>
+                <outlet property="mapView" destination="E8f-vj-qKc" id="XPq-Nl-JR8"/>
+                <outlet property="view" destination="iN0-l3-epB" id="fO2-kp-qOC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJq-ov-Fcd" customClass="ZTBriefBottomView">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上南路永泰路" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1j-Xc-CCw">
+                            <rect key="frame" x="20" y="5" width="160" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPU-8w-cXp">
+                            <rect key="frame" x="188" y="7" width="112" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="未连接">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doDetail:" destination="GJq-ov-Fcd" eventType="touchUpInside" id="gqZ-tf-8Du"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="vJx-Bh-rTt"/>
+                    </constraints>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="linkButton" destination="MPU-8w-cXp" id="K6x-GG-oZE"/>
+                        <outlet property="titleLabel" destination="j1j-Xc-CCw" id="36j-3F-wud"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8f-vj-qKc" customClass="MKMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="p7g-iQ-jC1"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="GJq-ov-Fcd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="R1t-7y-hqj"/>
+                <constraint firstItem="E8f-vj-qKc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rlq-Ry-SIX"/>
+                <constraint firstAttribute="trailing" secondItem="GJq-ov-Fcd" secondAttribute="trailing" id="Wbi-Qm-sGT"/>
+                <constraint firstItem="E8f-vj-qKc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y7a-Ps-om3"/>
+                <constraint firstAttribute="bottom" secondItem="GJq-ov-Fcd" secondAttribute="bottom" id="sN9-xP-zEb"/>
+                <constraint firstItem="GJq-ov-Fcd" firstAttribute="top" secondItem="E8f-vj-qKc" secondAttribute="bottom" id="tYG-yf-AXF"/>
+                <constraint firstAttribute="trailing" secondItem="E8f-vj-qKc" secondAttribute="trailing" id="uH5-NZ-3gf"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="9hh-i1-CFU" appends="YES" id="ZKM-2g-9An"/>
+            </connections>
+        </view>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="9hh-i1-CFU">
+            <connections>
+                <action selector="handleLongPress:" destination="-1" id="wmk-NN-iDA"/>
+                <outlet property="delegate" destination="-1" id="MWm-p8-5N4"/>
+            </connections>
+        </pongPressGestureRecognizer>
+    </objects>
+</document>
