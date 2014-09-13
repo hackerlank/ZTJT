@@ -48,6 +48,9 @@
 		C25225991957263200BA1731 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25225981957263200BA1731 /* Security.framework */; };
 		C252259B1957263E00BA1731 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C252259A1957263E00BA1731 /* libstdc++.6.0.9.dylib */; };
 		C252259D195726A800BA1731 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C252259C195726A800BA1731 /* libz.dylib */; };
+		C25A664619C456FD00564FAA /* UpdateAndBackupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25A664519C456FD00564FAA /* UpdateAndBackupTableViewController.m */; };
+		C25A664E19C45C3B00564FAA /* TimeSetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25A664D19C45C3B00564FAA /* TimeSetTableViewController.m */; };
+		C25A665119C4689600564FAA /* NSDate+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = C25A665019C4689600564FAA /* NSDate+Ext.m */; };
 		C290726919BC00FB00AA6D79 /* CrossingConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C290726819BC00FB00AA6D79 /* CrossingConfigViewController.m */; };
 		C290726C19BC520E00AA6D79 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = C290726B19BC520E00AA6D79 /* Tool.m */; };
 		C2C966F619BAFDE40079160C /* AppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C966F519BAFDE40079160C /* AppSetting.m */; };
@@ -135,6 +138,12 @@
 		C25225981957263200BA1731 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C252259A1957263E00BA1731 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		C252259C195726A800BA1731 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C25A664419C456FD00564FAA /* UpdateAndBackupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateAndBackupTableViewController.h; sourceTree = "<group>"; };
+		C25A664519C456FD00564FAA /* UpdateAndBackupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateAndBackupTableViewController.m; sourceTree = "<group>"; };
+		C25A664C19C45C3B00564FAA /* TimeSetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSetTableViewController.h; sourceTree = "<group>"; };
+		C25A664D19C45C3B00564FAA /* TimeSetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSetTableViewController.m; sourceTree = "<group>"; };
+		C25A664F19C4689600564FAA /* NSDate+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Ext.h"; sourceTree = "<group>"; };
+		C25A665019C4689600564FAA /* NSDate+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Ext.m"; sourceTree = "<group>"; };
 		C290726719BC00FB00AA6D79 /* CrossingConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossingConfigViewController.h; sourceTree = "<group>"; };
 		C290726819BC00FB00AA6D79 /* CrossingConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossingConfigViewController.m; sourceTree = "<group>"; };
 		C290726A19BC520E00AA6D79 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
@@ -368,6 +377,8 @@
 				C2C966F519BAFDE40079160C /* AppSetting.m */,
 				C290726A19BC520E00AA6D79 /* Tool.h */,
 				C290726B19BC520E00AA6D79 /* Tool.m */,
+				C25A664F19C4689600564FAA /* NSDate+Ext.h */,
+				C25A665019C4689600564FAA /* NSDate+Ext.m */,
 			);
 			name = Comm;
 			sourceTree = "<group>";
@@ -398,6 +409,10 @@
 				C2C9672719BB3EA10079160C /* IPCell.xib */,
 				C290726719BC00FB00AA6D79 /* CrossingConfigViewController.h */,
 				C290726819BC00FB00AA6D79 /* CrossingConfigViewController.m */,
+				C25A664419C456FD00564FAA /* UpdateAndBackupTableViewController.h */,
+				C25A664519C456FD00564FAA /* UpdateAndBackupTableViewController.m */,
+				C25A664C19C45C3B00564FAA /* TimeSetTableViewController.h */,
+				C25A664D19C45C3B00564FAA /* TimeSetTableViewController.m */,
 			);
 			name = LukSet;
 			sourceTree = "<group>";
@@ -515,11 +530,14 @@
 				C252249B1956778D00BA1731 /* ViewController.m in Sources */,
 				C25225681956DCCF00BA1731 /* UIViewController+MMDrawerController.m in Sources */,
 				C2C9671D19BB3C010079160C /* InputCell.m in Sources */,
+				C25A664619C456FD00564FAA /* UpdateAndBackupTableViewController.m in Sources */,
 				C2C966FE19BB27390079160C /* UrgentViewController.m in Sources */,
+				C25A664E19C45C3B00564FAA /* TimeSetTableViewController.m in Sources */,
 				C25225661956DCCF00BA1731 /* MMDrawerController.m in Sources */,
 				C25225651956DCCF00BA1731 /* MMDrawerBarButtonItem.m in Sources */,
 				C25225751956E2A900BA1731 /* LeftSideViewController.m in Sources */,
 				C25225811956E50D00BA1731 /* MMExampleDrawerVisualStateManager.m in Sources */,
+				C25A665119C4689600564FAA /* NSDate+Ext.m in Sources */,
 				C25224921956778D00BA1731 /* AppDelegate.m in Sources */,
 				C290726C19BC520E00AA6D79 /* Tool.m in Sources */,
 				C2C9672819BB3EA10079160C /* IPCell.m in Sources */,

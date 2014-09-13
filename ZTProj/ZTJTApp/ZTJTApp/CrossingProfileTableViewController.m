@@ -83,7 +83,93 @@ using namespace std;
     }
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    
+    switch (indexPath.section)
+    {
+        case 0:         // 路口名称与运行模式
+        {
+            switch (indexPath.row)
+            {
+                case 0: // 路口名
+                {
+                    CGRect textFieldRect = CGRectMake(62.0, 0.0f, 215.0f, 31.0f);
+                    UITextField *theTextField = [[UITextField alloc] initWithFrame:textFieldRect];
+                    theTextField.contentVerticalAlignment= UIControlContentVerticalAlignmentCenter;
+                    theTextField.keyboardType = UIKeyboardTypeDefault;
+                    theTextField.returnKeyType = UIReturnKeyDone;
+                    theTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+                    //theTextField.tag = row;
+                    theTextField.delegate = self;
+                    
+                    cell.textLabel.text = @"路口名称";
+                    theTextField.text = OS2SS(&(_crossing->Name()));
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                    
+                    cell.accessoryView = theTextField;
+                    
+                    return cell;
+                }
+                case 1: // 路口编号
+                {
+                    CGRect textFieldRect = CGRectMake(62.0, 0.0f, 215.0f, 31.0f);
+                    UITextField *theTextField = [[UITextField alloc] initWithFrame:textFieldRect];
+                    theTextField.contentVerticalAlignment= UIControlContentVerticalAlignmentCenter;
+                    theTextField.keyboardType = UIKeyboardTypeNumberPad;
+                    theTextField.returnKeyType = UIReturnKeyDone;
+                    theTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+                    //theTextField.tag = row;
+                    theTextField.delegate = self;
+                    
+                    cell.accessoryView = theTextField;
+                    cell.textLabel.text = @"路口编号";
+                    theTextField.text = [NSString stringWithFormat:@"%d", _crossing->No()];
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                    
+                    return cell;
+                }
+                case 2: // 运行模式
+                {
+                    cell.textLabel.text = @"运行模式";
+                    string runmodestr = _crossing->RunModeString();
+                    cell.detailTextLabel.text = OS2SS(&runmodestr);
+                    //cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                    
+                    return cell;
+                }
+                default:
+                    return nil;
+            }
+        }
+            break;
+        case 1:
+        {
+            switch (indexPath.row)
+            {
+                case 0: // IP地址
+                {
+                    NSArray *objs = [[NSBundle mainBundle] loadNibNamed:@"IPCell" owner:nil options:nil];
+                    
+                    IPCell *cell = (IPCell *)[objs firstObject];
+                    cell.titleLabel.text = @"IP地址";
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                    
+                    return cell;
+                }
+                default:
+                    break;
+            }
+        }
+        default:
+            break;
+    }
+    
+    return nil;
+}
 
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.section)
@@ -118,12 +204,6 @@ using namespace std;
                 }
                 case 2: // 运行模式
                 {
-                    /*
-                    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
-                    cell.textLabel.text = @"运行模式";
-                    string runmodestr = _crossing->RunModeString();
-                    cell.detailTextLabel.text = OS2SS(&runmodestr);
-                     */
                     NSArray *objs = [[NSBundle mainBundle] loadNibNamed:@"InputCell" owner:nil options:nil];
                     //路口名称
                     InputCell *cell = (InputCell *)[objs firstObject];
@@ -164,7 +244,7 @@ using namespace std;
     
     return nil;
 }
-
+*/
 
 /*
  // Override to support conditional editing of the table view.

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <ZTJT/Crossing.h>
 
-@interface CrossingProfileTableViewController : UITableViewController
+@interface CrossingProfileTableViewController : UITableViewController <UITextFieldDelegate>
 {
     Crossing *_crossing;
 }

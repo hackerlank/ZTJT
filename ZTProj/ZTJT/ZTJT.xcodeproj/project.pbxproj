@@ -246,11 +246,11 @@
 		C25224F21956789100BA1731 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C25224F51956789100BA1731 /* comm */,
 				C2C9670F19BB3AD60079160C /* Crossing.cpp */,
 				C2C9671019BB3AD60079160C /* Crossing.h */,
 				C2C9671119BB3AD60079160C /* CrossingGraphicsModule.cpp */,
 				C2C9671219BB3AD60079160C /* CrossingGraphicsModule.h */,
-				C25224F51956789100BA1731 /* comm */,
 				C25224F31956789100BA1731 /* BinaryObj.cpp */,
 				C25224F41956789100BA1731 /* BinaryObj.h */,
 				C25224FD1956789200BA1731 /* DayPlan.cpp */,

@@ -8,6 +8,7 @@
 
 #import "CrossingConfigViewController.h"
 #import "CrossingProfileTableViewController.h"
+#import "UpdateAndBackupTableViewController.h"
 
 @interface CrossingConfigViewController ()
 
@@ -104,7 +105,8 @@
             break;
         case 1:
         {
-            
+            UpdateAndBackupTableViewController *ub = [[UpdateAndBackupTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+            [self.navigationController pushViewController:ub animated:YES];
         }
         default:
             break;
