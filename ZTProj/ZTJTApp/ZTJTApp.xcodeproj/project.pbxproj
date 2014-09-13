@@ -9,15 +9,13 @@
 /* Begin PBXBuildFile section */
 		C206F99C197A136400624D10 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C206F99B197A136400624D10 /* MapKit.framework */; };
 		C206F9A0197A1EAE00624D10 /* ZTAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F99F197A1EAE00624D10 /* ZTAnnotation.m */; };
-		C206F9F5197A2DC500624D10 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C206F9F4197A2DC500624D10 /* FMDB.framework */; };
-		C206F9F8197AA66B00624D10 /* ZTBriefBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F9F7197AA66B00624D10 /* ZTBriefBottomView.m */; };
 		C206F9FC197AAD7500624D10 /* CenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C206F9FB197AAD7500624D10 /* CenterViewController.xib */; };
-		C206FA00197ABD9000624D10 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = C206F9FF197ABD9000624D10 /* FXBlurView.m */; };
+		C223F5AD19BAE23700C364BE /* MainBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = C223F5AC19BAE23700C364BE /* MainBottomView.m */; };
 		C25224821956778D00BA1731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224811956778D00BA1731 /* Foundation.framework */; };
 		C25224841956778D00BA1731 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224831956778D00BA1731 /* CoreGraphics.framework */; };
 		C25224861956778D00BA1731 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224851956778D00BA1731 /* UIKit.framework */; };
 		C252248C1956778D00BA1731 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C252248A1956778D00BA1731 /* InfoPlist.strings */; };
-		C252248E1956778D00BA1731 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C252248D1956778D00BA1731 /* main.m */; };
+		C252248E1956778D00BA1731 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = C252248D1956778D00BA1731 /* main.mm */; };
 		C25224921956778D00BA1731 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C25224911956778D00BA1731 /* AppDelegate.m */; };
 		C25224951956778D00BA1731 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25224931956778D00BA1731 /* Main_iPhone.storyboard */; };
 		C25224981956778D00BA1731 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25224961956778D00BA1731 /* Main_iPad.storyboard */; };
@@ -28,7 +26,6 @@
 		C25224A61956778E00BA1731 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224851956778D00BA1731 /* UIKit.framework */; };
 		C25224AE1956778E00BA1731 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25224AC1956778E00BA1731 /* InfoPlist.strings */; };
 		C25224B01956778E00BA1731 /* ZTJTAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C25224AF1956778E00BA1731 /* ZTJTAppTests.m */; };
-		C252255A195678E700BA1731 /* ZTJT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2522559195678E700BA1731 /* ZTJT.framework */; };
 		C25225651956DCCF00BA1731 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C252255E1956DCCF00BA1731 /* MMDrawerBarButtonItem.m */; };
 		C25225661956DCCF00BA1731 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25225601956DCCF00BA1731 /* MMDrawerController.m */; };
 		C25225671956DCCF00BA1731 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = C25225621956DCCF00BA1731 /* MMDrawerVisualState.m */; };
@@ -51,6 +48,20 @@
 		C25225991957263200BA1731 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25225981957263200BA1731 /* Security.framework */; };
 		C252259B1957263E00BA1731 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C252259A1957263E00BA1731 /* libstdc++.6.0.9.dylib */; };
 		C252259D195726A800BA1731 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C252259C195726A800BA1731 /* libz.dylib */; };
+		C290726919BC00FB00AA6D79 /* CrossingConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C290726819BC00FB00AA6D79 /* CrossingConfigViewController.m */; };
+		C290726C19BC520E00AA6D79 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = C290726B19BC520E00AA6D79 /* Tool.m */; };
+		C2C966F619BAFDE40079160C /* AppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C966F519BAFDE40079160C /* AppSetting.m */; };
+		C2C966F919BB11670079160C /* CenterViewController+Bottom.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C966F819BB11670079160C /* CenterViewController+Bottom.m */; };
+		C2C966FE19BB27390079160C /* UrgentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C966FC19BB27390079160C /* UrgentViewController.m */; };
+		C2C966FF19BB27390079160C /* UrgentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2C966FD19BB27390079160C /* UrgentViewController.xib */; };
+		C2C9670919BB2A540079160C /* ICConfigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9670719BB2A540079160C /* ICConfigCell.m */; };
+		C2C9670A19BB2A540079160C /* ICConfigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2C9670819BB2A540079160C /* ICConfigCell.xib */; };
+		C2C9670E19BB3A2F0079160C /* ZTJT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C9670C19BB3A2F0079160C /* ZTJT.framework */; };
+		C2C9671919BB3BB10079160C /* CrossingProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9671819BB3BB10079160C /* CrossingProfileTableViewController.m */; };
+		C2C9671D19BB3C010079160C /* InputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9671B19BB3C010079160C /* InputCell.m */; };
+		C2C9671E19BB3C010079160C /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2C9671C19BB3C010079160C /* InputCell.xib */; };
+		C2C9672819BB3EA10079160C /* IPCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9672619BB3EA10079160C /* IPCell.m */; };
+		C2C9672919BB3EA10079160C /* IPCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2C9672719BB3EA10079160C /* IPCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,19 +78,16 @@
 		C206F99B197A136400624D10 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C206F99E197A1EAE00624D10 /* ZTAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTAnnotation.h; path = MapElements/ZTAnnotation.h; sourceTree = "<group>"; };
 		C206F99F197A1EAE00624D10 /* ZTAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTAnnotation.m; path = MapElements/ZTAnnotation.m; sourceTree = "<group>"; };
-		C206F9F4197A2DC500624D10 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = "../FMDB/build/Debug-iphoneos/FMDB.framework"; sourceTree = "<group>"; };
-		C206F9F6197AA66B00624D10 /* ZTBriefBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTBriefBottomView.h; sourceTree = "<group>"; };
-		C206F9F7197AA66B00624D10 /* ZTBriefBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTBriefBottomView.m; sourceTree = "<group>"; };
 		C206F9FB197AAD7500624D10 /* CenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CenterViewController.xib; sourceTree = "<group>"; };
-		C206F9FE197ABD9000624D10 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
-		C206F9FF197ABD9000624D10 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		C223F5AB19BAE23700C364BE /* MainBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBottomView.h; sourceTree = "<group>"; };
+		C223F5AC19BAE23700C364BE /* MainBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBottomView.m; sourceTree = "<group>"; };
 		C252247E1956778D00BA1731 /* ZTJTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTJTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25224811956778D00BA1731 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C25224831956778D00BA1731 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C25224851956778D00BA1731 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C25224891956778D00BA1731 /* ZTJTApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZTJTApp-Info.plist"; sourceTree = "<group>"; };
 		C252248B1956778D00BA1731 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C252248D1956778D00BA1731 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C252248D1956778D00BA1731 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		C252248F1956778D00BA1731 /* ZTJTApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZTJTApp-Prefix.pch"; sourceTree = "<group>"; };
 		C25224901956778D00BA1731 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C25224911956778D00BA1731 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,7 +101,6 @@
 		C25224AB1956778E00BA1731 /* ZTJTAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZTJTAppTests-Info.plist"; sourceTree = "<group>"; };
 		C25224AD1956778E00BA1731 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C25224AF1956778E00BA1731 /* ZTJTAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTJTAppTests.m; sourceTree = "<group>"; };
-		C2522559195678E700BA1731 /* ZTJT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZTJT.framework; path = "../ZTJT/build/Debug-iphoneos/ZTJT.framework"; sourceTree = "<group>"; };
 		C252255D1956DCCF00BA1731 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		C252255E1956DCCF00BA1731 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		C252255F1956DCCF00BA1731 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
@@ -128,6 +135,29 @@
 		C25225981957263200BA1731 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C252259A1957263E00BA1731 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		C252259C195726A800BA1731 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C290726719BC00FB00AA6D79 /* CrossingConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossingConfigViewController.h; sourceTree = "<group>"; };
+		C290726819BC00FB00AA6D79 /* CrossingConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossingConfigViewController.m; sourceTree = "<group>"; };
+		C290726A19BC520E00AA6D79 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		C290726B19BC520E00AA6D79 /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		C2C966F419BAFDE40079160C /* AppSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSetting.h; sourceTree = "<group>"; };
+		C2C966F519BAFDE40079160C /* AppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSetting.m; sourceTree = "<group>"; };
+		C2C966F719BB11670079160C /* CenterViewController+Bottom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CenterViewController+Bottom.h"; sourceTree = "<group>"; };
+		C2C966F819BB11670079160C /* CenterViewController+Bottom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CenterViewController+Bottom.m"; sourceTree = "<group>"; };
+		C2C966FB19BB27390079160C /* UrgentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrgentViewController.h; sourceTree = "<group>"; };
+		C2C966FC19BB27390079160C /* UrgentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrgentViewController.m; sourceTree = "<group>"; };
+		C2C966FD19BB27390079160C /* UrgentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UrgentViewController.xib; sourceTree = "<group>"; };
+		C2C9670619BB2A540079160C /* ICConfigCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICConfigCell.h; sourceTree = "<group>"; };
+		C2C9670719BB2A540079160C /* ICConfigCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICConfigCell.m; sourceTree = "<group>"; };
+		C2C9670819BB2A540079160C /* ICConfigCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICConfigCell.xib; sourceTree = "<group>"; };
+		C2C9670C19BB3A2F0079160C /* ZTJT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZTJT.framework; path = "../ZTJT/build/Debug-iphoneos/ZTJT.framework"; sourceTree = "<group>"; };
+		C2C9671719BB3BB10079160C /* CrossingProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossingProfileTableViewController.h; sourceTree = "<group>"; };
+		C2C9671819BB3BB10079160C /* CrossingProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossingProfileTableViewController.m; sourceTree = "<group>"; };
+		C2C9671A19BB3C010079160C /* InputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCell.h; sourceTree = "<group>"; };
+		C2C9671B19BB3C010079160C /* InputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCell.m; sourceTree = "<group>"; };
+		C2C9671C19BB3C010079160C /* InputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputCell.xib; sourceTree = "<group>"; };
+		C2C9672519BB3EA10079160C /* IPCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCell.h; sourceTree = "<group>"; };
+		C2C9672619BB3EA10079160C /* IPCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPCell.m; sourceTree = "<group>"; };
+		C2C9672719BB3EA10079160C /* IPCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IPCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C206F9F5197A2DC500624D10 /* FMDB.framework in Frameworks */,
+				C2C9670E19BB3A2F0079160C /* ZTJT.framework in Frameworks */,
 				C206F99C197A136400624D10 /* MapKit.framework in Frameworks */,
 				C252259D195726A800BA1731 /* libz.dylib in Frameworks */,
 				C252259B1957263E00BA1731 /* libstdc++.6.0.9.dylib in Frameworks */,
@@ -144,7 +174,6 @@
 				C25225931957261100BA1731 /* SystemConfiguration.framework in Frameworks */,
 				C2522591195725FF00BA1731 /* QuartzCore.framework in Frameworks */,
 				C252258F195725F100BA1731 /* CoreLocation.framework in Frameworks */,
-				C252255A195678E700BA1731 /* ZTJT.framework in Frameworks */,
 				C25224841956778D00BA1731 /* CoreGraphics.framework in Frameworks */,
 				C25224861956778D00BA1731 /* UIKit.framework in Frameworks */,
 				C25224821956778D00BA1731 /* Foundation.framework in Frameworks */,
@@ -176,10 +205,30 @@
 		C206F9FD197ABD9000624D10 /* FXBlurView */ = {
 			isa = PBXGroup;
 			children = (
-				C206F9FE197ABD9000624D10 /* FXBlurView.h */,
-				C206F9FF197ABD9000624D10 /* FXBlurView.m */,
 			);
 			path = FXBlurView;
+			sourceTree = "<group>";
+		};
+		C223F5AA19BAE1E800C364BE /* SideCom */ = {
+			isa = PBXGroup;
+			children = (
+				C252257F1956E50D00BA1731 /* MMExampleDrawerVisualStateManager.h */,
+				C25225801956E50D00BA1731 /* MMExampleDrawerVisualStateManager.m */,
+				C25225731956E2A900BA1731 /* LeftSideViewController.h */,
+				C25225741956E2A900BA1731 /* LeftSideViewController.m */,
+				C25225701956E26000BA1731 /* MMLogoView.h */,
+				C25225711956E26000BA1731 /* MMLogoView.m */,
+				C252256D1956E23500BA1731 /* MMSideDrawerSectionHeaderView.h */,
+				C252256E1956E23500BA1731 /* MMSideDrawerSectionHeaderView.m */,
+				C25225791956E3B800BA1731 /* MMSideDrawerTableViewCell.h */,
+				C252257A1956E3B800BA1731 /* MMSideDrawerTableViewCell.m */,
+				C252257C1956E3CF00BA1731 /* MMTableViewCell.h */,
+				C252257D1956E3CF00BA1731 /* MMTableViewCell.m */,
+				C25225821956F22D00BA1731 /* LeftSideTableViewCell.h */,
+				C25225831956F22D00BA1731 /* LeftSideTableViewCell.m */,
+				C25225841956F22D00BA1731 /* LeftSideTableViewCell.xib */,
+			);
+			name = SideCom;
 			sourceTree = "<group>";
 		};
 		C25224751956778D00BA1731 = {
@@ -204,7 +253,7 @@
 		C25224801956778D00BA1731 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C206F9F4197A2DC500624D10 /* FMDB.framework */,
+				C2C9670C19BB3A2F0079160C /* ZTJT.framework */,
 				C206F99B197A136400624D10 /* MapKit.framework */,
 				C252259C195726A800BA1731 /* libz.dylib */,
 				C252259A1957263E00BA1731 /* libstdc++.6.0.9.dylib */,
@@ -213,7 +262,6 @@
 				C25225921957261100BA1731 /* SystemConfiguration.framework */,
 				C2522590195725FF00BA1731 /* QuartzCore.framework */,
 				C252258E195725F100BA1731 /* CoreLocation.framework */,
-				C2522559195678E700BA1731 /* ZTJT.framework */,
 				C25224811956778D00BA1731 /* Foundation.framework */,
 				C25224831956778D00BA1731 /* CoreGraphics.framework */,
 				C25224851956778D00BA1731 /* UIKit.framework */,
@@ -225,6 +273,9 @@
 		C25224871956778D00BA1731 /* ZTJTApp */ = {
 			isa = PBXGroup;
 			children = (
+				C2C9670019BB295D0079160C /* LukSet */,
+				C2C966FA19BB27120079160C /* urgent */,
+				C2C966F319BAFDC20079160C /* Comm */,
 				C206F9FD197ABD9000624D10 /* FXBlurView */,
 				C25225871957043800BA1731 /* image */,
 				C25225691956E21D00BA1731 /* main */,
@@ -246,7 +297,7 @@
 			children = (
 				C25224891956778D00BA1731 /* ZTJTApp-Info.plist */,
 				C252248A1956778D00BA1731 /* InfoPlist.strings */,
-				C252248D1956778D00BA1731 /* main.m */,
+				C252248D1956778D00BA1731 /* main.mm */,
 				C252248F1956778D00BA1731 /* ZTJTApp-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -288,27 +339,15 @@
 		C25225691956E21D00BA1731 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				C223F5AA19BAE1E800C364BE /* SideCom */,
 				C206F99D197A1C5700624D10 /* MapElements */,
-				C252257F1956E50D00BA1731 /* MMExampleDrawerVisualStateManager.h */,
-				C25225801956E50D00BA1731 /* MMExampleDrawerVisualStateManager.m */,
+				C223F5AB19BAE23700C364BE /* MainBottomView.h */,
+				C223F5AC19BAE23700C364BE /* MainBottomView.m */,
+				C2C966F719BB11670079160C /* CenterViewController+Bottom.h */,
+				C2C966F819BB11670079160C /* CenterViewController+Bottom.m */,
 				C25225761956E2B800BA1731 /* CenterViewController.h */,
 				C25225771956E2B800BA1731 /* CenterViewController.m */,
 				C206F9FB197AAD7500624D10 /* CenterViewController.xib */,
-				C25225731956E2A900BA1731 /* LeftSideViewController.h */,
-				C25225741956E2A900BA1731 /* LeftSideViewController.m */,
-				C25225701956E26000BA1731 /* MMLogoView.h */,
-				C25225711956E26000BA1731 /* MMLogoView.m */,
-				C252256D1956E23500BA1731 /* MMSideDrawerSectionHeaderView.h */,
-				C252256E1956E23500BA1731 /* MMSideDrawerSectionHeaderView.m */,
-				C25225791956E3B800BA1731 /* MMSideDrawerTableViewCell.h */,
-				C252257A1956E3B800BA1731 /* MMSideDrawerTableViewCell.m */,
-				C252257C1956E3CF00BA1731 /* MMTableViewCell.h */,
-				C252257D1956E3CF00BA1731 /* MMTableViewCell.m */,
-				C25225821956F22D00BA1731 /* LeftSideTableViewCell.h */,
-				C25225831956F22D00BA1731 /* LeftSideTableViewCell.m */,
-				C25225841956F22D00BA1731 /* LeftSideTableViewCell.xib */,
-				C206F9F6197AA66B00624D10 /* ZTBriefBottomView.h */,
-				C206F9F7197AA66B00624D10 /* ZTBriefBottomView.m */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -320,6 +359,47 @@
 				C25225881957043800BA1731 /* key@2x.png */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		C2C966F319BAFDC20079160C /* Comm */ = {
+			isa = PBXGroup;
+			children = (
+				C2C966F419BAFDE40079160C /* AppSetting.h */,
+				C2C966F519BAFDE40079160C /* AppSetting.m */,
+				C290726A19BC520E00AA6D79 /* Tool.h */,
+				C290726B19BC520E00AA6D79 /* Tool.m */,
+			);
+			name = Comm;
+			sourceTree = "<group>";
+		};
+		C2C966FA19BB27120079160C /* urgent */ = {
+			isa = PBXGroup;
+			children = (
+				C2C966FB19BB27390079160C /* UrgentViewController.h */,
+				C2C966FC19BB27390079160C /* UrgentViewController.m */,
+				C2C966FD19BB27390079160C /* UrgentViewController.xib */,
+			);
+			name = urgent;
+			sourceTree = "<group>";
+		};
+		C2C9670019BB295D0079160C /* LukSet */ = {
+			isa = PBXGroup;
+			children = (
+				C2C9670619BB2A540079160C /* ICConfigCell.h */,
+				C2C9670719BB2A540079160C /* ICConfigCell.m */,
+				C2C9670819BB2A540079160C /* ICConfigCell.xib */,
+				C2C9671719BB3BB10079160C /* CrossingProfileTableViewController.h */,
+				C2C9671819BB3BB10079160C /* CrossingProfileTableViewController.m */,
+				C2C9671A19BB3C010079160C /* InputCell.h */,
+				C2C9671B19BB3C010079160C /* InputCell.m */,
+				C2C9671C19BB3C010079160C /* InputCell.xib */,
+				C2C9672519BB3EA10079160C /* IPCell.h */,
+				C2C9672619BB3EA10079160C /* IPCell.m */,
+				C2C9672719BB3EA10079160C /* IPCell.xib */,
+				C290726719BC00FB00AA6D79 /* CrossingConfigViewController.h */,
+				C290726819BC00FB00AA6D79 /* CrossingConfigViewController.m */,
+			);
+			name = LukSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,10 +480,14 @@
 			files = (
 				C25225891957043800BA1731 /* key@2x.png in Resources */,
 				C25224981956778D00BA1731 /* Main_iPad.storyboard in Resources */,
+				C2C9671E19BB3C010079160C /* InputCell.xib in Resources */,
 				C25225861956F22D00BA1731 /* LeftSideTableViewCell.xib in Resources */,
 				C252249D1956778D00BA1731 /* Images.xcassets in Resources */,
+				C2C9672919BB3EA10079160C /* IPCell.xib in Resources */,
+				C2C966FF19BB27390079160C /* UrgentViewController.xib in Resources */,
 				C25224951956778D00BA1731 /* Main_iPhone.storyboard in Resources */,
 				C252248C1956778D00BA1731 /* InfoPlist.strings in Resources */,
+				C2C9670A19BB2A540079160C /* ICConfigCell.xib in Resources */,
 				C252258B195705FB00BA1731 /* key2@2x.png in Resources */,
 				C206F9FC197AAD7500624D10 /* CenterViewController.xib in Resources */,
 			);
@@ -425,23 +509,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				C252257E1956E3CF00BA1731 /* MMTableViewCell.m in Sources */,
+				C2C9671919BB3BB10079160C /* CrossingProfileTableViewController.m in Sources */,
 				C25225671956DCCF00BA1731 /* MMDrawerVisualState.m in Sources */,
 				C206F9A0197A1EAE00624D10 /* ZTAnnotation.m in Sources */,
 				C252249B1956778D00BA1731 /* ViewController.m in Sources */,
 				C25225681956DCCF00BA1731 /* UIViewController+MMDrawerController.m in Sources */,
+				C2C9671D19BB3C010079160C /* InputCell.m in Sources */,
+				C2C966FE19BB27390079160C /* UrgentViewController.m in Sources */,
 				C25225661956DCCF00BA1731 /* MMDrawerController.m in Sources */,
 				C25225651956DCCF00BA1731 /* MMDrawerBarButtonItem.m in Sources */,
 				C25225751956E2A900BA1731 /* LeftSideViewController.m in Sources */,
 				C25225811956E50D00BA1731 /* MMExampleDrawerVisualStateManager.m in Sources */,
 				C25224921956778D00BA1731 /* AppDelegate.m in Sources */,
+				C290726C19BC520E00AA6D79 /* Tool.m in Sources */,
+				C2C9672819BB3EA10079160C /* IPCell.m in Sources */,
+				C2C966F619BAFDE40079160C /* AppSetting.m in Sources */,
 				C25225721956E26000BA1731 /* MMLogoView.m in Sources */,
 				C25225851956F22D00BA1731 /* LeftSideTableViewCell.m in Sources */,
 				C25225781956E2B800BA1731 /* CenterViewController.m in Sources */,
-				C206F9F8197AA66B00624D10 /* ZTBriefBottomView.m in Sources */,
+				C2C966F919BB11670079160C /* CenterViewController+Bottom.m in Sources */,
+				C290726919BC00FB00AA6D79 /* CrossingConfigViewController.m in Sources */,
+				C2C9670919BB2A540079160C /* ICConfigCell.m in Sources */,
 				C252257B1956E3B800BA1731 /* MMSideDrawerTableViewCell.m in Sources */,
-				C252248E1956778D00BA1731 /* main.m in Sources */,
+				C223F5AD19BAE23700C364BE /* MainBottomView.m in Sources */,
+				C252248E1956778D00BA1731 /* main.mm in Sources */,
 				C252256F1956E23500BA1731 /* MMSideDrawerSectionHeaderView.m in Sources */,
-				C206FA00197ABD9000624D10 /* FXBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,7 +673,10 @@
 					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/ZTJT/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/ZTJTApp",
 					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/FMDB/build/Debug-iphoneos",
+					"/Users/Perry/Documents/work/ztjt/ZTJT/ZTProj/FMDB/build/Debug-iphoneos",
+					"/Users/Perry/Documents/work/ztjt/ZTJT/ZTProj/ZTJT/build/Debug-iphoneos",
 				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZTJTApp/ZTJTApp-Prefix.pch";
 				INFOPLIST_FILE = "ZTJTApp/ZTJTApp-Info.plist";
@@ -601,7 +696,10 @@
 					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/ZTJT/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/ZTJTApp",
 					"/Users/perry/Documents/ztjt/ZTJT/ZTProj/FMDB/build/Debug-iphoneos",
+					"/Users/Perry/Documents/work/ztjt/ZTJT/ZTProj/FMDB/build/Debug-iphoneos",
+					"/Users/Perry/Documents/work/ztjt/ZTJT/ZTProj/ZTJT/build/Debug-iphoneos",
 				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZTJTApp/ZTJTApp-Prefix.pch";
 				INFOPLIST_FILE = "ZTJTApp/ZTJTApp-Info.plist";

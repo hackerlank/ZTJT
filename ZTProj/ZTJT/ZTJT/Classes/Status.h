@@ -1,7 +1,7 @@
 //
 //  Status.h
 //  ZTJT
-//
+//  方案中的状态
 //  Created by Perry on 14-5-1.
 //  Copyright (c) 2014年 PerryMac. All rights reserved.
 //

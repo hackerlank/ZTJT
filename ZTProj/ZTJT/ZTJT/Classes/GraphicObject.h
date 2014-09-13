@@ -1,7 +1,7 @@
 //
 //  DrawObject.h
 //  ZTJT
-//
+//  需要描绘的元素基类
 //  Created by PerryMac on 3/19/14.
 //  Copyright (c) 2014 PerryMac. All rights reserved.
 //

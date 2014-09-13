@@ -1,13 +1,13 @@
 //
-//  InterGraphicsModule.h
+//  CrossingGraphicsModule.h
 //  ZTJT
-//
+//  路口图形
 //  Created by PerryMac on 3/19/14.
 //  Copyright (c) 2014 PerryMac. All rights reserved.
 //
 
-#ifndef __ZTJT__InterGraphicsModule__
-#define __ZTJT__InterGraphicsModule__
+#ifndef __ZTJT__CrossingGraphicsModule__
+#define __ZTJT__CrossingGraphicsModule__
 
 #include "Line.h"
 #include "LampGroup.h"
@@ -20,7 +20,7 @@ using namespace std;
 namespace ZTNAMESPACE
 {
     
-    class InterGraphicsModule : public ZTObject
+    class CrossingGraphicsModule : public ZTObject
     {
         list<Vertex*> m_Vertexes;           //路口形状顶点图
         list<Line*> m_Lines;                  //路口线条
@@ -28,7 +28,7 @@ namespace ZTNAMESPACE
         list<Name*> m_Names;                  //注释
         
     public:
-        CONSTRUCTOR_DECLARE(InterGraphicsModule)
+        CONSTRUCTOR_DECLARE(CrossingGraphicsModule)
         Vertex *AddVertex(POINT point);
         void DelVertex(Vertex *vertex);
         

@@ -1,7 +1,7 @@
 //
 //  Debug.h
 //  ZTJT
-//
+//  调试相关类
 //  Created by Perry on 14-5-2.
 //  Copyright (c) 2014年 PerryMac. All rights reserved.
 //

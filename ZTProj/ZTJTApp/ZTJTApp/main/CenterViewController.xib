@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CenterViewController">
             <connections>
-                <outlet property="bottomView" destination="GJq-ov-Fcd" id="eAu-od-m6T"/>
+                <outlet property="bottomView" destination="XgQ-7F-Xzq" id="Qkk-3i-Usk"/>
                 <outlet property="mapView" destination="E8f-vj-qKc" id="XPq-Nl-JR8"/>
                 <outlet property="view" destination="iN0-l3-epB" id="fO2-kp-qOC"/>
             </connections>
@@ -17,64 +17,85 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJq-ov-Fcd" customClass="ZTBriefBottomView">
-                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <subviews>
-                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上南路永泰路" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1j-Xc-CCw">
-                            <rect key="frame" x="20" y="5" width="160" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPU-8w-cXp">
-                            <rect key="frame" x="188" y="7" width="112" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="未连接">
-                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="doDetail:" destination="GJq-ov-Fcd" eventType="touchUpInside" id="gqZ-tf-8Du"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="vJx-Bh-rTt"/>
-                    </constraints>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <outlet property="linkButton" destination="MPU-8w-cXp" id="K6x-GG-oZE"/>
-                        <outlet property="titleLabel" destination="j1j-Xc-CCw" id="36j-3F-wud"/>
-                    </connections>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8f-vj-qKc" customClass="MKMapView">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8f-vj-qKc" customClass="MKMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="p7g-iQ-jC1"/>
                     </connections>
                 </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XgQ-7F-Xzq" customClass="MainBottomView">
+                    <rect key="frame" x="0.0" y="353" width="320" height="215"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YbZ-qG-FsN">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="CzC-0b-AdU" appends="YES" id="MCT-E3-KbC"/>
+                                <outletCollection property="gestureRecognizers" destination="23E-LX-SWf" appends="YES" id="AIe-Rl-jdL"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMC-Du-cKw">
+                            <rect key="frame" x="10" y="23" width="180" height="180"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="2su-xi-2L6" appends="YES" id="BXb-xb-8ew"/>
+                            </connections>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNs-qz-mKu">
+                            <rect key="frame" x="198" y="135" width="113" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="视频监控">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="videoMonitor:" destination="-1" eventType="touchUpInside" id="rD4-0K-v8A"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crB-GX-u6w">
+                            <rect key="frame" x="198" y="97" width="113" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="参数配置">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="interactionSet:" destination="-1" eventType="touchUpInside" id="Bhn-9h-Wf5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qg6-Eh-6RE">
+                            <rect key="frame" x="198" y="173" width="113" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="紧急控制">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="urgent:" destination="-1" eventType="touchUpInside" id="g6h-Iu-6lF"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="天安门" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6M-VI-12r">
+                            <rect key="frame" x="198" y="23" width="113" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="topView" destination="YbZ-qG-FsN" id="Ods-z3-lKh"/>
+                    </connections>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <gestureRecognizers/>
-            <constraints>
-                <constraint firstItem="GJq-ov-Fcd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="R1t-7y-hqj"/>
-                <constraint firstItem="E8f-vj-qKc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rlq-Ry-SIX"/>
-                <constraint firstAttribute="trailing" secondItem="GJq-ov-Fcd" secondAttribute="trailing" id="Wbi-Qm-sGT"/>
-                <constraint firstItem="E8f-vj-qKc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y7a-Ps-om3"/>
-                <constraint firstAttribute="bottom" secondItem="GJq-ov-Fcd" secondAttribute="bottom" id="sN9-xP-zEb"/>
-                <constraint firstItem="GJq-ov-Fcd" firstAttribute="top" secondItem="E8f-vj-qKc" secondAttribute="bottom" id="tYG-yf-AXF"/>
-                <constraint firstAttribute="trailing" secondItem="E8f-vj-qKc" secondAttribute="trailing" id="uH5-NZ-3gf"/>
-            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -88,5 +109,21 @@
                 <outlet property="delegate" destination="-1" id="MWm-p8-5N4"/>
             </connections>
         </pongPressGestureRecognizer>
+        <tapGestureRecognizer id="2su-xi-2L6">
+            <connections>
+                <action selector="runmonitor:" destination="-1" id="W6z-MY-s50"/>
+                <outlet property="delegate" destination="XgQ-7F-Xzq" id="2wO-4O-Vjk"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="CzC-0b-AdU">
+            <connections>
+                <action selector="topViewTapped:" destination="-1" id="UTK-zn-3r3"/>
+            </connections>
+        </tapGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="23E-LX-SWf">
+            <connections>
+                <action selector="topViewPan:" destination="-1" id="fPM-i8-W7Z"/>
+            </connections>
+        </panGestureRecognizer>
     </objects>
 </document>

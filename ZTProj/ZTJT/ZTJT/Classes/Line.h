@@ -1,7 +1,7 @@
 //
 //  Line.h
 //  ZTJT
-//
+//  路口线条
 //  Created by PerryMac on 3/18/14.
 //  Copyright (c) 2014 PerryMac. All rights reserved.
 //

@@ -1,7 +1,7 @@
 //
 //  BinaryObj.h
 //  ZTJT
-//
+//  二进制对象
 //  Created by Perry on 14-5-2.
 //  Copyright (c) 2014年 PerryMac. All rights reserved.
 //

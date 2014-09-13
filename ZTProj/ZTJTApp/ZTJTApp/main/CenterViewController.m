@@ -26,7 +26,6 @@
 #import "MMLogoView.h"
 #import "LeftSideViewController.h"
 #import "ZTAnnotation.h"
-#import "ZTBriefBottomView.h"
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -39,7 +38,6 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
 
 @interface CenterViewController ()
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (weak, nonatomic) IBOutlet ZTBriefBottomView *bottomView;
 @property (strong, nonatomic) NSMutableArray *annotations;
 
 @end
@@ -51,6 +49,9 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
     self = [super init];
     if (self) {
         // Custom initialization
+        _currentCrossing = new Crossing;
+        _currentCrossing->setName("天安门");
+        
     }
     return self;
 }
@@ -83,17 +84,10 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
     [self.navigationItem setTitleView:logo];
     [self.navigationController.view.layer setCornerRadius:10.0f];
 
-    // 创建地图
-    //self.mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
-    //self.mapView.delegate = self;
-    //[self.view addSubview:_mapView];
-    
-    // 给地图添加长按手势
-    //UILongPressGestureRecognizer *gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
-    //gesture.minimumPressDuration = 1;
-    //[self.view addGestureRecognizer:gesture];
-    
-    //self.bottomView.blurRadius = 15;
+    // 地图显示合适的范围
+    AppSetting *appSetting = [AppSetting sharedInstance];
+    MKCoordinateRegion region = [appSetting lastMapRegion];
+    [self.mapView setRegion:region];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -203,4 +197,13 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
 	}
 	return annotationView;
 }
+
+- (void) mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated
+{
+    MKCoordinateRegion region = mapView.region;
+    NSLog(@"(%lf,%lf)(%lf,%lf)", region.center.latitude, region.center.longitude, region.span.latitudeDelta, region.span.longitudeDelta);
+}
+
+
+
 @end

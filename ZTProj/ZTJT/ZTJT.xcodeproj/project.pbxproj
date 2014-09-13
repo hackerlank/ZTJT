@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C25224C81956782C00BA1731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224C71956782C00BA1731 /* Foundation.framework */; };
 		C25224CE1956782C00BA1731 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25224CC1956782C00BA1731 /* InfoPlist.strings */; };
-		C25224D21956782C00BA1731 /* ZTJT.m in Sources */ = {isa = PBXBuildFile; fileRef = C25224D11956782C00BA1731 /* ZTJT.m */; };
+		C25224D21956782C00BA1731 /* ZTJT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25224D11956782C00BA1731 /* ZTJT.cpp */; };
 		C25224D91956782C00BA1731 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224D81956782C00BA1731 /* XCTest.framework */; };
 		C25224DA1956782C00BA1731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224C71956782C00BA1731 /* Foundation.framework */; };
 		C25224DC1956782C00BA1731 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25224DB1956782C00BA1731 /* UIKit.framework */; };
@@ -33,10 +33,6 @@
 		C25225351956789200BA1731 /* DevConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225021956789200BA1731 /* DevConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C25225361956789200BA1731 /* GraphicObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225031956789200BA1731 /* GraphicObject.cpp */; };
 		C25225371956789200BA1731 /* GraphicObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225041956789200BA1731 /* GraphicObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C25225381956789200BA1731 /* InterGraphicsModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225051956789200BA1731 /* InterGraphicsModule.cpp */; };
-		C25225391956789200BA1731 /* InterGraphicsModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225061956789200BA1731 /* InterGraphicsModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C252253A1956789200BA1731 /* Intersections.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225071956789200BA1731 /* Intersections.cpp */; };
-		C252253B1956789200BA1731 /* Intersections.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225081956789200BA1731 /* Intersections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C252253C1956789200BA1731 /* Lamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225091956789200BA1731 /* Lamp.cpp */; };
 		C252253D1956789200BA1731 /* Lamp.h in Headers */ = {isa = PBXBuildFile; fileRef = C252250A1956789200BA1731 /* Lamp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C252253E1956789200BA1731 /* LampGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C252250B1956789200BA1731 /* LampGroup.cpp */; };
@@ -66,6 +62,11 @@
 		C25225561956789200BA1731 /* Vertex.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225241956789200BA1731 /* Vertex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C25225571956789200BA1731 /* WeekPlan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25225251956789200BA1731 /* WeekPlan.cpp */; };
 		C25225581956789200BA1731 /* WeekPlan.h in Headers */ = {isa = PBXBuildFile; fileRef = C25225261956789200BA1731 /* WeekPlan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2C966F219BAF6A60079160C /* ZTJT.h in Headers */ = {isa = PBXBuildFile; fileRef = C25224D01956782C00BA1731 /* ZTJT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2C9671319BB3AD60079160C /* Crossing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C9670F19BB3AD60079160C /* Crossing.cpp */; };
+		C2C9671419BB3AD60079160C /* Crossing.h in Headers */ = {isa = PBXBuildFile; fileRef = C2C9671019BB3AD60079160C /* Crossing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2C9671519BB3AD60079160C /* CrossingGraphicsModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C9671119BB3AD60079160C /* CrossingGraphicsModule.cpp */; };
+		C2C9671619BB3AD60079160C /* CrossingGraphicsModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C2C9671219BB3AD60079160C /* CrossingGraphicsModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +93,7 @@
 		C25224CD1956782C00BA1731 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C25224CF1956782C00BA1731 /* ZTJT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZTJT-Prefix.pch"; sourceTree = "<group>"; };
 		C25224D01956782C00BA1731 /* ZTJT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTJT.h; sourceTree = "<group>"; };
-		C25224D11956782C00BA1731 /* ZTJT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTJT.m; sourceTree = "<group>"; };
+		C25224D11956782C00BA1731 /* ZTJT.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ZTJT.cpp; sourceTree = "<group>"; };
 		C25224D71956782C00BA1731 /* ZTJTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTJTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25224D81956782C00BA1731 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C25224DB1956782C00BA1731 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -116,10 +117,6 @@
 		C25225021956789200BA1731 /* DevConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevConfig.h; sourceTree = "<group>"; };
 		C25225031956789200BA1731 /* GraphicObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicObject.cpp; sourceTree = "<group>"; };
 		C25225041956789200BA1731 /* GraphicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
-		C25225051956789200BA1731 /* InterGraphicsModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InterGraphicsModule.cpp; sourceTree = "<group>"; };
-		C25225061956789200BA1731 /* InterGraphicsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterGraphicsModule.h; sourceTree = "<group>"; };
-		C25225071956789200BA1731 /* Intersections.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Intersections.cpp; sourceTree = "<group>"; };
-		C25225081956789200BA1731 /* Intersections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intersections.h; sourceTree = "<group>"; };
 		C25225091956789200BA1731 /* Lamp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lamp.cpp; sourceTree = "<group>"; };
 		C252250A1956789200BA1731 /* Lamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lamp.h; sourceTree = "<group>"; };
 		C252250B1956789200BA1731 /* LampGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LampGroup.cpp; sourceTree = "<group>"; };
@@ -149,6 +146,10 @@
 		C25225241956789200BA1731 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 		C25225251956789200BA1731 /* WeekPlan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WeekPlan.cpp; sourceTree = "<group>"; };
 		C25225261956789200BA1731 /* WeekPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekPlan.h; sourceTree = "<group>"; };
+		C2C9670F19BB3AD60079160C /* Crossing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Crossing.cpp; sourceTree = "<group>"; };
+		C2C9671019BB3AD60079160C /* Crossing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crossing.h; sourceTree = "<group>"; };
+		C2C9671119BB3AD60079160C /* CrossingGraphicsModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrossingGraphicsModule.cpp; sourceTree = "<group>"; };
+		C2C9671219BB3AD60079160C /* CrossingGraphicsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossingGraphicsModule.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +209,7 @@
 			children = (
 				C25224F21956789100BA1731 /* Classes */,
 				C25224D01956782C00BA1731 /* ZTJT.h */,
-				C25224D11956782C00BA1731 /* ZTJT.m */,
+				C25224D11956782C00BA1731 /* ZTJT.cpp */,
 				C25224CA1956782C00BA1731 /* Supporting Files */,
 			);
 			path = ZTJT;
@@ -245,9 +246,13 @@
 		C25224F21956789100BA1731 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C2C9670F19BB3AD60079160C /* Crossing.cpp */,
+				C2C9671019BB3AD60079160C /* Crossing.h */,
+				C2C9671119BB3AD60079160C /* CrossingGraphicsModule.cpp */,
+				C2C9671219BB3AD60079160C /* CrossingGraphicsModule.h */,
+				C25224F51956789100BA1731 /* comm */,
 				C25224F31956789100BA1731 /* BinaryObj.cpp */,
 				C25224F41956789100BA1731 /* BinaryObj.h */,
-				C25224F51956789100BA1731 /* comm */,
 				C25224FD1956789200BA1731 /* DayPlan.cpp */,
 				C25224FE1956789200BA1731 /* DayPlan.h */,
 				C25224FF1956789200BA1731 /* Debug.cpp */,
@@ -256,10 +261,6 @@
 				C25225021956789200BA1731 /* DevConfig.h */,
 				C25225031956789200BA1731 /* GraphicObject.cpp */,
 				C25225041956789200BA1731 /* GraphicObject.h */,
-				C25225051956789200BA1731 /* InterGraphicsModule.cpp */,
-				C25225061956789200BA1731 /* InterGraphicsModule.h */,
-				C25225071956789200BA1731 /* Intersections.cpp */,
-				C25225081956789200BA1731 /* Intersections.h */,
 				C25225091956789200BA1731 /* Lamp.cpp */,
 				C252250A1956789200BA1731 /* Lamp.h */,
 				C252250B1956789200BA1731 /* LampGroup.cpp */,
@@ -336,18 +337,19 @@
 				C25225411956789200BA1731 /* Line.h in Headers */,
 				C25225491956789200BA1731 /* Scheme.h in Headers */,
 				C25225561956789200BA1731 /* Vertex.h in Headers */,
-				C25225391956789200BA1731 /* InterGraphicsModule.h in Headers */,
 				C25225331956789200BA1731 /* Debug.h in Headers */,
 				C252254F1956789200BA1731 /* ZTPacket.h in Headers */,
 				C25225371956789200BA1731 /* GraphicObject.h in Headers */,
 				C252252A1956789200BA1731 /* Config.h in Headers */,
 				C25225351956789200BA1731 /* DevConfig.h in Headers */,
 				C25225541956789200BA1731 /* Status.h in Headers */,
-				C252253B1956789200BA1731 /* Intersections.h in Headers */,
 				C25225471956789200BA1731 /* PlanModule.h in Headers */,
 				C25225521956789200BA1731 /* ZTThread.h in Headers */,
 				C252254D1956789200BA1731 /* ZTData.h in Headers */,
+				C2C9671419BB3AD60079160C /* Crossing.h in Headers */,
+				C2C9671619BB3AD60079160C /* CrossingGraphicsModule.h in Headers */,
 				C25225281956789200BA1731 /* BinaryObj.h in Headers */,
+				C2C966F219BAF6A60079160C /* ZTJT.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,8 +471,8 @@
 				C25225401956789200BA1731 /* Line.cpp in Sources */,
 				C252254A1956789200BA1731 /* NetNode.cpp in Sources */,
 				C252254E1956789200BA1731 /* ZTPacket.cpp in Sources */,
-				C25225381956789200BA1731 /* InterGraphicsModule.cpp in Sources */,
 				C25225531956789200BA1731 /* Status.cpp in Sources */,
+				C2C9671519BB3AD60079160C /* CrossingGraphicsModule.cpp in Sources */,
 				C252252E1956789200BA1731 /* ZTObject.cpp in Sources */,
 				C252253C1956789200BA1731 /* Lamp.cpp in Sources */,
 				C25225321956789200BA1731 /* Debug.cpp in Sources */,
@@ -479,14 +481,14 @@
 				C25225341956789200BA1731 /* DevConfig.cpp in Sources */,
 				C25225501956789200BA1731 /* ZTSocket.cpp in Sources */,
 				C252252C1956789200BA1731 /* ZTFile.cpp in Sources */,
+				C2C9671319BB3AD60079160C /* Crossing.cpp in Sources */,
 				C25225271956789200BA1731 /* BinaryObj.cpp in Sources */,
 				C252254C1956789200BA1731 /* ZTData.cpp in Sources */,
 				C25225481956789200BA1731 /* Scheme.cpp in Sources */,
 				C25225421956789200BA1731 /* Name.cpp in Sources */,
-				C25224D21956782C00BA1731 /* ZTJT.m in Sources */,
+				C25224D21956782C00BA1731 /* ZTJT.cpp in Sources */,
 				C252253E1956789200BA1731 /* LampGroup.cpp in Sources */,
 				C25225361956789200BA1731 /* GraphicObject.cpp in Sources */,
-				C252253A1956789200BA1731 /* Intersections.cpp in Sources */,
 				C25225441956789200BA1731 /* Period.cpp in Sources */,
 				C25225301956789200BA1731 /* DayPlan.cpp in Sources */,
 				C25225571956789200BA1731 /* WeekPlan.cpp in Sources */,
@@ -607,10 +609,7 @@
 		C25224ED1956782C00BA1731 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -626,10 +625,7 @@
 		C25224EE1956782C00BA1731 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;

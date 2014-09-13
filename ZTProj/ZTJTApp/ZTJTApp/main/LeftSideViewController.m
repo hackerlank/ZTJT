@@ -135,9 +135,7 @@ static NSString *LeftSideCellID = @"cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.section) {
-            CenterViewController * center = ((AppDelegate *)[UIApplication sharedApplication].delegate).centerNavi;//[[CenterViewController alloc] init];
-            
-            UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:center];
+            UINavigationController * nav = ((AppDelegate *)[UIApplication sharedApplication].delegate).centerNavi;//[[CenterViewController alloc] init];
             
             if(indexPath.row%2==0){
                 [self.mm_drawerController

@@ -14,8 +14,13 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <MapKit/MapKit.h>
+    #import <ZTJT/ZTJT.h>
+    #import "AppSetting.h"
+    #import "Tool.h"
 #endif
 
+
+using namespace ZTNAMESPACE;
 
 #ifdef DEBUG
 #define DLog(format, ...) NSLog(format, ## __VA_ARGS__);

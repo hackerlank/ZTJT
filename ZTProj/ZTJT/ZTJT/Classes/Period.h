@@ -1,7 +1,7 @@
 //
 //  Period.h
 //  ZTJT
-//
+//  时段
 //  Created by Perry on 14-5-11.
 //  Copyright (c) 2014年 PerryMac. All rights reserved.
 //

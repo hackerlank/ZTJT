@@ -8,6 +8,3 @@
 
 #import "ZTJT.h"
 
-@implementation ZTJT
-
-@end

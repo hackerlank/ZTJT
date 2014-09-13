@@ -1,7 +1,7 @@
 //
 //  Lamp.h
 //  ZTJT
-//
+//  路灯
 //  Created by PerryMac on 3/20/14.
 //  Copyright (c) 2014 PerryMac. All rights reserved.
 //
