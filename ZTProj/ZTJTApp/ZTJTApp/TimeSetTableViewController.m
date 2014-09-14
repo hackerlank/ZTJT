@@ -9,14 +9,26 @@
 #import "TimeSetTableViewController.h"
 #import "InputCell.h"
 #import "NSDate+Ext.h"
+#import "TimeSetFooterView.h"
+#import "TimeSetHeaderView.h"
 
 #define kTimeSetTime @"time"
 #define kTimeSetDayOfWeek @"dayofweek"
 
 @interface TimeSetTableViewController ()
-@property (strong, nonatomic) NSDate *date;
-@property (assign, nonatomic) NSInteger dayOfWeek;   //星期几 从0~6
+{
+    Crossing *_crossing;
+    DEVICETIME _deviceTime;
+    DEVICETIME _newDeviceTime;
+}
+
+
+@property (weak, nonatomic) NSTimer *timer;
+
+@property (weak, nonatomic) TimeSetHeaderView *headerView;
+
 @end
+
 
 @implementation TimeSetTableViewController
 
@@ -26,14 +38,23 @@
 }
 
 
+- (IBAction) synToPhoneTime:(id)sender
+{
+    
+}
+
+- (void) timerFired:(NSTimer *)timer
+{
+    self.headerView.textLabel.text = [NSString stringWithFormat:@"当前时间:%@", [[NSDate date] stringFormat2] ];
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-        self.date = [NSDate date];
-        _dayOfWeek = 3;
+        _crossing = Area::sharedInstance()->CurrentCrossing();
+        _deviceTime = _crossing->DeviceTime();
     }
     return self;
 }
@@ -44,10 +65,11 @@
     
     self.title = @"编辑时钟";
     
-    //[self.tableView registerNib:[UINib nibWithNibName:@"InputCell" bundle:nil] forCellReuseIdentifier:@"InputCell"];
-    
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStyleBordered target:self action:@selector(save:)];
     self.navigationItem.rightBarButtonItem = item;
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
+    
     // 异步读取时钟
 }
 
@@ -55,6 +77,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) dealloc
+{
+    [self.timer invalidate];
 }
 
 #pragma mark - Table view data source
@@ -95,11 +122,11 @@
     switch (indexPath.row)
     {
         case 0:
-            cell.textLabel.text = @"时间";
-            cell.detailTextLabel.text = [self.date stringFormat1];
+            cell.textLabel.text = @"设备时间";
+            cell.detailTextLabel.text = [[NSDate date] stringFormat1];
             break;
         case 1:
-            cell.textLabel.text = @"今天是";
+            cell.textLabel.text = @"设备星期";
             cell.detailTextLabel.text = @"星期四";
         default:
             break;
@@ -108,53 +135,62 @@
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return 35;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+
+- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    TimeSetHeaderView *headerView = nil;
+    NSArray *objs = [[NSBundle mainBundle] loadNibNamed:@"TimeSetHeaderView" owner:nil options:nil];
+    
+    headerView = [objs firstObject];
+    headerView.textLabel.text = [NSString stringWithFormat:@"当前时间:%@", [[NSDate date] stringFormat2]];
+    headerView.backgroundColor = [UIColor clearColor];
+    
+    self.headerView = headerView;
+    
+    return headerView;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    NSString *rttitle = nil;
+//    switch (section)
+//    {
+//        case 0:
+//        {
+//            rttitle = [[NSDate date] stringFormat2];
+//        }
+//            
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//    
+//    return rttitle;
+//}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
+    return 44;
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+    TimeSetFooterView *footerView = nil;
+    NSArray *objs = [[NSBundle mainBundle] loadNibNamed:@"TimeSetFooterView" owner:nil options:nil];
+    
+    footerView = [objs firstObject];
+    [footerView.phoneTimeButton addTarget:self action:@selector(synToPhoneTime:) forControlEvents:UIControlEventTouchUpInside];
+    [footerView.doneButton addTarget:self action:@selector(save:) forControlEvents:UIControlEventTouchUpInside];
+    footerView.backgroundColor = [UIColor clearColor];
+    
+    return footerView;
 }
-*/
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

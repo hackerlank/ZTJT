@@ -94,6 +94,17 @@ typedef enum {
 }LampState;
 
 
+typedef struct _DEVICETIME {
+    UINT16 wYear;
+    UINT16 wMonth;
+    UINT16 wDayOfWeek;
+    UINT16 wDay;
+    UINT16 wHour;
+    UINT16 wMinute;
+    UINT16 wSecond;
+    UINT16 wMilliseconds;
+} DEVICETIME, *PDEVICETIME, *LPDEVICETIME;
+
 #define PRIVATE_PROPERTY(type,name) \
 private: \
     type m_##name; \

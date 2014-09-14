@@ -19,6 +19,11 @@
 
 - (NSString *) stringFormat2
 {
-    return nil;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh"];
+    [formatter setLocale:locale];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss cccc"];
+    
+    return [formatter stringFromDate:self];;
 }
 @end

@@ -8,6 +8,7 @@
 
 #import "UpdateAndBackupTableViewController.h"
 #import "TimeSetTableViewController.h"
+#import "SytemBackUpViewController.h"
 
 @interface UpdateAndBackupTableViewController ()
 
@@ -95,7 +96,8 @@
             break;
         case 1:
         {
-            
+            SytemBackUpViewController *sbu = [[SytemBackUpViewController alloc] init];
+            [self.navigationController pushViewController:sbu animated:YES];
         }
             break;
         case 2:

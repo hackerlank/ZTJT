@@ -63,12 +63,14 @@ namespace ZTNAMESPACE
         PRIVATE_PROPERTY(NetNode, Node);    //网络地址
         
         PRIVATE_PROPERTY(CrossingRunMode, RunMode);     //运行模式
-        PRIVATE_PROPERTY(INT, OldRunMode);  //先前运行模式
+        PRIVATE_PROPERTY(INT, OldRunMode);              //先前运行模式
         
-        PRIVATE_PROPERTY(SHORT, Port);      //端口
-        PRIVATE_PROPERTY(CrossingState, State);    //路口运行状态
+        PRIVATE_PROPERTY(SHORT, Port);              //端口
+        PRIVATE_PROPERTY(CrossingState, State);     //路口运行状态
         
-        PRIVATE_PROPERTY(ZTBOOL, connected);    //是否正在连接状态
+        PRIVATE_PROPERTY(ZTBOOL, Connected);        //是否正在连接状态
+        
+        PRIVATE_PROPERTY(DEVICETIME, DeviceTime);   //设备时间
         
     public:
         // 重写父类方法

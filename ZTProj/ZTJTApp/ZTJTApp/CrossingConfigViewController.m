@@ -11,20 +11,14 @@
 #import "UpdateAndBackupTableViewController.h"
 
 @interface CrossingConfigViewController ()
+{
+    Crossing *_crossing;
+}
+
 
 @end
 
 @implementation CrossingConfigViewController
-
-#pragma mark - Public
-- (void) setCrossing:(Crossing *)crossing
-{
-    if (nil == crossing)
-    {
-        assert(0);
-    }
-    _crossing = crossing;
-}
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -32,6 +26,7 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        _crossing = Area::sharedInstance()->CurrentCrossing();
     }
     return self;
 }
@@ -41,7 +36,6 @@
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -99,7 +93,6 @@
         case 0:
         {
             CrossingProfileTableViewController *profile = [[CrossingProfileTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-            [profile setCrossing:_crossing];
             [self.navigationController pushViewController:profile animated:YES];
         }
             break;

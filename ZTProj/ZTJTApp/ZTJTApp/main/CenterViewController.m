@@ -49,8 +49,6 @@ typedef NS_ENUM(NSInteger, MMCenterViewControllerSection){
     self = [super init];
     if (self) {
         // Custom initialization
-        _currentCrossing = new Crossing;
-        _currentCrossing->setName("天安门");
         
     }
     return self;

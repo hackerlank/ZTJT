@@ -48,7 +48,9 @@ namespace ZTNAMESPACE
     SYNTHESIZE(Crossing, SHORT, Port);      //端口
     SYNTHESIZE(Crossing, Crossing::CrossingState, State);    //路口运行状态
     
-    SYNTHESIZE(Crossing, ZTBOOL, connected);    //是否正在连接状态
+    SYNTHESIZE(Crossing, ZTBOOL, Connected);    //是否正在连接状态
+    
+    SYNTHESIZE(Crossing, DEVICETIME, DeviceTime);   //设备时间
     
     ZTBOOL Crossing::HitTest(POINT point)
     {

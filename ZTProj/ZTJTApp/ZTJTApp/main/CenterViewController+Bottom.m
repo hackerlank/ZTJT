@@ -57,7 +57,6 @@
 - (IBAction)interactionSet:(id)sender
 {
     CrossingConfigViewController *config = [[CrossingConfigViewController alloc] initWithStyle:UITableViewStylePlain];
-    [config setCrossing:_currentCrossing];
     [self.navigationController pushViewController:config animated:YES];
 }
 

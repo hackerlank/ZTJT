@@ -9,9 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CrossingConfigViewController : UITableViewController
-{
-    Crossing *_crossing;
-}
 
-- (void) setCrossing:(Crossing *)crossing;
 @end

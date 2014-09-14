@@ -10,9 +10,5 @@
 #import <ZTJT/Crossing.h>
 
 @interface CrossingProfileTableViewController : UITableViewController <UITextFieldDelegate>
-{
-    Crossing *_crossing;
-}
 
-- (void) setCrossing:(ZT::Crossing *)crossing;
 @end

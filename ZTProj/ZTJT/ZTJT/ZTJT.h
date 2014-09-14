@@ -6,27 +6,29 @@
 //  Copyright (c) 2014年 Perry. All rights reserved.
 //
 
-#import <ZTJT/Crossing.h>
+#include <ZTJT/Crossing.h>
 
-#import <ZTJT/Vertex.h>
-#import <ZTJT/Line.h>
-#import <ZTJT/Name.h>
-#import <ZTJT/Lamp.h>
-#import <ZTJT/LampGroup.h>
-#import <ZTJT/CrossingGraphicsModule.h>
+#include <ZTJT/Vertex.h>
+#include <ZTJT/Line.h>
+#include <ZTJT/Name.h>
+#include <ZTJT/Lamp.h>
+#include <ZTJT/LampGroup.h>
+#include <ZTJT/CrossingGraphicsModule.h>
 
-#import <ZTJT/Period.h>
-#import <ZTJT/DayPlan.h>
-#import <ZTJT/WeekPlan.h>
-#import <ZTJT/PlanModule.h>
+#include <ZTJT/Period.h>
+#include <ZTJT/DayPlan.h>
+#include <ZTJT/WeekPlan.h>
+#include <ZTJT/PlanModule.h>
 
-#import <ZTJT/Status.h>
-#import <ZTJT/Scheme.h>
+#include <ZTJT/Status.h>
+#include <ZTJT/Scheme.h>
 
-#import <ZTJT/DevConfig.h>
+#include <ZTJT/DevConfig.h>
 
-#import <ZTJT/Config.h>
-#import <ZTJT/TypeDef.h>
-#import <ZTJT/ZTFile.h>
+#include <ZTJT/Config.h>
+#include <ZTJT/TypeDef.h>
+#include <ZTJT/ZTFile.h>
+
+#include <ZTJT/Area.h>
 
 

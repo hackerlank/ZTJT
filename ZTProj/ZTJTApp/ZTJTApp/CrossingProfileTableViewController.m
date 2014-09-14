@@ -17,6 +17,7 @@ using namespace std;
 @interface CrossingProfileTableViewController ()
 {
     vector< pair<ZT::Crossing::CrossingRunMode, string> > _runModes;
+    Crossing *_crossing;
 }
 
 @end
@@ -25,25 +26,16 @@ using namespace std;
 
 #pragma mark - Private
 
-#pragma mark - Public
-- (void) setCrossing:(ZT::Crossing *)crossing
-{
-    if (nil == crossing)
-    {
-        assert(0);
-    }
-    _crossing = crossing;
-    string str = _crossing->RunModeDescription(ZT::Crossing::CrossingRunModeRunMonitor);
-    _runModes = _crossing->GetRunModes();
-}
-
-
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        _crossing = Area::sharedInstance()->CurrentCrossing();
+        
+        string str = _crossing->RunModeDescription(ZT::Crossing::CrossingRunModeRunMonitor);
+        _runModes = _crossing->GetRunModes();
     }
     return self;
 }

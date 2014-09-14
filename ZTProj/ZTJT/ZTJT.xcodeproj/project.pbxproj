@@ -67,6 +67,8 @@
 		C2C9671419BB3AD60079160C /* Crossing.h in Headers */ = {isa = PBXBuildFile; fileRef = C2C9671019BB3AD60079160C /* Crossing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2C9671519BB3AD60079160C /* CrossingGraphicsModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C9671119BB3AD60079160C /* CrossingGraphicsModule.cpp */; };
 		C2C9671619BB3AD60079160C /* CrossingGraphicsModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C2C9671219BB3AD60079160C /* CrossingGraphicsModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2EEF49019C51A7F00751333 /* Area.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2EEF48E19C51A7F00751333 /* Area.cpp */; };
+		C2EEF49119C51A7F00751333 /* Area.h in Headers */ = {isa = PBXBuildFile; fileRef = C2EEF48F19C51A7F00751333 /* Area.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +152,8 @@
 		C2C9671019BB3AD60079160C /* Crossing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crossing.h; sourceTree = "<group>"; };
 		C2C9671119BB3AD60079160C /* CrossingGraphicsModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrossingGraphicsModule.cpp; sourceTree = "<group>"; };
 		C2C9671219BB3AD60079160C /* CrossingGraphicsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossingGraphicsModule.h; sourceTree = "<group>"; };
+		C2EEF48E19C51A7F00751333 /* Area.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Area.cpp; sourceTree = "<group>"; };
+		C2EEF48F19C51A7F00751333 /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +253,8 @@
 				C25224F51956789100BA1731 /* comm */,
 				C2C9670F19BB3AD60079160C /* Crossing.cpp */,
 				C2C9671019BB3AD60079160C /* Crossing.h */,
+				C2EEF48E19C51A7F00751333 /* Area.cpp */,
+				C2EEF48F19C51A7F00751333 /* Area.h */,
 				C2C9671119BB3AD60079160C /* CrossingGraphicsModule.cpp */,
 				C2C9671219BB3AD60079160C /* CrossingGraphicsModule.h */,
 				C25224F31956789100BA1731 /* BinaryObj.cpp */,
@@ -349,6 +355,7 @@
 				C2C9671419BB3AD60079160C /* Crossing.h in Headers */,
 				C2C9671619BB3AD60079160C /* CrossingGraphicsModule.h in Headers */,
 				C25225281956789200BA1731 /* BinaryObj.h in Headers */,
+				C2EEF49119C51A7F00751333 /* Area.h in Headers */,
 				C2C966F219BAF6A60079160C /* ZTJT.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +483,7 @@
 				C252252E1956789200BA1731 /* ZTObject.cpp in Sources */,
 				C252253C1956789200BA1731 /* Lamp.cpp in Sources */,
 				C25225321956789200BA1731 /* Debug.cpp in Sources */,
+				C2EEF49019C51A7F00751333 /* Area.cpp in Sources */,
 				C25225551956789200BA1731 /* Vertex.cpp in Sources */,
 				C25225461956789200BA1731 /* PlanModule.cpp in Sources */,
 				C25225341956789200BA1731 /* DevConfig.cpp in Sources */,
